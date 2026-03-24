@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — RenMagDB</title>
+<style>
+:root {
+    --bg: #f5f0e8;
+    --bg-card: #fff;
+    --text: #2c2418;
+    --text-muted: #6b5e4f;
+    --accent: #8b4513;
+    --accent-light: #d4a574;
+    --accent-hover: #a0522d;
+    --header-bg: #2c2418;
+    --header-text: #f5f0e8;
+    --border: #d4c5a9;
+    --shadow: rgba(44, 36, 24, 0.08);
+    --font: 'Georgia', 'Times New Roman', serif;
+    --font-mono: 'Consolas', 'Monaco', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+header { background: var(--header-bg); color: var(--header-text); padding: 1.5rem 2rem; }
+header h1 { font-size: 1.6rem; font-weight: 400; letter-spacing: 0.05em; }
+header h1 span { font-weight: 700; }
+header nav { margin-top: 0.5rem; }
+header nav a { color: var(--accent-light); margin-right: 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
+header nav a:hover { color: #fff; }
+main { max-width: 1100px; margin: 2rem auto; padding: 0 2rem; }
+h2 { font-size: 1.4rem; color: var(--accent); margin: 2rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+h3 { font-size: 1.1rem; color: var(--text); margin: 1.5rem 0 0.5rem; }
+.stats-bar { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.5rem 0; }
+.stat { background: var(--bg-card); padding: 1rem 1.5rem; border-radius: 6px; box-shadow: 0 1px 4px var(--shadow); border-left: 3px solid var(--accent); }
+.stat .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+.stat .label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin: 1rem 0; }
+.card { background: var(--bg-card); border-radius: 6px; padding: 1.2rem 1.5rem; box-shadow: 0 1px 4px var(--shadow); border-top: 2px solid var(--accent-light); }
+.card h3 { margin: 0 0 0.3rem; font-size: 1rem; }
+.card .meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.card p { font-size: 0.9rem; line-height: 1.6; }
+.tag { display: inline-block; background: var(--accent-light); color: var(--header-bg); font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 3px; margin: 0.1rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.tag.hermetic { background: #c4956a; }
+.tag.kabbalistic { background: #7a6b8a; color: #fff; }
+.tag.neoplatonic { background: #5a7a6b; color: #fff; }
+.tag.magical { background: #8b4513; color: #fff; }
+.tag.astrological { background: #4a6a8a; color: #fff; }
+.tag.theological { background: #6a5a4a; color: #fff; }
+.tag.enochian { background: #3a5a7a; color: #fff; }
+.tag.alchemical { background: #7a5a3a; color: #fff; }
+.tag.philosophical { background: #5a6a5a; color: #fff; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+th { background: var(--header-bg); color: var(--header-text); padding: 0.6rem 1rem; text-align: left; font-weight: 400; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+td { padding: 0.5rem 1rem; border-bottom: 1px solid var(--border); }
+tr:hover td { background: rgba(139,69,19,0.03); }
+.timeline-event { border-left: 3px solid var(--accent); padding: 0.8rem 1.5rem; margin: 0.8rem 0; background: var(--bg-card); border-radius: 0 6px 6px 0; }
+.timeline-event .year { font-size: 1.1rem; font-weight: 700; color: var(--accent); }
+.timeline-event .title { font-weight: 600; }
+.timeline-event .desc { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem; }
+.badge { display: inline-block; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 3px; background: var(--border); color: var(--text-muted); }
+.badge.draft { background: #ffeaa7; color: #856404; }
+footer { text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid var(--border); }
+.search-box { width: 100%; padding: 0.7rem 1rem; border: 1px solid var(--border); border-radius: 6px; font-size: 1rem; font-family: var(--font); margin: 1rem 0; }
+.search-box:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.disclosure { background: #fff3cd; border: 1px solid #ffc107; padding: 0.8rem 1rem; border-radius: 6px; font-size: 0.8rem; margin: 1rem 0; }
+@media (max-width: 768px) {
+    .stats-bar { flex-direction: column; }
+    .card-grid { grid-template-columns: 1fr; }
+    header { padding: 1rem; }
+    main { padding: 0 1rem; }
+}
+</style>
+</head>
+<body>
+<header>
+<h1><span>RenMagDB</span> — Renaissance Magic Database</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="dictionary.html">Dictionary</a>
+<a href="figures.html">Figures</a>
+<a href="timeline.html">Timeline</a>
+<a href="library.html">Library</a>
+<a href="catalog.html">Catalog</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+<main>
+
+<h2>About RenMagDB</h2>
+
+<h3>What This Is</h3>
+<p>RenMagDB is a digital humanities project cataloging a research corpus of 337 scholarly documents on Renaissance magic. The database indexes figures, texts, terms, traditions, and events across the intellectual world of Renaissance magical philosophy — from Marsilio Ficino's translations of the <em>Corpus Hermeticum</em> to John Dee's Enochian angel conversations.</p>
+
+<h3>A Note on "Magic"</h3>
+<p>"Renaissance magic" is a modern scholarly category, not a term most Renaissance figures would have used to describe their own work. Ficino called his project <em>prisca theologia</em> (ancient theology); Agrippa titled his synthesis <em>philosophia occulta</em> (occult philosophy); Dee described his angel conversations as divine revelation. The word <em>magia</em> was more often applied by opponents — Church authorities, rival scholars, inquisitors — to delegitimize intellectual work. We use the term as a scholarly convenience while acknowledging its constructed nature.</p>
+<p>For more on this framing, see the project essay "Magic as a Scholarly Category: From Yates to Copenhaver" in the project repository.</p>
+
+<h3>Methodology</h3>
+<p>The database was built using a Python-first pipeline: documents were converted to markdown via PyMuPDF, metadata was extracted via regex and spaCy NER, terms were detected via a 200-term seed list, and topic clusters were generated via TF-IDF. AI-generated content (dictionary definitions, summaries) is tagged with <code>source_method='LLM_ASSISTED'</code> and marked as DRAFT pending human review.</p>
+
+<h3>Coverage Gaps</h3>
+<ul>
+<li><strong>Arabic/Islamic transmission</strong> — Only one dedicated source (Liana Saif) for the entire Arabic pipeline</li>
+<li><strong>Paracelsus</strong> — Referenced frequently but no dedicated corpus documents</li>
+<li><strong>Women practitioners</strong> — Limited dedicated scholarship in this corpus</li>
+<li><strong>Operative alchemy</strong> — Corpus treats alchemy philosophically; see the companion AlchemyDB for practical terms</li>
+</ul>
+
+<h3>Technology</h3>
+<p>SQLite database + Python scripts + static HTML. No frameworks, no JavaScript frameworks, no build tools. Deployed via GitHub Pages.</p>
+
+</main>
+<footer>
+RenMagDB &mdash; A digital humanities project cataloging Renaissance magic scholarship.
+Built with Python + SQLite + Claude Code. <a href="https://github.com/t3dy/RMDB">GitHub</a>
+</footer>
+</body>
+</html>

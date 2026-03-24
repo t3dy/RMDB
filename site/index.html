@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home — RenMagDB</title>
+<style>
+:root {
+    --bg: #f5f0e8;
+    --bg-card: #fff;
+    --text: #2c2418;
+    --text-muted: #6b5e4f;
+    --accent: #8b4513;
+    --accent-light: #d4a574;
+    --accent-hover: #a0522d;
+    --header-bg: #2c2418;
+    --header-text: #f5f0e8;
+    --border: #d4c5a9;
+    --shadow: rgba(44, 36, 24, 0.08);
+    --font: 'Georgia', 'Times New Roman', serif;
+    --font-mono: 'Consolas', 'Monaco', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+header { background: var(--header-bg); color: var(--header-text); padding: 1.5rem 2rem; }
+header h1 { font-size: 1.6rem; font-weight: 400; letter-spacing: 0.05em; }
+header h1 span { font-weight: 700; }
+header nav { margin-top: 0.5rem; }
+header nav a { color: var(--accent-light); margin-right: 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
+header nav a:hover { color: #fff; }
+main { max-width: 1100px; margin: 2rem auto; padding: 0 2rem; }
+h2 { font-size: 1.4rem; color: var(--accent); margin: 2rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+h3 { font-size: 1.1rem; color: var(--text); margin: 1.5rem 0 0.5rem; }
+.stats-bar { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.5rem 0; }
+.stat { background: var(--bg-card); padding: 1rem 1.5rem; border-radius: 6px; box-shadow: 0 1px 4px var(--shadow); border-left: 3px solid var(--accent); }
+.stat .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+.stat .label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin: 1rem 0; }
+.card { background: var(--bg-card); border-radius: 6px; padding: 1.2rem 1.5rem; box-shadow: 0 1px 4px var(--shadow); border-top: 2px solid var(--accent-light); }
+.card h3 { margin: 0 0 0.3rem; font-size: 1rem; }
+.card .meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.card p { font-size: 0.9rem; line-height: 1.6; }
+.tag { display: inline-block; background: var(--accent-light); color: var(--header-bg); font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 3px; margin: 0.1rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.tag.hermetic { background: #c4956a; }
+.tag.kabbalistic { background: #7a6b8a; color: #fff; }
+.tag.neoplatonic { background: #5a7a6b; color: #fff; }
+.tag.magical { background: #8b4513; color: #fff; }
+.tag.astrological { background: #4a6a8a; color: #fff; }
+.tag.theological { background: #6a5a4a; color: #fff; }
+.tag.enochian { background: #3a5a7a; color: #fff; }
+.tag.alchemical { background: #7a5a3a; color: #fff; }
+.tag.philosophical { background: #5a6a5a; color: #fff; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+th { background: var(--header-bg); color: var(--header-text); padding: 0.6rem 1rem; text-align: left; font-weight: 400; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+td { padding: 0.5rem 1rem; border-bottom: 1px solid var(--border); }
+tr:hover td { background: rgba(139,69,19,0.03); }
+.timeline-event { border-left: 3px solid var(--accent); padding: 0.8rem 1.5rem; margin: 0.8rem 0; background: var(--bg-card); border-radius: 0 6px 6px 0; }
+.timeline-event .year { font-size: 1.1rem; font-weight: 700; color: var(--accent); }
+.timeline-event .title { font-weight: 600; }
+.timeline-event .desc { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem; }
+.badge { display: inline-block; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 3px; background: var(--border); color: var(--text-muted); }
+.badge.draft { background: #ffeaa7; color: #856404; }
+footer { text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid var(--border); }
+.search-box { width: 100%; padding: 0.7rem 1rem; border: 1px solid var(--border); border-radius: 6px; font-size: 1rem; font-family: var(--font); margin: 1rem 0; }
+.search-box:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.disclosure { background: #fff3cd; border: 1px solid #ffc107; padding: 0.8rem 1rem; border-radius: 6px; font-size: 0.8rem; margin: 1rem 0; }
+@media (max-width: 768px) {
+    .stats-bar { flex-direction: column; }
+    .card-grid { grid-template-columns: 1fr; }
+    header { padding: 1rem; }
+    main { padding: 0 1rem; }
+}
+</style>
+</head>
+<body>
+<header>
+<h1><span>RenMagDB</span> — Renaissance Magic Database</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="dictionary.html">Dictionary</a>
+<a href="figures.html">Figures</a>
+<a href="timeline.html">Timeline</a>
+<a href="library.html">Library</a>
+<a href="catalog.html">Catalog</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+<main>
+
+<h2>A Digital Exhibition of Renaissance Magic Scholarship</h2>
+<p>RenMagDB catalogs a research corpus of 337 scholarly documents on Renaissance magic — covering figures from Marsilio Ficino to John Dee, traditions from Hermeticism to Kabbalah, and texts from the <em>Corpus Hermeticum</em> to the Enochian <em>Calls</em>.</p>
+
+<div class="disclosure">This content was drafted by an AI language model based on scholarly sources in our corpus. It has not been reviewed by a human scholar. Citations should be verified against original sources. <span class="badge draft">DRAFT</span></div>
+
+<div class="stats-bar">
+<div class="stat"><div class="num">337</div><div class="label">Documents</div></div>
+<div class="stat"><div class="num">29</div><div class="label">Figures</div></div>
+<div class="stat"><div class="num">139</div><div class="label">Dictionary Terms</div></div>
+<div class="stat"><div class="num">58</div><div class="label">Timeline Events</div></div>
+<div class="stat"><div class="num">36</div><div class="label">Primary Sources</div></div>
+<div class="stat"><div class="num">9</div><div class="label">Traditions</div></div>
+</div>
+
+<h2>Traditions</h2>
+<div class="card-grid">
+<div class="card"><h3>Alchemy</h3><p>The art and science of transmutation, encompassing both laboratory practice (chrysopoeia) and spiritual purification. Renaissance alchemists drew on Arabic, Greek, and medieval Latin sources to develo...</p></div>
+<div class="card"><h3>Astrology & Celestial Influence</h3><p>The system of celestial correspondences linking planetary movements to terrestrial events and human character. Renaissance magi used astrology both as a diagnostic tool and as the theoretical basis fo...</p></div>
+<div class="card"><h3>Christian Theology & Magic</h3><p>The theological dimension of Renaissance magic, including debates over the legitimacy of magical practice, the doctrine of divine names, angelic hierarchies, and the relationship between theurgy and p...</p></div>
+<div class="card"><h3>Enochian & Angelic Communication</h3><p>The system of angel magic developed by John Dee and Edward Kelley through scrying sessions (1581-1589), producing the Enochian language, the Sigillum Dei Aemeth, and the Heptarchic system. Unique to D...</p></div>
+<div class="card"><h3>Hermeticism</h3><p>The philosophical and magical tradition attributed to Hermes Trismegistus, transmitted through the Corpus Hermeticum, Asclepius, and related texts. Ficino's 1463 Latin translation established Hermetic...</p></div>
+<div class="card"><h3>Kabbalah & Christian Cabala</h3><p>Jewish mystical tradition based on the Zohar, Sefer Yetzirah, and related texts, adapted by Christian scholars (Pico, Reuchlin) into a syncretic system integrating Hebrew letter-mysticism with Neoplat...</p></div>
+<div class="card"><h3>Neoplatonism</h3><p>The philosophical tradition descending from Plotinus through Proclus and Iamblichus, providing the metaphysical framework (the One, Intellect, Soul, Matter) within which Renaissance magical philosophy...</p></div>
+<div class="card"><h3>Renaissance Philosophy (General)</h3><p>Broad philosophical concepts (form, matter, intellect, nature, being) that underpin all Renaissance magical traditions. These terms derive from Aristotelian and Neoplatonic sources and are used across...</p></div>
+<div class="card"><h3>Ritual & Ceremonial Magic</h3><p>The practical tradition of invoking spiritual beings, constructing talismans, and performing ceremonial operations. Encompasses natural magic (magia naturalis), angel magic, the Ars Notoria, and grimo...</p></div>
+</div>
+<h2>Key Figures</h2>
+<div class="card-grid">
+<div class="card"><h3>Hermes Trismegistus </h3><div class="meta">Egyptian (attributed)</div><p>Legendary author of the Corpus Hermeticum; syncretic figure combining Greek Hermes and Egyptian Thoth; central to prisca theologia tradition; real tex...</p></div>
+<div class="card"><h3>Plato (-427–-347)</h3><div class="meta">Greek</div><p>Athenian philosopher; Timaeus provided cosmological framework for Renaissance Neoplatonic magic; Republic's demiurge concept central to Hermetic thoug...</p></div>
+<div class="card"><h3>Plotinus (204–270)</h3><div class="meta">Roman Egyptian</div><p>Neoplatonic philosopher; Enneads provided the metaphysical framework (One, Intellect, Soul, Matter) that structured all Renaissance magical philosophy</p></div>
+<div class="card"><h3>Iamblichus (245–325)</h3><div class="meta">Syrian</div><p>Neoplatonic philosopher; De Mysteriis provided philosophical justification for theurgy; crucial link between philosophy and ritual magic</p></div>
+<div class="card"><h3>Proclus (412–485)</h3><div class="meta">Greek</div><p>Late Neoplatonic philosopher; systematized theurgy; influenced Ficino and the Renaissance understanding of divine names and ritual practice</p></div>
+<div class="card"><h3>Al-Kindi (801–873)</h3><div class="meta">Arab</div><p>Arab philosopher; De Radiis Stellarum theorized celestial influence and ray theory; key intermediary transmitting Greek magical philosophy to Latin We...</p></div>
+<div class="card"><h3>Albertus Magnus (1200–1280)</h3><div class="meta">German</div><p>German Dominican friar and philosopher; Speculum Astronomiae distinguished licit from illicit astrology; key medieval authority on natural magic</p></div>
+<div class="card"><h3>Roger Bacon (1214–1292)</h3><div class="meta">English</div><p>English Franciscan friar; advocated scientia experimentalis; Opus Majus included sections on optics and natural magic; forerunner of empirical approac...</p></div>
+<div class="card"><h3>Ramon Llull (1232–1316)</h3><div class="meta">Catalan</div><p>Catalan philosopher and mystic; inventor of the Ars Magna combinatory system; influenced Bruno's memory arts and later computational thinking</p></div>
+<div class="card"><h3>Nicholas of Cusa (1401–1464)</h3><div class="meta">German</div><p>German cardinal and philosopher; De Docta Ignorantia and coincidentia oppositorum influenced Pico and Bruno; bridge between medieval and Renaissance t...</p></div>
+<div class="card"><h3>Marsilio Ficino (1433–1499)</h3><div class="meta">Italian</div><p>Italian philosopher and Catholic priest; head of Florentine Platonic Academy; translated Corpus Hermeticum and Plato into Latin; author of Theologia P...</p></div>
+<div class="card"><h3>Johannes Reuchlin (1455–1522)</h3><div class="meta">German</div><p>German humanist and Hebraist; author of De Verbo Mirifico and De Arte Cabalistica; defender of Jewish books; pioneer of Christian Kabbalah alongside P...</p></div>
+<div class="card"><h3>Johannes Trithemius (1462–1516)</h3><div class="meta">German</div><p>German Benedictine abbot; author of Steganographia (cryptography/angel magic) and Polygraphia; teacher of Agrippa</p></div>
+<div class="card"><h3>Giovanni Pico della Mirandola (1463–1494)</h3><div class="meta">Italian</div><p>Italian philosopher; author of Oration on the Dignity of Man and 900 syncretic Theses; pioneer of Christian Kabbalah; attempted synthesis of all philo...</p></div>
+<div class="card"><h3>Heinrich Cornelius Agrippa (1486–1535)</h3><div class="meta">German</div><p>German polymath and occult philosopher; author of De Occulta Philosophia, the foundational Renaissance synthesis of natural, celestial, and ceremonial...</p></div>
+<div class="card"><h3>Paracelsus (1493–1541)</h3><div class="meta">Swiss</div><p>Swiss physician, alchemist, and astrologer; founder of iatrochemistry; reformed medical practice using chemical remedies; developed tria prima (salt, ...</p></div>
+<div class="card"><h3>John Dee (1527–1608)</h3><div class="meta">English</div><p>English mathematician, astronomer, astrologer, and occult philosopher; advisor to Elizabeth I; developed Enochian angel magic system; author of Monas ...</p></div>
+<div class="card"><h3>Giordano Bruno (1548–1600)</h3><div class="meta">Italian</div><p>Italian Dominican friar, philosopher, cosmologist; proponent of infinite universe and Hermetic magic; developed Lullian memory arts; burned at the sta...</p></div>
+<div class="card"><h3>Robert Fludd (1574–1637)</h3><div class="meta">English</div><p>English Paracelsian physician and Rosicrucian philosopher; developed elaborate cosmological diagrams integrating Hermetic, Kabbalistic, and alchemical...</p></div>
+<div class="card"><h3>Jacob Boehme (1575–1624)</h3><div class="meta">German</div><p>German Christian mystic and theologian; author of Aurora; developed theosophical system drawing on alchemy and Kabbalistic imagery; influenced later G...</p></div>
+<div class="card"><h3>Athanasius Kircher (1602–1680)</h3><div class="meta">German</div><p>German Jesuit polymath; Egyptologist and universalist scholar; attempted decipherment of hieroglyphics; studied magnetism, acoustics, and geo-cosmolog...</p></div>
+<div class="card"><h3>Francis Mercury van Helmont (1614–1698)</h3><div class="meta">Flemish</div><p>Flemish philosopher and Kabbalist; advocate of transmigration of souls; bridge figure between Renaissance Kabbalah and Enlightenment thought</p></div>
+</div>
+</main>
+<footer>
+RenMagDB &mdash; A digital humanities project cataloging Renaissance magic scholarship.
+Built with Python + SQLite + Claude Code. <a href="https://github.com/t3dy/RMDB">GitHub</a>
+</footer>
+</body>
+</html>

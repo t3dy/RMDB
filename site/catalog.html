@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalog — RenMagDB</title>
+<style>
+:root {
+    --bg: #f5f0e8;
+    --bg-card: #fff;
+    --text: #2c2418;
+    --text-muted: #6b5e4f;
+    --accent: #8b4513;
+    --accent-light: #d4a574;
+    --accent-hover: #a0522d;
+    --header-bg: #2c2418;
+    --header-text: #f5f0e8;
+    --border: #d4c5a9;
+    --shadow: rgba(44, 36, 24, 0.08);
+    --font: 'Georgia', 'Times New Roman', serif;
+    --font-mono: 'Consolas', 'Monaco', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.7; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+header { background: var(--header-bg); color: var(--header-text); padding: 1.5rem 2rem; }
+header h1 { font-size: 1.6rem; font-weight: 400; letter-spacing: 0.05em; }
+header h1 span { font-weight: 700; }
+header nav { margin-top: 0.5rem; }
+header nav a { color: var(--accent-light); margin-right: 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
+header nav a:hover { color: #fff; }
+main { max-width: 1100px; margin: 2rem auto; padding: 0 2rem; }
+h2 { font-size: 1.4rem; color: var(--accent); margin: 2rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+h3 { font-size: 1.1rem; color: var(--text); margin: 1.5rem 0 0.5rem; }
+.stats-bar { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.5rem 0; }
+.stat { background: var(--bg-card); padding: 1rem 1.5rem; border-radius: 6px; box-shadow: 0 1px 4px var(--shadow); border-left: 3px solid var(--accent); }
+.stat .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+.stat .label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin: 1rem 0; }
+.card { background: var(--bg-card); border-radius: 6px; padding: 1.2rem 1.5rem; box-shadow: 0 1px 4px var(--shadow); border-top: 2px solid var(--accent-light); }
+.card h3 { margin: 0 0 0.3rem; font-size: 1rem; }
+.card .meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.card p { font-size: 0.9rem; line-height: 1.6; }
+.tag { display: inline-block; background: var(--accent-light); color: var(--header-bg); font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 3px; margin: 0.1rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.tag.hermetic { background: #c4956a; }
+.tag.kabbalistic { background: #7a6b8a; color: #fff; }
+.tag.neoplatonic { background: #5a7a6b; color: #fff; }
+.tag.magical { background: #8b4513; color: #fff; }
+.tag.astrological { background: #4a6a8a; color: #fff; }
+.tag.theological { background: #6a5a4a; color: #fff; }
+.tag.enochian { background: #3a5a7a; color: #fff; }
+.tag.alchemical { background: #7a5a3a; color: #fff; }
+.tag.philosophical { background: #5a6a5a; color: #fff; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+th { background: var(--header-bg); color: var(--header-text); padding: 0.6rem 1rem; text-align: left; font-weight: 400; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+td { padding: 0.5rem 1rem; border-bottom: 1px solid var(--border); }
+tr:hover td { background: rgba(139,69,19,0.03); }
+.timeline-event { border-left: 3px solid var(--accent); padding: 0.8rem 1.5rem; margin: 0.8rem 0; background: var(--bg-card); border-radius: 0 6px 6px 0; }
+.timeline-event .year { font-size: 1.1rem; font-weight: 700; color: var(--accent); }
+.timeline-event .title { font-weight: 600; }
+.timeline-event .desc { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem; }
+.badge { display: inline-block; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 3px; background: var(--border); color: var(--text-muted); }
+.badge.draft { background: #ffeaa7; color: #856404; }
+footer { text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.8rem; margin-top: 3rem; border-top: 1px solid var(--border); }
+.search-box { width: 100%; padding: 0.7rem 1rem; border: 1px solid var(--border); border-radius: 6px; font-size: 1rem; font-family: var(--font); margin: 1rem 0; }
+.search-box:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.disclosure { background: #fff3cd; border: 1px solid #ffc107; padding: 0.8rem 1rem; border-radius: 6px; font-size: 0.8rem; margin: 1rem 0; }
+@media (max-width: 768px) {
+    .stats-bar { flex-direction: column; }
+    .card-grid { grid-template-columns: 1fr; }
+    header { padding: 1rem; }
+    main { padding: 0 1rem; }
+}
+</style>
+</head>
+<body>
+<header>
+<h1><span>RenMagDB</span> — Renaissance Magic Database</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="dictionary.html">Dictionary</a>
+<a href="figures.html">Figures</a>
+<a href="timeline.html">Timeline</a>
+<a href="library.html">Library</a>
+<a href="catalog.html">Catalog</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+<main>
+<h2>Corpus Catalog</h2>
+<input type="text" class="search-box" id="catSearch" placeholder="Search documents..." onkeyup="filterCat()">
+<table><thead><tr><th>Title</th><th>Type</th><th>Figure</th><th>Lang</th></tr></thead><tbody>
+<tr class="cat-row"><td> L'ambigua natura della magia. Filosofi, streghe, riti nel Rinascimento, 2 e éd.</td><td><span class="badge">REVIEW</span></td><td></td><td>fr</td></tr>
+<tr class="cat-row"><td>"Astrologi hallucinati." Stars and the End of the World in Luther's Time. by Pao</td><td><span class="badge">REVIEW</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>16775 Article Text 16440 1 10 20170821 saif arabic influences occult phil</td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>A Treatise on Angel Magic: Maghum Opus Hermetic Sourceworks</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Adam McLean Steganographia of Johannes Trithemius</td><td><span class="badge">PRIMARY_SOURCE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Daimonic Imagination: Uncanny Intelligence</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Frances A Yates Giordano Bruno and the Hermetic Tradition</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Frank Klaassen The Transformations of Magic</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>From Menocchio to Piero Della Francesca: The Work of Carlo Ginzburg</td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>High and Low: The Theme of Forbidden Knowledge in the Sixteenth and Seventeenth </td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Iconology, Neoplatonism, and the Arts in the Renaissance; First Edition</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Ioan P Couliano Eros and Magic in the Renaissance</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>James Calum O'Neill - The Allegory of Love in the Early Renaissance</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>John S Mebane Renaissance Magic and the Return of the Golden Age</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Keith Thomas - Religion and the Decline of Magic Studies in Popular Beliefs in S</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>L'ambigua natura della magia: Filosofi, streghe, riti nel Rinascimento by Paola </td><td><span class="badge">REVIEW</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Magic, Witchcraft, and Ghosts in the Enlightenment</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Messias Puer: Christian Knorr Von Rosenroth's Lost Exegesis of Kabbalistic Chris</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Moulton_ASMAR.indb</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Paola Zambelli Astrology and Magic from the Medieval Latin and Islamic World to </td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Paola Zambelli White Magic Black Magic in the European Renaissance</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Refiners Fire and the Yates Thesis Herme</td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Religion, Magic, and the Origins of Science in Early Modern England</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Renaissance Magic and the Return of the Golden Age: The Occult Tradition and Mar</td><td><span class="badge">REVIEW</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Renaissance Magic and the Return of the Golden Age: Utopianism and Religious Ent</td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Simon Young Helen Killick An Analysis of Keith Thomas s Religion and the Decline</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Speculum astronomiae by Alberto Magno; S. Caroti; M. Periera; S. Zamponi; Paola </td><td><span class="badge">REVIEW</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Spiritual&Demonic.Magic.pdf</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Syncretism in the West : Pico's 900 theses (1486) : the evolution of traditional</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>The Allegory of Love in the Early Renaissance</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>The Magician, the Witch, and the Law (review)</td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Thinking with Demons: The Idea of Witchcraft in Early Modern Europe</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>White magic, black magic in the European Renaissance. From Ficino, Pico, Della P</td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>[Sixteenth Century Journal vol. 22 iss. 4] Review by  Byron Nelson - Renaissance</td><td><span class="badge">REVIEW</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>[South Atlantic Review 1988-may vol. 53 iss. 2] John S. Mebane - Metadrama and t</td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>[Speculum 1980-oct vol. 55 iss. 4] The Magician, the Witch and the Law{Kieckhefe</td><td><span class="badge">ARTICLE</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>[The Journal of English and Germanic Philology 1992-apr vol. 91 iss. 2] Review b</td><td><span class="badge">REVIEW</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>religion, magic, and the origins of science in ear</td><td><span class="badge">MONOGRAPH</span></td><td></td><td>en</td></tr>
+<tr class="cat-row"><td>Bibliothèque d Humanisme et Renaissance vol 34 iss 2 Barbara C Bowen CORNELIUS A</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Christopher I. Lehrich. The Language of Demons and Angels: Cornelius Agrippa’s O</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Cornelius Agrippa and Henry Vaughan</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Declamation on the Nobility and Preeminence of the Female Sex</td><td><span class="badge">MONOGRAPH</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>English Literary Renaissance 1997 jan vol 27 iss 1 ESTHER GILMAN RICHEY To Undoe</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Henricus Cornelius Agrippa Albert Rabil Jr Declamation on the Nobility and Preem</td><td><span class="badge">MONOGRAPH</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Hero Leander  The Art Of Leaping In Poetry     Of the Vanitieand Vncertaintie of</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>KNOWLEDGE AND FAITH IN THE THOUGHT OF CORNELIUS AGRIPPA</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Latomus 1979 jul sep vol 38 iss 3 Review by  R Desmed Of the Vanitie and Uncerta</td><td><span class="badge">REVIEW</span></td><td>Agrippa</td><td>fr</td></tr>
+<tr class="cat-row"><td>Llewellyn s sourcebook series Heinrich Cornelius Agrippa von Nettesheim  Donald </td><td><span class="badge">MONOGRAPH</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Marc van der Poel Cornelius Agrippa the Humanist Theologian and His Declamations</td><td><span class="badge">MONOGRAPH</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Mediaevistik vol 7 Review by  Peter Dinzelbacher Cornelius Agrippa De occulta ph</td><td><span class="badge">REVIEW</span></td><td>Agrippa</td><td>de</td></tr>
+<tr class="cat-row"><td>Notes and Queries 1972 jan 01 vol 19 iss 1 RUDRUM ALAN VAUGHAN S THE TEMPEST   A</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Nuncius vol 9 iss 2 PEREIRA MICHELA CORNELIUS AGRIPPA De occulta philosophia lib</td><td><span class="badge">ANTHOLOGY</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Orientalistische Literaturzeitung 1913 jan vol 16 iss 1 6 Röck Friedrich Der Den</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>de</td></tr>
+<tr class="cat-row"><td>PII: S0002-9610(37)91051-1</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Publications du Centre Européen d Etudes Bourguignonnes 1964 jan vol 6 Le Paige </td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>fr</td></tr>
+<tr class="cat-row"><td>Sixteenth Century Journal vol 28 iss 2 Review by  Charles G Nauert Declamation o</td><td><span class="badge">REVIEW</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>The Language of Demons and Angels and Cornelius Agrippas Occult Philosophy</td><td><span class="badge">MONOGRAPH</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Thomas Vaughan as an Interpreter of Agrippa Von Nettesheim</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Viator 1993 jan vol 24 Newman Barbara Renaissance Feminism and Esoteric Theology</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>Vom leeren Schein der Musik. Paradoxa der effectus musicae in Heinrich Cornelius</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>de</td></tr>
+<tr class="cat-row"><td>a cura di E Garin M Brini C Vasoli P Zambelli Testi umanistici su l ermetismo Te</td><td><span class="badge">MONOGRAPH</span></td><td>Agrippa</td><td>it</td></tr>
+<tr class="cat-row"><td>kl-2014-0001d 151..192</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Agrippa</td><td>fr</td></tr>
+<tr class="cat-row"><td>rrsq337713 433..456</td><td><span class="badge">ARTICLE</span></td><td>Agrippa</td><td>en</td></tr>
+<tr class="cat-row"><td>An Introduction to Jacob Boehme</td><td><span class="badge">MONOGRAPH</span></td><td>Bohme</td><td>en</td></tr>
+<tr class="cat-row"><td>Aurora (Morgen Röte Im Auffgang, 1612) and Fundamental Report (Gründlicher Beric</td><td><span class="badge">MONOGRAPH</span></td><td>Bohme</td><td>en</td></tr>
+<tr class="cat-row"><td>Claudia Brink Lucinda Martin Cecilia Muratori Light in Darkness The Mystical Phi</td><td><span class="badge">MONOGRAPH</span></td><td>Bohme</td><td>en</td></tr>
+<tr class="cat-row"><td>Critique of the Teutonic Philosophy and Other Writings Against Jacob Bohme</td><td><span class="badge">MONOGRAPH</span></td><td>Bohme</td><td>en</td></tr>
+<tr class="cat-row"><td>Jacob Bhme and His World</td><td><span class="badge">MONOGRAPH</span></td><td>Bohme</td><td>en</td></tr>
+<tr class="cat-row"><td>MA on Boehme</td><td><span class="badge">MONOGRAPH</span></td><td>Bohme</td><td>pt</td></tr>
+<tr class="cat-row"><td>Art and Logic of Ramon Llull : a User's Guide (Studien Und Texte Zur Geistesgesc</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Els debats de Debats 1 Julia Benavent Actas del Proceso de Giordano Bruno libgen</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>ca</td></tr>
+<tr class="cat-row"><td>Essays on Giordano Bruno</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Filippo Mignini Bruniana e Campanelliana Su di una originale traduzione dell acr</td><td><span class="badge">ARTICLE</span></td><td>Bruno</td><td>it</td></tr>
+<tr class="cat-row"><td>Giordano Bruno</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Giordano Bruno</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Giordano Bruno Richard J Blackwell Robert de Lucca Alfonso Ingegno Giordano Brun</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Giordano Bruno: Philosopher of the Renaissance</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Giordano Bruno: Philosopher of the Renaissance</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Giordano Bruno: Universo infinito, unión con Dios, perfección del hombre by Migu</td><td><span class="badge">REVIEW</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Giuliana Conforto La futura scienza di Giordano Bruno libgen li</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>it</td></tr>
+<tr class="cat-row"><td>Il problema della conoscenza in Giordano Bruno by Leen Spruit</td><td><span class="badge">REVIEW</span></td><td>Bruno</td><td>nl</td></tr>
+<tr class="cat-row"><td>Ingrid D. Rowland - Giordano Bruno  Philosopher Heretic (2008, Farrar, Straus an</td><td><span class="badge">ARTICLE</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>L identitá italiana Anna Foa Giordano Bruno libgen li</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>it</td></tr>
+<tr class="cat-row"><td>Magic and Memory in Giordano Bruno</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Nuccio Ordine Giordano Bruno and the Philosophy of the Ass Yale University Press</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>On the Composition Of Images, Signs & Ideas </td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Ramo n Lull  Anthony Bonner  Eve Bonner Doctor Illuminatus  A Ramon Llull Reader</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Renaissance Quarterly vol 50 iss 4 Review by  Leen Spruit Metaphysik und Mathema</td><td><span class="badge">REVIEW</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>The Ash Wednesday Supper</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>The Cabala of Pegasus</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>The European Legacy 2006 dec vol 11 iss 7 Ferraro Bruno Giordano Bruno s Infinit</td><td><span class="badge">ARTICLE</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>The Trial of Giordano Bruno</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Thirty Statues: A Book of the Art of Memory & the Art of Invention (Giordano Bru</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>Turning Traditions Upside Down</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>William Boulting Giordano Bruno  His Life Thought and Martyrdom 1 Routledge</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>giordano bruno philosopher of the renaissance gatt</td><td><span class="badge">MONOGRAPH</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>renq70206 633..829</td><td><span class="badge">ARTICLE</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>renq70206 633..829</td><td><span class="badge">ARTICLE</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td>thirty statues a book of the art of memory & the a</td><td><span class="badge">ARTICLE</span></td><td>Bruno</td><td>en</td></tr>
+<tr class="cat-row"><td><66696C653A2F2F493A5C3031CEF7B7BDCEC4CFD75C315FD5DCD1A7CAB72ECBBCCFEBCAB72ECEC4B</td><td><span class="badge">MONOGRAPH</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>A Tale of Two Fishes: Magical Objects in Natural History from Antiquity Through </td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>BJH_49_3_BookReviews 473..476BJH_49_3_BookReviews 476..477</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Brian P. Copenhaver,  Hermetica: The Greek Corpus Hermeticum and the Latin Asdep</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Copenhaver Brian PA  Copenhaver Rebecca From Kant to Croce  Modern Philosophy in</td><td><span class="badge">MONOGRAPH</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Did Science Have a Renaissance?</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Icastes: Marsilio Ficino's Interpretation of Plato's Sophist (Five Studies and a</td><td><span class="badge">REVIEW</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Journal of the Warburg and Courtauld Institutes vol 40 Brian P Copenhaver Lefevr</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Magic Ritual and Witchcraft vol 1 iss 1 Bailey Michael D   Copenhaver Brian P Fr</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Magic Ritual and Witchcraft vol 4 iss 2 Brian P Copenhaver A Grand End for a Gra</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Renaissance Philosophy. by Brian P. Copenhaver; Charles B. Schmitt</td><td><span class="badge">REVIEW</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Sacralizing the Secular: The Renaissance Origins of Modernity (review)</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>The English Historical Review 1994 feb vol 109 iss 430 Review by  Brian P Copenh</td><td><span class="badge">REVIEW</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>The Magician, the Witch, and the Law (review)</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>Valla Our Contemporary: Philosophy and Philology</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>renq69407 1413..1613</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>renq70206 633..829</td><td><span class="badge">ARTICLE</span></td><td>Copenhaver</td><td>en</td></tr>
+<tr class="cat-row"><td>(Draft)</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>31928</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>31928</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>A Translation of John Dee's "Monas Hieroglyphica" (Antwerp, 1564), with an Intro</td><td><span class="badge">REVIEW</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Decoding the Monas Hieroglyphica</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Dee Kelley and the Angelic Machine</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Document</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Grimoirium Imperium</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>JOHN DEE'S ACTIONS WITH SPIRITS</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee  Meric Casaubon True faithful relation of what passed for many years be</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee - De Heptarchia Mystica.doc</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee - Mysteriorum Liber Secundus</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee - Rosicrucian Secrets</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee - Sigillum Dei</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee - The Hieroglyphic Monad-Weiser Books (2000)</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee A Fractured History</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee A letter containing a most brief  Apologetical Let</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee Angels and the End of Nature</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee Between God and Gold</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>nl</td></tr>
+<tr class="cat-row"><td>John Dee Charlotte Fell Smith</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee Edward Fenton Diaries of John Dee Day Books</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee John Dee on Astronomy  Propaedeumata Aphoristica Univ of California Pr</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee Science Magic and Intellectual Evolution</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee The Magic Tables In The Book Of Soyga</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee The Practice Of Enochian Evocation</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee True and Faithful Relation (excerpts)</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee True and Faithful Relation (excerpts) - intro by C</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee True and Faithful Relation (excerpts)Liber Mysteri</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee True and Faithful Relation, (excerpts) - Liber Per</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee's Conversations with Angels</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee's Five Books of Mystery: Original Sourcebook of Enochian Magic</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee's Library Catalogue. by Julian Roberts; Andrew G. Watson</td><td><span class="badge">REVIEW</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee's Natural Philosophy</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee's Occultism</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee: A letter containing a most brief...</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee: True and Faithful Relation (excerpts)</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee: True and Faithful Relation (excerpts)</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee: True and Faithful Relation (excerpts)</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>John Dee: True and Faithful Relation, (excerpts)</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Light coming out of darkness\374</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Microsoft Word - Liber Mysteriorum.doc</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Microsoft Word - quartus.doc</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Mysteriorum</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Mysteriorum Liber Primus</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Mysteriorum Liber Primus</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Mysteriorum Liber Secundus</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Mysteriorum Liber Tertius</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Mysteriorum Liber Tertius</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Mysteriorum Libri Quinque - John Dee and Edward Kelly</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Pythagorean Number Symbolism, Alchemy, and the Disciplina Noua of John Dee's <i></td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Review</td><td><span class="badge">REVIEW</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>S D A</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>SDA</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Sixteenth and Seventeenth Centuries  A Translation of John Dee's “Monas Hierogly</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>Skinner S, Rankine, D - The Practical Angel Magic of John Dee's Enochian Tables.</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>The <italic>Monas Hieroglyphica</italic> and the Alchemical Thread of John Dee's</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>The Arch Conjuror of England</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>The Calls of Enoch: The First Key of Enochian Magic</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>The Hieroglyphic Monad</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>The Hieroglyphic Monad</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>The Hieroglyphic Monad</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>The Royal Typographer and the Alchemist: John Dee, Willem Silvius, and the Diagr</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>William Howard Sherman - John Dee  the politics of reading and writing in the En</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>William Sherman John Dee</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>[Ambix 1976-jul 01 vol. 23 iss. 2] Walton, Michael T. - John Dee's Monas Hierogl</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>[Ambix 2005-nov vol. 52 iss. 3] Forshaw, Peter J. - The Early Alchemical Recepti</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>[The Journal of English and Germanic Philology 1997-apr vol. 96 iss. 2] Review b</td><td><span class="badge">REVIEW</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>grimoirium_imperium.PDF</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>liber084.PDF</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>liber084.PDF</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>necronomicon</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>bn</td></tr>
+<tr class="cat-row"><td>primus notes</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>primus notes</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>primus notes</td><td><span class="badge">ARTICLE</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>test</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>test</td><td><span class="badge">MONOGRAPH</span></td><td>Dee</td><td>en</td></tr>
+<tr class="cat-row"><td>All Things Natural</td><td><span class="badge">MONOGRAPH</span></td><td>Ficino</td><td>en</td></tr>
+<tr class="cat-row"><td>Marsilio Ficino  Dan Attrell  Brett Bartlett  David Porreca  Dan On the Christia</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Ficino</td><td>en</td></tr>
+<tr class="cat-row"><td>Marsilio Ficino (Angela Voss) NoOCR</td><td><span class="badge">MONOGRAPH</span></td><td>Ficino</td><td>en</td></tr>
+<tr class="cat-row"><td>Marsilio Ficino Carol V Kaske John R Clark Three Books on Life</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Ficino</td><td>en</td></tr>
+<tr class="cat-row"><td>Sophia Howlett Marsilio Ficino and His World Palgrave Macmillan US</td><td><span class="badge">MONOGRAPH</span></td><td>Ficino</td><td>en</td></tr>
+<tr class="cat-row"><td>The Influence of Marsilio Ficino (1433-1494) on Elizabethan Literature: Christop</td><td><span class="badge">MONOGRAPH</span></td><td>Ficino</td><td>en</td></tr>
+<tr class="cat-row"><td>cover</td><td><span class="badge">MONOGRAPH</span></td><td>Ficino</td><td>en</td></tr>
+<tr class="cat-row"><td>C H Josten Robert Fludd s Theory of Geomancy and His Experiences at Avignon in t</td><td><span class="badge">ARTICLE</span></td><td>Fludd</td><td>en</td></tr>
+<tr class="cat-row"><td>Joscelyn Godwin Robert Fludd  Hermetic Philosopher and Surveyor of Two Worlds Th</td><td><span class="badge">MONOGRAPH</span></td><td>Fludd</td><td>en</td></tr>
+<tr class="cat-row"><td>Joscelyn Godwin The Greater and Lesser Worlds of Robert Fludd  Macrocosm Microco</td><td><span class="badge">MONOGRAPH</span></td><td>Fludd</td><td>en</td></tr>
+<tr class="cat-row"><td>Peter Hauge The Temple of Music by Robert Fludd Ashgate</td><td><span class="badge">MONOGRAPH</span></td><td>Fludd</td><td>en</td></tr>
+<tr class="cat-row"><td>Robert Fludd (William Huffman) NoOCR EnhTxt</td><td><span class="badge">MONOGRAPH</span></td><td>Fludd</td><td>en</td></tr>
+<tr class="cat-row"><td>13570FM.pgs</td><td><span class="badge">MONOGRAPH</span></td><td>Kircher</td><td>en</td></tr>
+<tr class="cat-row"><td>Athanasius Kircher, the Mysteries of the Geocosmos, Magnetism, and the Universe</td><td><span class="badge">MONOGRAPH</span></td><td>Kircher</td><td>en</td></tr>
+<tr class="cat-row"><td>Joscelyn Godwin Athanasius Kircher  A Renaissance Man and the Quest for Lost Kno</td><td><span class="badge">MONOGRAPH</span></td><td>Kircher</td><td>en</td></tr>
+<tr class="cat-row"><td>Compagni, Vittoria Perrone (author) - Circe, la «virtus loci», il determinismo n</td><td><span class="badge">ARTICLE</span></td><td>Perrone Compagni</td><td>it</td></tr>
+<tr class="cat-row"><td>Lovesickness in the Middle Ages. The Viaticum and Its Commentaries (Middle Ages </td><td><span class="badge">REVIEW</span></td><td>Perrone Compagni</td><td>en</td></tr>
+<tr class="cat-row"><td>Lovesickness in the Middle Ages. The Viaticum and Its Commentaries (Middle Ages </td><td><span class="badge">REVIEW</span></td><td>Perrone Compagni</td><td>en</td></tr>
+<tr class="cat-row"><td>[Nuncius vol. 3 iss. 2] PERRONE COMPAGNI, VITTORIA - Picatrix. The latin version</td><td><span class="badge">ANTHOLOGY</span></td><td>Perrone Compagni</td><td>en</td></tr>
+<tr class="cat-row"><td>(Variorum Collected Studies 1063) Allen, MichaelJ. B - Studies in the Platonism </td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>00_Frag_FM.indd</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>499538_1_En_Print.indd</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>9781107015876pre_pi-viii.indd</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>9782503550640_txt.pdf</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>A Philosopher at the Crossroads</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Benivieni Girolamo Two Poems on Spiritual Renewal libgen li</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Beyond Pico della Mirandola: John Deeâ€™s â€˜formal numbersâ€™ and â€˜real cabal</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Bibliothèque d Humanisme et Renaissance vol 65 iss 2 Olga Zorzi Pugliese GIROLAM</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Brian P. Copenhaver, Magic and the Dignity of Man: Pico della Mirandola and his </td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>CHANCE 1992 jan vol 5 iss 1 2 Pico Della Mirandola  A Philosophical Forefather o</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Debating the Stars in the Italian Renaissance</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Debating the Stars in the Italian Renaissance</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Ficino, Pico and Savonarola: The Evolution of Humanist Theology 1461/2-1498 (Med</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Francesco Lamanna Il concetto di Dio nel pensiero di Pico della Mirandola libgen</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>From Sinai to Athens: Giovanni Pico della Mirandola’s philological quest for the</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Giovanni Pico Della Mirandola on the Conflict of Philosophy and Rhetoric</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Giovanni Pico Della Mirandola: A Study in the History of Renaissance Ideas</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Giovanni Pico della Mirandola Conclusioni ermetiche magiche e orfiche libgen li</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Giovanni Pico della Mirandola Heptaplus libgen li</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Giovanni Pico della Mirandola and Astrology (1486–1493): From Scientia Naturalis</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Giovanni Pico della Mirandola and Jochanan Alemanno</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Giovanni Pico e la cabbalà</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Giulio Busi Raphael Ebgi Giovanni Pico della Mirandola Mito magia Qabbalah Einau</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Heptaplus Pico della Mirandola On the Dignity of Man Being and One</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Italica vol 63 iss 2 Review by  M J B Allen Commentary on a Canzone of Benivieni</td><td><span class="badge">REVIEW</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Leone Ebreo und Pico della Mirandola</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>de</td></tr>
+<tr class="cat-row"><td>Leoni Giulio - 2009 - La regola delle ombre</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Lettere</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Magic and the Dignity of Man: Pico della Mirandola and His Oration in Modern Mem</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Manuscripta 1976 nov vol 20 iss 3 Kristeller Paul Oskar Giovanni Pico della Mira</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Medieval Renaissance Texts Studies 167 Stephen A Farmer Giovanni Pico Della Mira</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Melancthon's Reply to G. Pico Della Mirandola</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Microsoft Word - ## 7 Indice generale.rtf</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Notes on the Emergence of Christian Cabala</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Nuncius vol 11 iss 2 TOSCANO ANNA PAOLA ZAMBELLI L apprendista stregone Astrolog</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>Of the Dignity of Man: Oration of Giovanni Pico Della Mirandola, Count of Concor</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Philosophical Studies vol 3 Pico Della Mirandola  Of Being and Unity 10 5840 phi</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Philosophy East and West vol 60 iss 2 Craig Truglia Al Ghazali and Giovanni Pico</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Philosophy East and West vol 68 iss 3 Girdner Scott Michael Giovanni Pico Della </td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Pico Giovanni ERSTER TEIL Erkenntnistheorie und christliche Kabbalah  Das Paradi</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>de</td></tr>
+<tr class="cat-row"><td>Pico Giovanni Giovanni Pico della Mirandola und die Entdeckung der jüdischen Mys</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>de</td></tr>
+<tr class="cat-row"><td>Pico della Mirandola on Trial</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Pico della Mirandola's Encounter with Jewish Mysticism</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Pico della Mirandola's Encounter with Jewish Mysticism</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Pico della Mirandola's praise of Lorenzo (and critique of Dante and Petrarch)</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Pico della Mirandola: New Essays</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Pico della Mirandola: New Essays</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Pico della Mirandola: New Essays ed. by M. V. Dougherty (review)</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Pico's Heptaplus and Biblical Hermeneutics</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Poisoning histories in the Italian renaissance: The case of Pico Della Mirandola</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Princeps Concordiae: Pico della Mirandola and the Scholastic Tradition by Avery </td><td><span class="badge">REVIEW</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>RQX_73_4_BookReviews 1328..1330</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Renaissance Quarterly vol 55 iss 1 Roush Sherry Dante as Piagnone Prophet  Girol</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Renaissance Quarterly vol 61 iss 3 Review by  Marion Leathers Kuntz M V Doughert</td><td><span class="badge">REVIEW</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>SavPicoPresentRSA2012</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Scholastic Florence: Moral Psychology in the Quattrocento</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Self-Knowledge Illumination and Natural notes on Pico sources</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Stephen A Farmer Giovanni Pico Della Mirandola Syncretism in the West  Pico s 90</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Studies in the Platonism of Marsilio Ficino and Giovanni Pico</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Studies in the Platonism of Marsilio Ficino and Giovanni Pico</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Synoptic Art: Marsilio Ficino on the History of Platonic Interpretation by Micha</td><td><span class="badge">REVIEW</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>The American Historical Review 1937 oct The Library of Pico della Mirandola By P</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>The Beginning of the World in Renaissance Jewish Thought</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>The Beginning of the World in Renaissance Jewish Thought</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>The Classical Weekly vol 38 iss 1 Sheehan Daniel F   Hamm Victor Michael Pico de</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>The South Central Bulletin vol 38 iss 1 Review by  Dorothy H Brown Pico della Mi</td><td><span class="badge">REVIEW</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>The Thomist  A Speculative Quarterly Review 2014 jul 1 vol 78 iss 3 Salas Victor</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Trattato in difesa di Girolamo Savonarola, (Savonarola e la Toscana. Atti e docu</td><td><span class="badge">REVIEW</span></td><td>Pico</td><td>it</td></tr>
+<tr class="cat-row"><td>notesj_61_2notes 181..325</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>pico being</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>test</td><td><span class="badge">MONOGRAPH</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>ŁPrinceps aliorumŁ and his followers: Giovanni Pico della Mirandola on the ŁAstr</td><td><span class="badge">ARTICLE</span></td><td>Pico</td><td>en</td></tr>
+<tr class="cat-row"><td>Churchill</td><td><span class="badge">MONOGRAPH</span></td><td>Reuchlin</td><td>en</td></tr>
+<tr class="cat-row"><td>Erika Rummel The Case Against Johann Reuchlin  Social and Religious Controversy </td><td><span class="badge">MONOGRAPH</span></td><td>Reuchlin</td><td>en</td></tr>
+<tr class="cat-row"><td>Ian Christie Miller 72 in His Name  Reuchlin Luther Thenaud Wolff and the Names </td><td><span class="badge">MONOGRAPH</span></td><td>Reuchlin</td><td>en</td></tr>
+<tr class="cat-row"><td>Johannes Reuchlin De Arte Cabalistica Libri Tres libgen li</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Reuchlin</td><td>it</td></tr>
+<tr class="cat-row"><td>Johannes Reuchlin und sein Kampf</td><td><span class="badge">MONOGRAPH</span></td><td>Reuchlin</td><td>de</td></tr>
+<tr class="cat-row"><td>Johannes Reuchlin. Briefwechsel: Band 4, 1518–1522</td><td><span class="badge">REVIEW</span></td><td>Reuchlin</td><td>en</td></tr>
+<tr class="cat-row"><td>Journal of the Warburg and Courtauld Institutes vol 39 Charles Zika Reuchlin s D</td><td><span class="badge">ARTICLE</span></td><td>Reuchlin</td><td>en</td></tr>
+<tr class="cat-row"><td>REUCHLIN UND PICO DELLA MIRANDOLA</td><td><span class="badge">ARTICLE</span></td><td>Reuchlin</td><td>de</td></tr>
+<tr class="cat-row"><td>Reuchlin and Erasmus: Humanism and Occult Philosophy1</td><td><span class="badge">ARTICLE</span></td><td>Reuchlin</td><td>en</td></tr>
+<tr class="cat-row"><td>Schriften zur Rechtsgeschichte  77 Ackermann Markus Rafael Der Jurist Johannes R</td><td><span class="badge">MONOGRAPH</span></td><td>Reuchlin</td><td>de</td></tr>
+<tr class="cat-row"><td>Sixteenth Century Journal vol 27 iss 1 Review by  James V Mehl Johannes Reuchlin</td><td><span class="badge">REVIEW</span></td><td>Reuchlin</td><td>en</td></tr>
+<tr class="cat-row"><td>The Kabbalah of Johannes Reuchlin and its Historical Significance / תורת הקבלה ש</td><td><span class="badge">ARTICLE</span></td><td>Reuchlin</td><td>he</td></tr>
+<tr class="cat-row"><td>The Preservation of Jewish Religious Books in Sixteenth-Century Germany: Johanne</td><td><span class="badge">MONOGRAPH</span></td><td>Reuchlin</td><td>en</td></tr>
+<tr class="cat-row"><td><Emphasis Type="Italic">Polygraphia</Emphasis> and the Renaissance sign: The cas</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Fabula 2018 nov 07 vol 59 iss 3 4 McDonald William C Trithemius and the Legend o</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Fabula 2018 nov 07 vol 59 iss 3 4 McDonald William C Trithemius and the Legend o</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Fasciculus chemicus. by Arthur Dee; Elias Ashmole; Lyndy Abraham</td><td><span class="badge">REVIEW</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Gantenbein Urs Leo 4  Converging Magical Legends  Faustus Paracelsus and Trithem</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>George Ripley and the Abbot Trithemius: An Inquiry into Contrasting Medical Atti</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Johannes Trithemius (1462-1516). Zweite, Bibliographisch und Überlieferungsgesch</td><td><span class="badge">REVIEW</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Johannes Trithemius (1462-1516). by Klaus Arnold</td><td><span class="badge">REVIEW</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Johannes Trithemius: Humanismus und Magie im vorreformatorischen Deutschland. by</td><td><span class="badge">REVIEW</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Journal of Physics Conference Series 2018 mar 15 vol 978 Budiman M A  Rachmawati</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Journal of the Warburg and Courtauld Institutes vol 42 Charles G Nauert The Auth</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>it</td></tr>
+<tr class="cat-row"><td>Microsoft Word - 7145.doc</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Ninth-Century Figural Poetry and Medieval Easter Tables—Possible Inspirations fo</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Noel L. Brann - Trithemius and Magical Theology</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Notes and Queries 1851 dec 20 vol s1 IV iss 112 Harrington E C Johannes Trithemi</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Renaissance Curiosa. John Dee's Conversation with Angels, Girolamo Cardano's Hor</td><td><span class="badge">REVIEW</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Renaissance Quarterly vol 53 iss 3 Rabin Sheila J   Grell Ole Peter  Brann Noel </td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Revue Bénédictine 1976 jan vol 86 iss 1 2 Howie David I Benedictine Monks Manusc</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>SOLVED: THE CIPHERS IN BOOK III OF TRITHEMIUS'S STEGANOGRAPHIA</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Studies in the History of Christian Thought 24 N L Brann The Abbot Trithemius Th</td><td><span class="badge">PRIMARY_SOURCE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>TRITHEMIUS, CUSANUS, AND THE WILL TO THE INFINITE: A PRE-FAUSTIAN PARADIGM</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>TRITHEMIUS, CUSANUS, AND THE WILL TO THE INFINITE: A PRE-FAUSTIAN PARADIGM</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>The Catholic Historical Review 1983 oct vol 69 iss 4 Review by  Gerald Strauss T</td><td><span class="badge">REVIEW</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>The Proto-Protestant Assault upon Church Magic: The ‘Errores Bohemanorum‘ Accord</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>The Proto-Protestant Assault upon Church Magic: The ‘Errores Bohemanorum‘ Accord</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Trithemius and Alchemy</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Trithemius and Magical Theology</td><td><span class="badge">MONOGRAPH</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Trithemius and Magical Theology</td><td><span class="badge">MONOGRAPH</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Trithemius and Magical Theology: A Chapter in the Controversy over Occult Studie</td><td><span class="badge">REVIEW</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Trithemius: The art of drawing spirits into crystals</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>Was Paracelsus a Disciple of Trithemius?</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>en</td></tr>
+<tr class="cat-row"><td>White Magic, Black Magic in the European Renaissance. From Ficino, Pico, Della P</td><td><span class="badge">ARTICLE</span></td><td>Trithemius</td><td>de</td></tr>
+<tr class="cat-row"><td>Alphabet of Nature</td><td><span class="badge">MONOGRAPH</span></td><td>Van Helmont</td><td>en</td></tr>
+<tr class="cat-row"><td>Francis Mercury Van Helmont's "Sketch of Christian Kabbalism"</td><td><span class="badge">MONOGRAPH</span></td><td>Van Helmont</td><td>en</td></tr>
+<tr class="cat-row"><td>Cannibalism and Witchcraft in Early Modern Europe: Reading the Visual Images</td><td><span class="badge">ARTICLE</span></td><td>Zika</td><td>en</td></tr>
+<tr class="cat-row"><td>Charles Zika. The Appearance of Witchcraft: Print and Visual Culture in Sixteent</td><td><span class="badge">REVIEW</span></td><td>Zika</td><td>en</td></tr>
+<tr class="cat-row"><td>Exorcising Our Demons. Magic, Witchcraft and Visual Culture in Early Modern Euro</td><td><span class="badge">REVIEW</span></td><td>Zika</td><td>nl</td></tr>
+<tr class="cat-row"><td>Gary K. Waite. Eradicating the Devil's Minions: Anabaptists and Witches in Refor</td><td><span class="badge">REVIEW</span></td><td>Zika</td><td>en</td></tr>
+<tr class="cat-row"><td>Palgrave Studies in the History of Emotions Jennifer Spinks Charles Zika Disaste</td><td><span class="badge">MONOGRAPH</span></td><td>Zika</td><td>en</td></tr>
+<tr class="cat-row"><td>Sixteenth Century Journal vol 31 iss 3 Review by  Andrew Gow Durer and His Cultu</td><td><span class="badge">REVIEW</span></td><td>Zika</td><td>en</td></tr>
+</tbody></table>
+
+<script>
+function filterCat() {
+    const q = document.getElementById('catSearch').value.toLowerCase();
+    document.querySelectorAll('.cat-row').forEach(el => {
+        el.style.display = el.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+}
+</script>
+</main>
+<footer>
+RenMagDB &mdash; A digital humanities project cataloging Renaissance magic scholarship.
+Built with Python + SQLite + Claude Code. <a href="https://github.com/t3dy/RMDB">GitHub</a>
+</footer>
+</body>
+</html>
