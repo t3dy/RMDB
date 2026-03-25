@@ -15,6 +15,7 @@ Vanilla HTML/CSS, no frameworks. GitHub Pages compatible.
 
 import io
 import json
+import re
 import sqlite3
 import sys
 from pathlib import Path
@@ -24,6 +25,44 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='repla
 CORPUS_ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = CORPUS_ROOT / "db" / "renmagic.db"
 SITE_DIR = CORPUS_ROOT / "site"
+
+# ── Latin/Greek/Hebrew term italicization ──
+# Terms that should be italicized in HTML output (per Dekany style guide)
+ITALIC_TERMS = [
+    # Latin phrases (longer first to avoid partial matches)
+    "anima mundi", "spiritus mundi", "prisca theologia", "philosophia occulta",
+    "magia naturalis", "magia ceremonialis", "magia daemonica", "De Occulta Philosophia",
+    "De Vita Libri Tres", "Corpus Hermeticum", "De Mysteriis", "Theologia Platonica",
+    "De Vanitate Scientiarum", "Tabula Smaragdina", "Ars Magna", "Ars Notoria",
+    "De Docta Ignorantia", "De Radiis Stellarum", "Speculum Astronomiae",
+    "Monas Hieroglyphica", "Steganographia", "Polygraphia", "Utriusque Cosmi Historia",
+    "De Arte Cabalistica", "De Verbo Mirifico", "De Umbris Idearum",
+    "De la Causa, Principio et Uno", "Conclusiones Nongentae",
+    "Oratio de Hominis Dignitate", "Kabbala Denudata", "Opus Majus",
+    "Disputationes adversus astrologiam divinatricem",
+    "coincidentia oppositorum", "docta ignorantia",
+    "scientia experimentalis", "tria prima",
+    # Single Latin/Greek/Hebrew terms
+    "magia", "theurgia", "theologia", "philosophia",
+    "demiurgus", "nous", "pneuma", "epistrophe", "proodos",
+    "sephiroth", "sefirot", "ein sof", "ain soph",
+    "gematria", "notarikon", "temurah", "gilgul",
+    "nefesh", "ruach", "neshamah",
+]
+
+def italicize_terms(text):
+    """Wrap known Latin/Greek/Hebrew terms in <em> tags."""
+    if not text:
+        return text
+    # Skip if already contains <em> tags (already processed)
+    if "<em>" in text:
+        return text
+    # Sort by length (longest first) to avoid partial matches
+    for term in sorted(ITALIC_TERMS, key=len, reverse=True):
+        # Case-sensitive match, word boundary aware
+        pattern = r'(?<![<\w])(' + re.escape(term) + r')(?![>\w])'
+        text = re.sub(pattern, r'<em>\1</em>', text)
+    return text
 
 # ── CSS ──
 CSS = """
@@ -174,7 +213,7 @@ def build_index(conn):
     for row in conn.execute("SELECT name, birth_year, death_year, nationality, significance, figure_type FROM figures WHERE figure_type='HISTORICAL' ORDER BY birth_year"):
         dates = f"({row[1]}–{row[2]})" if row[1] else ""
         sig = (row[4] or "")[:150] + "..." if len(row[4] or "") > 150 else (row[4] or "")
-        content += f'<div class="card"><h3>{row[0]} {dates}</h3><div class="meta">{row[3] or ""}</div><p>{sig}</p></div>\n'
+        content += f'<div class="card"><h3>{row[0]} {dates}</h3><div class="meta">{row[3] or ""}</div><p>{italicize_terms(sig)}</p></div>\n'
 
     content += "</div>"
     return page("Home", content)
@@ -198,7 +237,7 @@ def build_dictionary(conn):
 
         for t in terms:
             cat_badge = f' <span class="badge">{t[5]}</span>' if t[5] else ""
-            long_def = f"<p>{t[4]}</p>" if t[4] else ""
+            long_def = f"<p>{italicize_terms(t[4])}</p>" if t[4] else ""
             content += f"""<div class="card dict-entry" data-term="{t[0].lower()}">
 <h3><em>{t[0]}</em> ({t[1]}){cat_badge}</h3>
 <div class="meta">{t[2]} &bull; freq: {t[6]}</div>
@@ -228,7 +267,7 @@ def build_figures(conn):
         FROM figures f WHERE f.figure_type='HISTORICAL' ORDER BY f.birth_year
     """):
         dates = f"({row[1]}–{row[2]})" if row[1] else ""
-        sig = (row[4] or "")[:250]
+        sig = italicize_terms((row[4] or "")[:250])
         # Get traditions
         traditions = conn.execute("SELECT tradition, relationship_type FROM figure_traditions WHERE figure_id=(SELECT id FROM figures WHERE name=?)", (row[0],)).fetchall()
         trad_html = " ".join(f'<span class="tag">{t[1]}: {t[0]}</span>' for t in traditions)
@@ -247,7 +286,7 @@ def build_figures(conn):
         FROM figures f WHERE f.figure_type='SCHOLAR' ORDER BY f.name
     """):
         dates = f"({row[1]}–{row[2]})" if row[1] else ""
-        sig = (row[4] or "")[:250]
+        sig = italicize_terms((row[4] or "")[:250])
         content += f'<div class="card"><h3>{row[0]} {dates}</h3><div class="meta">{row[3] or ""} &bull; {row[5]} corpus documents</div><p>{sig}</p></div>\n'
     content += "</div>"
     return page("Figures", content)
@@ -258,7 +297,7 @@ def build_timeline(conn):
     events = conn.execute("SELECT year, year_end, event_type, title, description FROM timeline_events ORDER BY year").fetchall()
     for e in events:
         yr = str(e[0]) + (f"–{e[1]}" if e[1] else "")
-        desc = f'<div class="desc">{e[4]}</div>' if e[4] else ""
+        desc = f'<div class="desc">{italicize_terms(e[4])}</div>' if e[4] else ""
         content += f'<div class="timeline-event"><div class="year">{yr}</div><div class="title">{e[3]}</div><div class="meta"><span class="tag">{e[2]}</span></div>{desc}</div>\n'
     return page("Timeline", content)
 
@@ -281,7 +320,7 @@ def build_library(conn):
         for t in texts:
             author = t[7] or "Anonymous"
             trad_class = (t[3] or "").lower().split()[0]
-            sig = f"<p>{t[6]}</p>" if t[6] else ""
+            sig = f"<p>{italicize_terms(t[6])}</p>" if t[6] else ""
             content += f"""<div class="card">
 <h3><em>{t[0]}</em></h3>
 <div class="meta">{author} &bull; {t[5] or ""} &bull; {t[4] or ""} <span class="tag {trad_class}">{t[3] or ""}</span></div>
