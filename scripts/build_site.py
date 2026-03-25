@@ -334,14 +334,21 @@ def build_catalog(conn):
     content = "<h2>Corpus Catalog</h2>\n"
     content += '<input type="text" class="search-box" id="catSearch" placeholder="Search documents..." onkeyup="filterCat()">\n'
 
-    content += "<table><thead><tr><th>Title</th><th>Type</th><th>Figure</th><th>Lang</th></tr></thead><tbody>\n"
+    content += "<div class='card-grid'>\n"
     for row in conn.execute("""
-        SELECT title, doc_type, folder_figure, language
+        SELECT title, doc_type, folder_figure, language, summary, confidence, author_from_filename
         FROM documents ORDER BY folder_figure, title
     """):
-        title = (row[0] or "")[:80]
-        content += f'<tr class="cat-row"><td>{title}</td><td><span class="badge">{row[1] or "?"}</span></td><td>{row[2] or ""}</td><td>{row[3] or ""}</td></tr>\n'
-    content += "</tbody></table>\n"
+        title = (row[0] or "")[:100]
+        summary = italicize_terms((row[4] or "")[:300])
+        author = row[6] or ""
+        conf_class = "draft" if row[5] == "LOW" else ""
+        content += f"""<div class="card cat-row">
+<h3>{title}</h3>
+<div class="meta">{author} &bull; <span class="badge">{row[1] or "?"}</span> <span class="badge">{row[2] or "root"}</span> {row[3] or ""}</div>
+<p>{summary}</p>
+</div>\n"""
+    content += "</div>\n"
 
     content += """
 <script>
