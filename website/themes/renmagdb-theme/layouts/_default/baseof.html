@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/" class="logo">RenMagDB</a>
+            <ul class="nav-menu">
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="main-footer">
+        <p>RenMagDB © 2026 | Historiographic Database of Renaissance Magic & Esotericism</p>
+        <p class="version">Version {{ .Site.Params.version }} | Launched {{ .Site.Params.launch_date }}</p>
+    </footer>
+
+    <script src="/js/search.js"></script>
+</body>
+</html>

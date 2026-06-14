@@ -1,0 +1,47 @@
+baseURL = "https://renmagdb.github.io/"
+languageCode = "en-us"
+title = "RenMagDB: Renaissance Magic Database"
+theme = "renmagdb-theme"
+paginate = 20
+hasCJKLanguage = false
+
+[outputs]
+home = ["HTML", "JSON"]
+section = ["HTML"]
+
+[params]
+author = "RenMagDB Project"
+description = "Comprehensive historiographic database of Renaissance magic, hermetic philosophy, and esoteric traditions"
+version = "3.0"
+launch_date = "2026-06-14"
+
+[menu]
+[[menu.main]]
+name = "Figures"
+url = "/figures/"
+weight = 10
+
+[[menu.main]]
+name = "Traditions"
+url = "/traditions/"
+weight = 20
+
+[[menu.main]]
+name = "Essays"
+url = "/essays/"
+weight = 30
+
+[[menu.main]]
+name = "Dictionary"
+url = "/dictionary/"
+weight = 40
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 50
+
+[taxonomies]
+tradition = "traditions"
+era = "era_assignments"
+debate = "historiographic_debates"
