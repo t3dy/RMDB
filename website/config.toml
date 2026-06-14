@@ -1,4 +1,4 @@
-baseURL = "https://renmagdb.github.io/"
+baseURL = "https://t3dy.github.io/RMDB/"
 defaultContentLanguage = "en"
 locale = "en-us"
 title = "RenMagDB: Renaissance Magic Database"
@@ -26,6 +26,11 @@ weight = 10
 name = "Traditions"
 url = "/traditions/"
 weight = 20
+
+[[menu.main]]
+name = "Texts"
+url = "/texts/"
+weight = 25
 
 [[menu.main]]
 name = "Essays"

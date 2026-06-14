@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Aquinas and Occultism on RenMagDB: Renaissance Magic Database</title>
-		<link>https://renmagdb.github.io/historiographic_debates/aquinas-and-occultism/</link>
+		<link>https://t3dy.github.io/RMDB/historiographic_debates/aquinas-and-occultism/</link>
 		<description>Recent content in Aquinas and Occultism on RenMagDB: Renaissance Magic Database</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,12 +10,12 @@
 		
 		
 		
-			<atom:link href="https://renmagdb.github.io/historiographic_debates/aquinas-and-occultism/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://t3dy.github.io/RMDB/historiographic_debates/aquinas-and-occultism/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Thomas Aquinas (1225–1274): Scholastic Philosophy and the Boundaries of Natural Knowledge</title>
-				<link>https://renmagdb.github.io/figures/aquinas/</link>
+				<link>https://t3dy.github.io/RMDB/figures/aquinas/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/figures/aquinas/</guid>
+				<guid>https://t3dy.github.io/RMDB/figures/aquinas/</guid>
 				<description>&lt;h2 id=&#34;life-and-intellectual-authority&#34;&gt;Life and Intellectual Authority&lt;/h2&gt;&#xA;&lt;p&gt;Thomas Aquinas (1225–1274), Dominican friar and the most influential medieval theologian, stands as a towering authority for subsequent discussions of magic, natural philosophy, and the boundaries of legitimate knowledge. Though Aquinas himself did not write treatises on magic, his philosophical framework—particularly his doctrine of causation, his theory of natural knowledge, and his insistence on divine transcendence—shaped how medieval and Renaissance thinkers debated whether magic was natural, demonic, or impossible.&lt;/p&gt;</description>
 			</item>
 	</channel>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Natural Magic vs. Superstition on RenMagDB: Renaissance Magic Database</title>
-		<link>https://renmagdb.github.io/historiographic_debates/natural-magic-vs.-superstition/</link>
+		<link>https://t3dy.github.io/RMDB/historiographic_debates/natural-magic-vs.-superstition/</link>
 		<description>Recent content in Natural Magic vs. Superstition on RenMagDB: Renaissance Magic Database</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,12 +10,12 @@
 		
 		
 		
-			<atom:link href="https://renmagdb.github.io/historiographic_debates/natural-magic-vs.-superstition/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://t3dy.github.io/RMDB/historiographic_debates/natural-magic-vs.-superstition/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Giovan Battista Della Porta (1535–1615): Natural Magic, Cryptography, and Renaissance Erudition</title>
-				<link>https://renmagdb.github.io/figures/della_porta/</link>
+				<link>https://t3dy.github.io/RMDB/figures/della_porta/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/figures/della_porta/</guid>
+				<guid>https://t3dy.github.io/RMDB/figures/della_porta/</guid>
 				<description>&lt;h2 id=&#34;life-and-polymathic-achievement&#34;&gt;Life and Polymathic Achievement&lt;/h2&gt;&#xA;&lt;p&gt;Giovan Battista Della Porta (1535–1615), Neapolitan nobleman and natural philosopher, achieved renown across Renaissance Europe as a polymath: natural magician, cryptographer, dramatist, and experimental philosopher. Born in Naples to a noble family, Della Porta had the leisure to pursue comprehensive learning.&lt;/p&gt;&#xA;&lt;p&gt;Della Porta founded the Academy of Secrets (&lt;em&gt;Accademia dei Segreti&lt;/em&gt;) in Naples, a gathering of learned men devoted to investigating nature&amp;rsquo;s hidden operations. He published extensively on cryptography, natural magic, alchemy, optics, agriculture, and botany. His works circulated widely in Renaissance Europe and influenced both natural philosophers and occultists.&lt;/p&gt;</description>
 			</item>
 	</channel>

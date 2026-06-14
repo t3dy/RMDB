@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Traditions on RenMagDB: Renaissance Magic Database</title>
-		<link>https://renmagdb.github.io/traditions/</link>
+		<link>https://t3dy.github.io/RMDB/traditions/</link>
 		<description>Recent content in Traditions on RenMagDB: Renaissance Magic Database</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,180 +10,180 @@
 		
 		
 		
-			<atom:link href="https://renmagdb.github.io/traditions/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://t3dy.github.io/RMDB/traditions/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Alchemy</title>
-				<link>https://renmagdb.github.io/traditions/alchemy/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/alchemy/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/alchemy/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/alchemy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Astrology</title>
-				<link>https://renmagdb.github.io/traditions/astrology/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/astrology/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/astrology/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/astrology/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Cryptography</title>
-				<link>https://renmagdb.github.io/traditions/cryptography/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/cryptography/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/cryptography/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/cryptography/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Demonology</title>
-				<link>https://renmagdb.github.io/traditions/demonology/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/demonology/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/demonology/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/demonology/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Demonology Critique</title>
-				<link>https://renmagdb.github.io/traditions/demonology-critique/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/demonology-critique/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/demonology-critique/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/demonology-critique/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Experimental Philosophy</title>
-				<link>https://renmagdb.github.io/traditions/experimental-philosophy/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/experimental-philosophy/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/experimental-philosophy/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/experimental-philosophy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Hermeticism</title>
-				<link>https://renmagdb.github.io/traditions/hermeticism/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/hermeticism/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/hermeticism/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/hermeticism/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Islamic Philosophy</title>
-				<link>https://renmagdb.github.io/traditions/islamic-philosophy/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/islamic-philosophy/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/islamic-philosophy/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/islamic-philosophy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Kabbalah</title>
-				<link>https://renmagdb.github.io/traditions/kabbalah/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/kabbalah/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/kabbalah/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/kabbalah/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Medical Demonology</title>
-				<link>https://renmagdb.github.io/traditions/medical-demonology/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/medical-demonology/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/medical-demonology/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/medical-demonology/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Medicine</title>
-				<link>https://renmagdb.github.io/traditions/medicine/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/medicine/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/medicine/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/medicine/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Medieval Scholasticism</title>
-				<link>https://renmagdb.github.io/traditions/medieval-scholasticism/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/medieval-scholasticism/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/medieval-scholasticism/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/medieval-scholasticism/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Metaphysics</title>
-				<link>https://renmagdb.github.io/traditions/metaphysics/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/metaphysics/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/metaphysics/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/metaphysics/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Mysticism</title>
-				<link>https://renmagdb.github.io/traditions/mysticism/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/mysticism/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/mysticism/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/mysticism/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Natural Magic</title>
-				<link>https://renmagdb.github.io/traditions/natural-magic/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/natural-magic/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/natural-magic/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/natural-magic/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Natural Philosophy</title>
-				<link>https://renmagdb.github.io/traditions/natural-philosophy/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/natural-philosophy/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/natural-philosophy/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/natural-philosophy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Neoplatonism</title>
-				<link>https://renmagdb.github.io/traditions/neoplatonism/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/neoplatonism/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/neoplatonism/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/neoplatonism/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Optics</title>
-				<link>https://renmagdb.github.io/traditions/optics/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/optics/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/optics/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/optics/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Psychiatry</title>
-				<link>https://renmagdb.github.io/traditions/psychiatry/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/psychiatry/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/psychiatry/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/psychiatry/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Ritual Magic</title>
-				<link>https://renmagdb.github.io/traditions/ritual-magic/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/ritual-magic/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/ritual-magic/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/ritual-magic/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Rosicrucianism</title>
-				<link>https://renmagdb.github.io/traditions/rosicrucianism/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/rosicrucianism/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/rosicrucianism/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/rosicrucianism/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Theology</title>
-				<link>https://renmagdb.github.io/traditions/theology/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/theology/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/theology/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/theology/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Theosophy</title>
-				<link>https://renmagdb.github.io/traditions/theosophy/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/theosophy/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/theosophy/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/theosophy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Theurgy</title>
-				<link>https://renmagdb.github.io/traditions/theurgy/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/theurgy/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/theurgy/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/theurgy/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Witchcraft Skepticism</title>
-				<link>https://renmagdb.github.io/traditions/witchcraft-skepticism/</link>
+				<link>https://t3dy.github.io/RMDB/traditions/witchcraft-skepticism/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/traditions/witchcraft-skepticism/</guid>
+				<guid>https://t3dy.github.io/RMDB/traditions/witchcraft-skepticism/</guid>
 				<description></description>
 			</item>
 	</channel>

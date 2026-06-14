@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Astrology on RenMagDB: Renaissance Magic Database</title>
-		<link>https://renmagdb.github.io/traditions/astrology/</link>
+		<link>https://t3dy.github.io/RMDB/traditions/astrology/</link>
 		<description>Recent content in Astrology on RenMagDB: Renaissance Magic Database</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,19 +10,19 @@
 		
 		
 		
-			<atom:link href="https://renmagdb.github.io/traditions/astrology/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://t3dy.github.io/RMDB/traditions/astrology/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Albertus Magnus (ca. 1193–1280): Medieval Natural Philosophy and the Legitimation of Magic</title>
-				<link>https://renmagdb.github.io/figures/albertus_magnus/</link>
+				<link>https://t3dy.github.io/RMDB/figures/albertus_magnus/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/figures/albertus_magnus/</guid>
+				<guid>https://t3dy.github.io/RMDB/figures/albertus_magnus/</guid>
 				<description>&lt;h2 id=&#34;life-and-intellectual-context&#34;&gt;Life and Intellectual Context&lt;/h2&gt;&#xA;&lt;p&gt;Albertus Magnus (Albert of Cologne, ca. 1193–1280) was one of the most influential medieval philosophers and theologians, a Dominican friar whose vast erudition shaped medieval and Renaissance intellectual life. Born in Swabia, he joined the Dominican order and became a major theological authority, serving as Archbishop of Regensburg and influencing Thomas Aquinas, his most famous student.&lt;/p&gt;&#xA;&lt;p&gt;Albertus&amp;rsquo;s significance for the history of magic lies not primarily in his personal engagement with magical practice, but in his &lt;em&gt;reception&lt;/em&gt;: later Renaissance magicians and occultists claimed him as an authority on natural magic, astrology, and the hidden operations of nature. Whether Albertus intended his natural philosophy as magical justification remains debated; what is certain is that his writings on minerals, animals, plants, and celestial influences were cited by Renaissance magicians as foundational texts legitimating occult philosophy.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Paracelsus (1493–1541): Medicine, Alchemy, and the Occult Philosophy of Nature</title>
-				<link>https://renmagdb.github.io/figures/paracelsus/</link>
+				<link>https://t3dy.github.io/RMDB/figures/paracelsus/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/figures/paracelsus/</guid>
+				<guid>https://t3dy.github.io/RMDB/figures/paracelsus/</guid>
 				<description>&lt;h2 id=&#34;life-and-intellectual-context&#34;&gt;Life and Intellectual Context&lt;/h2&gt;&#xA;&lt;p&gt;Paracelsus (Philippus Aureolus Theophrastus Bombastus von Hohenheim, 1493–1541) stands as one of the Renaissance&amp;rsquo;s most controversial and influential medical philosophers. Born in Einsiedeln, Switzerland, Paracelsus rejected the Galenic-Aristotelian medical establishment and proposed a radical alternative based on alchemy, astrology, and what he understood as a direct engagement with nature&amp;rsquo;s secrets.&lt;/p&gt;&#xA;&lt;p&gt;Paracelsus traveled extensively—through Europe, possibly to the Levant—and claimed empirical investigation of mines, military medicine, and practical alchemy. He settled briefly in Basel as a university physician before his heterodox views and combative personality led to expulsion and decades of wandering. He died in Salzburg in 1541, but his reputation grew dramatically after his death: published collections of his works proliferated, and he became a towering figure in early modern medical reform and alchemical philosophy.&lt;/p&gt;</description>
 			</item>
 	</channel>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Baroque Spirituality on RenMagDB: Renaissance Magic Database</title>
-		<link>https://renmagdb.github.io/historiographic_debates/baroque-spirituality/</link>
+		<link>https://t3dy.github.io/RMDB/historiographic_debates/baroque-spirituality/</link>
 		<description>Recent content in Baroque Spirituality on RenMagDB: Renaissance Magic Database</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,12 +10,12 @@
 		
 		
 		
-			<atom:link href="https://renmagdb.github.io/historiographic_debates/baroque-spirituality/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://t3dy.github.io/RMDB/historiographic_debates/baroque-spirituality/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Jacob Böhme (1575–1624): Theosophical Vision and the Mystical Reformation</title>
-				<link>https://renmagdb.github.io/figures/bohme/</link>
+				<link>https://t3dy.github.io/RMDB/figures/bohme/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://renmagdb.github.io/figures/bohme/</guid>
+				<guid>https://t3dy.github.io/RMDB/figures/bohme/</guid>
 				<description>&lt;h2 id=&#34;life-and-intellectual-context&#34;&gt;Life and Intellectual Context&lt;/h2&gt;&#xA;&lt;p&gt;Jacob Böhme (1575–1624), a German Lutheran mystic and theosophist, represents a threshold between Renaissance magic and early modern mysticism. Born in Lusatia, trained as a shoemaker, Böhme experienced profound mystical visions that he spent his life attempting to articulate and defend. Unlike the educated polymaths (Ficino, Dee, Agrippa), Böhme was an artisan-mystic whose authority derived from claimed direct spiritual experience rather than textual scholarship.&lt;/p&gt;&#xA;&lt;p&gt;Despite—or perhaps because of—his lack of formal education, Böhme exercised extraordinary influence over subsequent mystical and theosophical movements. His visions of the divine creativity and cosmic struggle between light and darkness shaped Baroque spirituality, influenced later mystical theology, and contributed to Romantic philosophy. Yet his relationship to &amp;ldquo;magic&amp;rdquo; is complex: he rejected magic explicitly, yet his visions of divine correspondence and cosmic forces operated within frameworks close to magical philosophy.&lt;/p&gt;</description>
 			</item>
 	</channel>
