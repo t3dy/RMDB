@@ -61,6 +61,13 @@
 				<description></description>
 			</item>
 			<item>
+				<title>Mysticism</title>
+				<link>https://renmagdb.github.io/traditions/mysticism/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/mysticism/</guid>
+				<description></description>
+			</item>
+			<item>
 				<title>Natural Magic</title>
 				<link>https://renmagdb.github.io/traditions/natural-magic/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -72,6 +79,20 @@
 				<link>https://renmagdb.github.io/traditions/neoplatonism/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>https://renmagdb.github.io/traditions/neoplatonism/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Rosicrucianism</title>
+				<link>https://renmagdb.github.io/traditions/rosicrucianism/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/rosicrucianism/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Theosophy</title>
+				<link>https://renmagdb.github.io/traditions/theosophy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/theosophy/</guid>
 				<description></description>
 			</item>
 	</channel>
