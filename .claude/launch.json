@@ -1,0 +1,14 @@
+﻿{
+    "configurations":  [
+                           {
+                               "port":  8000,
+                               "runtimeExecutable":  "python",
+                               "name":  "renmagdb-preview",
+                               "runtimeArgs":  [
+                                                   "serve.py"
+                                               ]
+                           }
+                       ],
+    "version":  "0.0.1",
+    "autoPort":  true
+}

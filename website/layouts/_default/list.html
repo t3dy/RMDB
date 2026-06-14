@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="content-list">
+    <h1>{{ .Title }}</h1>
+    {{ if .Description }}
+    <p class="list-description">{{ .Description }}</p>
+    {{ end }}
+
+    <div class="articles-list">
+    {{ range .Pages }}
+        <article class="list-item">
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            {{ if .Params.dates }}
+            <p class="dates">{{ .Params.dates }}</p>
+            {{ end }}
+            {{ if and (isset .Params "word_count") (gt .Params.word_count 0) }}
+            <p class="metadata">{{ .Params.reading_time_minutes }} min read | {{ .Params.word_count }} words</p>
+            {{ end }}
+        </article>
+    {{ end }}
+    </div>
+</div>
+{{ end }}

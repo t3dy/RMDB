@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="home-content">
+    <section class="home-hero">
+        <h1>{{ .Site.Title }}</h1>
+        <p class="tagline">{{ .Site.Params.description }}</p>
+    </section>
+
+    <section class="home-section">
+        <h2>Historical Figures</h2>
+        <div class="preview-grid">
+        {{ range first 5 (where .Site.RegularPages "Type" "in" (slice "figures")) }}
+            <article class="preview-card">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ if .Params.dates }}
+                <p class="dates">{{ .Params.dates }}</p>
+                {{ end }}
+            </article>
+        {{ end }}
+        </div>
+        <p class="view-all"><a href="/figures/">View all figures →</a></p>
+    </section>
+
+    <section class="home-section">
+        <h2>Traditions & Concepts</h2>
+        <div class="preview-grid">
+        {{ range first 5 (where .Site.RegularPages "Type" "in" (slice "traditions")) }}
+            <article class="preview-card">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            </article>
+        {{ end }}
+        </div>
+        <p class="view-all"><a href="/traditions/">View all traditions →</a></p>
+    </section>
+</div>
+{{ end }}
