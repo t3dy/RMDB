@@ -11,5 +11,68 @@
 		
 		
 			<atom:link href="https://renmagdb.github.io/historiographic_debates/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Albertus as Authority Figure</title>
+				<link>https://renmagdb.github.io/historiographic_debates/albertus-as-authority-figure/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/albertus-as-authority-figure/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cryptographical Innovation</title>
+				<link>https://renmagdb.github.io/historiographic_debates/cryptographical-innovation/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/cryptographical-innovation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Empiricism and Hermetic Synthesis</title>
+				<link>https://renmagdb.github.io/historiographic_debates/empiricism-and-hermetic-synthesis/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/empiricism-and-hermetic-synthesis/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Magic and Monasticism</title>
+				<link>https://renmagdb.github.io/historiographic_debates/magic-and-monasticism/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/magic-and-monasticism/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Medicine vs. Occult Philosophy</title>
+				<link>https://renmagdb.github.io/historiographic_debates/medicine-vs.-occult-philosophy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/medicine-vs.-occult-philosophy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Medieval Magic and Natural Philosophy</title>
+				<link>https://renmagdb.github.io/historiographic_debates/medieval-magic-and-natural-philosophy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/medieval-magic-and-natural-philosophy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Paracelsian Reception and Legacy</title>
+				<link>https://renmagdb.github.io/historiographic_debates/paracelsian-reception-and-legacy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/paracelsian-reception-and-legacy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Steganography as Occult Art</title>
+				<link>https://renmagdb.github.io/historiographic_debates/steganography-as-occult-art/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/steganography-as-occult-art/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Transmission of Islamic Knowledge</title>
+				<link>https://renmagdb.github.io/historiographic_debates/transmission-of-islamic-knowledge/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/historiographic_debates/transmission-of-islamic-knowledge/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>

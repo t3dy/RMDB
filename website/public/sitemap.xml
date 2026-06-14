@@ -2,13 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://renmagdb.github.io/historiographic_debates/albertus-as-authority-figure/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/albertus_magnus/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/alchemy/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/traditions/alchemy/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/astrology/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/traditions/astrology/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/cryptographical-innovation/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/cryptography/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/demonology/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/traditions/demonology/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/era_assignments/early-modern/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/empiricism-and-hermetic-synthesis/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/era_assignments/</loc>
   </url><url>
@@ -28,17 +44,33 @@
   </url><url>
     <loc>https://renmagdb.github.io/traditions/islamic_magic/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/figures/trithemius/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/figures/dee/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/kabbalah/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/kabbalah/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/magic-and-monasticism/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/figures/ficino/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/medicine-vs.-occult-philosophy/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/medieval-magic-and-natural-philosophy/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/medieval-scholasticism/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/natural-magic/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/traditions/neoplatonism/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/neoplatonism/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/paracelsian-reception-and-legacy/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/paracelsus/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/era_assignments/renaissance/</loc>
   </url><url>
@@ -46,8 +78,12 @@
   </url><url>
     <loc>https://renmagdb.github.io/traditions/rosicrucianism/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/steganography-as-occult-art/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/traditions/theurgy_goeteia/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/transmission-of-islamic-knowledge/</loc>
   </url>
 </urlset>

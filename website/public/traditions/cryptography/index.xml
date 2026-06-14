@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Cryptography on RenMagDB: Renaissance Magic Database</title>
+		<link>https://renmagdb.github.io/traditions/cryptography/</link>
+		<description>Recent content in Cryptography on RenMagDB: Renaissance Magic Database</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="https://renmagdb.github.io/traditions/cryptography/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Johannes Trithemius (1462–1516): Magic, Steganography, and Renaissance Benedictine Erudition</title>
+				<link>https://renmagdb.github.io/figures/trithemius/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/figures/trithemius/</guid>
+				<description>&lt;h2 id=&#34;life-and-intellectual-context&#34;&gt;Life and Intellectual Context&lt;/h2&gt;&#xA;&lt;p&gt;Johannes Trithemius (1462–1516), born in the Rhineland village of Trittenheim, became one of the Renaissance&amp;rsquo;s most influential polymaths and one of the few high-ranking Catholic clerics to engage seriously with occult philosophy. A Benedictine monk and, from 1506, abbot of Sponheim, Trithemius combined monastic scholarship, ecclesiastical authority, and hermetic learning in ways that fascinate and perplex historians.&lt;/p&gt;&#xA;&lt;p&gt;He was a prodigious author, producing works on history, biography, cryptography, magic, and ecclesiastical reform. Though he achieved considerable institutional power as abbot, Trithemius was also suspected of heretical learning, and his magical writings provoked controversy. He died in 1516, but his &lt;em&gt;Steganographia&lt;/em&gt;—a cryptographical and magical treatise—circulated in manuscript and became one of the most famous (and infamous) works of Renaissance occultism.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

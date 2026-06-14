@@ -12,6 +12,34 @@
 		
 			<atom:link href="https://renmagdb.github.io/traditions/index.xml" rel="self" type="application/rss+xml" />
 			<item>
+				<title>Alchemy</title>
+				<link>https://renmagdb.github.io/traditions/alchemy/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/alchemy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Astrology</title>
+				<link>https://renmagdb.github.io/traditions/astrology/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/astrology/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cryptography</title>
+				<link>https://renmagdb.github.io/traditions/cryptography/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/cryptography/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Demonology</title>
+				<link>https://renmagdb.github.io/traditions/demonology/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/demonology/</guid>
+				<description></description>
+			</item>
+			<item>
 				<title>Hermeticism</title>
 				<link>https://renmagdb.github.io/traditions/hermeticism/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23,6 +51,20 @@
 				<link>https://renmagdb.github.io/traditions/kabbalah/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>https://renmagdb.github.io/traditions/kabbalah/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Medieval Scholasticism</title>
+				<link>https://renmagdb.github.io/traditions/medieval-scholasticism/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/medieval-scholasticism/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Natural Magic</title>
+				<link>https://renmagdb.github.io/traditions/natural-magic/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://renmagdb.github.io/traditions/natural-magic/</guid>
 				<description></description>
 			</item>
 			<item>
