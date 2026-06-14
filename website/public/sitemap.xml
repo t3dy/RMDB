@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://renmagdb.github.io/figures/al_kindi/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/al-kindis-theology/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/albertus-as-authority-figure/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/figures/albertus_magnus/</loc>
@@ -10,9 +14,17 @@
   </url><url>
     <loc>https://renmagdb.github.io/traditions/alchemy/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/aquinas-and-occultism/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/traditions/astrology/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/astrology/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/avicenna/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/avicenna-and-medieval-europe/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/bacon-and-experimental-method/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/baroque-spirituality/</loc>
   </url><url>
@@ -22,21 +34,37 @@
   </url><url>
     <loc>https://renmagdb.github.io/traditions/cryptography/</loc>
   </url><url>
-    <loc>https://renmagdb.github.io/traditions/demonology/</loc>
+    <loc>https://renmagdb.github.io/historiographic_debates/cryptography-and-occultism/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/demon-possession-vs.-mental-illness/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/demonology/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/demonology-critique/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/demonology/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/divine-vs.-natural-causation/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/era_assignments/early-modern/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/early-modern-empiricism-and-mysticism/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/emanation-and-creation/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/empiricism-and-hermetic-synthesis/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/empiricism-and-medieval-philosophy/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/era_assignments/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/experimental-philosophy/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/figures/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/figures/bruno/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/della_porta/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/figures/pico/</loc>
   </url><url>
@@ -46,11 +74,25 @@
   </url><url>
     <loc>https://renmagdb.github.io/traditions/hermeticism/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/hidden-properties-in-natural-philosophy/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/iamblichus/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/iamblichus-and-porphyry/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/islamic-knowledge-transmission/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/islamic_magic/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/traditions/islamic-philosophy/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/islamic-rationalism-and-magic/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/figures/bohme/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/weyer/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/figures/trithemius/</loc>
   </url><url>
@@ -60,9 +102,19 @@
   </url><url>
     <loc>https://renmagdb.github.io/traditions/kabbalah/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/limits-of-natural-knowledge/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/magic-and-monasticism/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/magic-and-mysticism-in-neoplatonism/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/figures/ficino/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/medical-authority-and-persecution/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/medical-demonology/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/medicine/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/medicine-vs.-occult-philosophy/</loc>
   </url><url>
@@ -70,25 +122,55 @@
   </url><url>
     <loc>https://renmagdb.github.io/traditions/medieval-scholasticism/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/traditions/metaphysics/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/traditions/mysticism/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/mysticism-and-magic-distinction/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/natural-magic/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/natural-magic-vs.-superstition/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/natural-philosophy/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/traditions/neoplatonism/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/neoplatonism/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/optics/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/paracelsian-reception-and-legacy/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/figures/paracelsus/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/figures/plotinus/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/plotinus-reception-in-renaissance/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/porphyry/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/porphyrys-platonism-and-christianity/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/psychiatry/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/scot/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/era_assignments/renaissance/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/renaissance-experimentalism/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/traditions/ritual-magic/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/ritual-magic-in-neoplatonism/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/figures/fludd/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/roger_bacon/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/roger-bacon-and-magic/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/rosicrucian-philosophy-and-practice/</loc>
   </url><url>
@@ -96,16 +178,42 @@
   </url><url>
     <loc>https://renmagdb.github.io/traditions/rosicrucianism/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/scots-influence-on-magic-discourse/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/skepticism-and-empiricism/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/steganography-as-occult-art/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/theology/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/theosophical-transmission/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/theosophy/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/traditions/theurgy/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/traditions/theurgy_goeteia/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/theurgy-and-natural-philosophy/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/theurgy-as-divine-operation/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/figures/aquinas/</loc>
   </url><url>
     <loc>https://renmagdb.github.io/traditions/</loc>
   </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/transmission-of-greek-philosophy/</loc>
+  </url><url>
     <loc>https://renmagdb.github.io/historiographic_debates/transmission-of-islamic-knowledge/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/transmission-of-neoplatonism/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/weyer-and-witchcraft-reform/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/historiographic_debates/witchcraft-and-delusion/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/witchcraft-skepticism/</loc>
+  </url><url>
+    <loc>https://renmagdb.github.io/traditions/witchcraft/</loc>
   </url>
 </urlset>
