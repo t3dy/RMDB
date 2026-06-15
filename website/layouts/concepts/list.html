@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="concepts-index">
+  <header class="section-header">
+    <h1>Concepts</h1>
+    <p class="section-desc">Encyclopedia articles on the major ideas, practices, and scholarly frameworks of Renaissance magic and Western esotericism. Each entry treats its subject as a scholarly category requiring historical analysis, following the methodological approach of Copenhaver, Hanegraaff, and Walker.</p>
+    <p class="entry-count">{{ len .Pages }} articles</p>
+  </header>
+
+  {{ $byCategory := .Pages.GroupByParam "category" }}
+  {{ range $byCategory }}
+  <section class="concept-category-group">
+    <h2 class="category-heading">{{ .Key }}</h2>
+    <div class="concept-grid">
+      {{ range .Pages.ByTitle }}
+      <article class="concept-card">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ if .Params.summary }}
+        <p class="card-summary">{{ .Params.summary }}</p>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</div>
+{{ end }}

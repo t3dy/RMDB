@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="concept-article">
+  <header class="concept-header">
+    <div class="concept-category">{{ .Params.category }}</div>
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.summary }}
+    <p class="concept-summary">{{ .Params.summary }}</p>
+    {{ end }}
+    <div class="concept-meta">
+      {{ if .Params.related_figures }}
+      <div class="meta-group">
+        <span class="meta-label">Key figures:</span>
+        {{ range .Params.related_figures }}
+        <a class="meta-tag" href="/figures/">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ if .Params.related_concepts }}
+      <div class="meta-group">
+        <span class="meta-label">Related concepts:</span>
+        {{ range .Params.related_concepts }}
+        <a class="meta-tag" href="/concepts/{{ . | urlize }}/">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </header>
+  <div class="concept-body">
+    {{ .Content }}
+  </div>
+  <footer class="concept-footer">
+    <a href="/concepts/" class="back-link">← All Concepts</a>
+  </footer>
+</article>
+{{ end }}
