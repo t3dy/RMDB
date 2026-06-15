@@ -1,0 +1,113 @@
+{
+  "artifact_id": "raw_ext_yates-giordano-bruno-1964-intro",
+  "artifact_type": "raw_extraction",
+  "schema_version": "1.0",
+  "source_id": "yates-giordano-bruno-1964",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "generated_by": "scripts/artifact_pipeline.py (LLM_ASSISTED)",
+  "section_id": "introduction-and-chapter-1",
+  "extraction_scope": "Introduction and Chapter 1 ('Hermes Trismegistus') of Yates (1964), covering approximately pp. 1–44. Captures entities, topics, key terms, claims, and passages as they appear in the text without interpretive elaboration.",
+  "extracted_entities": {
+    "people": [
+      "Giordano Bruno",
+      "Marsilio Ficino",
+      "Cosimo de' Medici",
+      "Hermes Trismegistus",
+      "Pico della Mirandola",
+      "Lactantius",
+      "Augustine",
+      "Copernicus",
+      "Lodovico Lazzarelli"
+    ],
+    "works": [
+      "Corpus Hermeticum",
+      "Asclepius",
+      "De occulta philosophia (Agrippa)",
+      "Pimander (Ficino translation)",
+      "De vita coelitus comparanda (Ficino)"
+    ],
+    "places": [
+      "Florence",
+      "Alexandria",
+      "Egypt",
+      "Rome"
+    ],
+    "dates": [
+      "1463 (Ficino's translation of Pimander)",
+      "1st–3rd century AD (dating debate for Corpus Hermeticum)",
+      "1614 (Casaubon's dating)",
+      "1543 (Copernicus, De revolutionibus)"
+    ],
+    "institutions": [
+      "Platonic Academy (Florence)",
+      "Medici court"
+    ],
+    "traditions": [
+      "Hermetism",
+      "Neoplatonism",
+      "Egyptian religion (as invoked in the text)"
+    ]
+  },
+  "key_terms": [
+    "Hermes Trismegistus",
+    "Corpus Hermeticum",
+    "Pimander",
+    "prisca theologia",
+    "prisca magia",
+    "mens",
+    "Asclepius",
+    "natural magic",
+    "theurgy",
+    "animism",
+    "Egyptian religion",
+    "Renaissance Hermetism"
+  ],
+  "explicit_topics": [
+    "Origin and transmission of the Corpus Hermeticum",
+    "Ficino's translation of the Hermetic texts for Cosimo de' Medici",
+    "Ancient dating attributed to Hermetic texts before Casaubon (1614)",
+    "The figure of Hermes Trismegistus in patristic and Renaissance tradition",
+    "Animism and the world-soul in Hermetic thought",
+    "The relationship between Hermetism and Egyptian religion as understood by Renaissance readers",
+    "Bruno's use of Hermetic sources"
+  ],
+  "substances_materials": [],
+  "images_symbols_motifs": [
+    "Egyptian hieroglyphs as magic signs (as discussed by Yates)",
+    "Sun worship imagery in Hermetic texts"
+  ],
+  "rituals_practices_procedures": [
+    "Talismanic magic (discussed in relation to Ficino and Asclepius)",
+    "Prayer and contemplation in Hermetic tradition"
+  ],
+  "claims_made_by_source": [
+    "Yates argues that the Renaissance rediscovery of the Corpus Hermeticum was foundational to the intellectual transformations of the period.",
+    "Yates asserts that Bruno's philosophy cannot be understood without understanding Renaissance Hermetism.",
+    "Yates presents the Hermetic texts as regarded by Renaissance readers as ancient Egyptian wisdom predating Plato and Moses.",
+    "Yates contends that Ficino's translation of the Hermetic corpus in 1463 was a decisive moment in the history of Renaissance thought.",
+    "Yates describes Bruno as moving within a Hermetic-Neoplatonic tradition rather than a proto-scientific one in the modern sense.",
+    "Yates claims that the animism and world-soul doctrines of the Hermetic texts shaped Bruno's cosmological thinking."
+  ],
+  "important_passages": [
+    {
+      "excerpt": "The Renaissance magus…regarded himself as a profound student of the divine secrets hidden in nature.",
+      "location": "Introduction, approx. p. 2",
+      "significance": "Defines Yates's central subject: the Renaissance magus as scholar-practitioner distinct from the medieval sorcerer."
+    },
+    {
+      "excerpt": "Ficino translated the Corpus Hermeticum in 1463 at the command of Cosimo de' Medici, who instructed him to interrupt his translation of Plato in order to translate the newly arrived manuscript.",
+      "location": "Chapter 1, approx. p. 13",
+      "significance": "Key historical claim about the priority given to Hermetic translation over Plato — central to Yates's argument about its importance."
+    },
+    {
+      "excerpt": "The 'Egyptian' writings of Hermes Trismegistus were believed in the Renaissance to be of enormous antiquity, earlier even than the writings of Plato…",
+      "location": "Chapter 1, approx. p. 2",
+      "significance": "Documents the core assumption Renaissance readers brought to the Hermetic texts — the prisca theologia doctrine."
+    }
+  ],
+  "uncertainties": [
+    "Page numbers are approximate — drawn from secondary memory of the text rather than direct extraction from a processed PDF. Should be verified against actual PDF extraction.",
+    "Some passages quoted from memory may not be verbatim; should be cross-checked against the text."
+  ],
+  "extraction_notes": "This is a fixture example for schema testing purposes. In production, extraction would be performed on the processed markdown in md/ using scripts/extract_abstracts.py or a dedicated LLM extraction prompt against the raw PDF text."
+}

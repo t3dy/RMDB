@@ -1,0 +1,1848 @@
+[
+  {
+    "id": 59,
+    "year": -360,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Plato's Timaeus composed",
+    "description": "Plato's cosmological dialogue describes the Demiurge's creation of the world-soul through mathematical ratios. The only Platonic text available in substantial Latin translation throughout the Middle Ages, the Timaeus supplies the philosophical foundation — world-soul, cosmic sympathy, mathematical harmony — on which Ficino and Renaissance natural magicians build their accounts of celestial influence.",
+    "location_name": "Athens, Greece",
+    "lat": 37.98,
+    "lon": 23.73,
+    "figures": [
+      "Plato"
+    ]
+  },
+  {
+    "id": 27,
+    "year": 204,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Plotinus",
+    "description": "Plotinus, the founder of Neoplatonism, was born in Lycopolis, Egypt. His metaphysical system of the One, Intellect, and Soul would become the philosophical architecture of Renaissance magical thought.",
+    "location_name": "Lycopolis, Egypt",
+    "lat": 27.19,
+    "lon": 31.18,
+    "figures": [
+      "Plotinus"
+    ]
+  },
+  {
+    "id": 60,
+    "year": 234,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Porphyry",
+    "description": "Porphyry of Tyre was born in what is now Lebanon. His editing of Plotinus's Enneads, his Isagoge (Introduction to the Categories), and his Life of Plotinus were to become foundational texts of medieval philosophy. His Letter to Anebo challenging the metaphysical basis of theurgy provoked Iamblichus's De Mysteriis as its systematic refutation.",
+    "location_name": "Tyre, Lebanon",
+    "lat": 33.27,
+    "lon": 35.2,
+    "figures": [
+      "Porphyry"
+    ]
+  },
+  {
+    "id": 31,
+    "year": 245,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Iamblichus",
+    "description": "Iamblichus was born in Chalcis, Syria. His defense of theurgy against purely contemplative ascent provided the theoretical basis for Renaissance ceremonial magic.",
+    "location_name": "Chalcis, Syria",
+    "lat": 36.17,
+    "lon": 37.05,
+    "figures": [
+      "Iamblichus"
+    ]
+  },
+  {
+    "id": 61,
+    "year": 250,
+    "year_end": null,
+    "event_type": "INSTITUTION",
+    "title": "Plotinus opens school in Rome",
+    "description": "Plotinus begins teaching in Rome under the patronage of the senator Rogatianus, eventually attracting disciples including Porphyry, Amelius, and the physician Eustochius. For the next two decades he composes the treatises Porphyry will arrange as the Enneads — the foundational text of the philosophical tradition the Renaissance would call Neoplatonism.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.49,
+    "figures": [
+      "Plotinus"
+    ]
+  },
+  {
+    "id": 62,
+    "year": 263,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Porphyry joins Plotinus in Rome",
+    "description": "Porphyry of Tyre arrives in Rome as a student of Plotinus. He will spend six years in direct study, edit and arrange the Enneads, and write the sole surviving biography of Plotinus — the primary source for Neoplatonism's origins and ethos.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.49,
+    "figures": [
+      "Plotinus",
+      "Porphyry"
+    ]
+  },
+  {
+    "id": 28,
+    "year": 270,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Plotinus",
+    "description": "Plotinus died in Campania. His Enneads, compiled by Porphyry, would wait over a millennium for Ficino to translate them into Latin.",
+    "location_name": "Campania, Italy",
+    "lat": 41.05,
+    "lon": 14.25,
+    "figures": [
+      "Plotinus"
+    ]
+  },
+  {
+    "id": 63,
+    "year": 300,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Iamblichus writes De Mysteriis",
+    "description": "Iamblichus composes De Mysteriis Aegyptiorum, presenting the most systematic philosophical defense of theurgy in the ancient world. Its argument that divinely instituted rites prepare the soul for illumination that philosophy alone cannot achieve — and that their power derives from divine essence, not human convention — will underwrite Renaissance ceremonial magic's philosophical self-defense against charges of demonic operation.",
+    "location_name": "Apamea, Syria",
+    "lat": 35.43,
+    "lon": 36.4,
+    "figures": [
+      "Iamblichus"
+    ]
+  },
+  {
+    "id": 64,
+    "year": 301,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Porphyry publishes the Enneads",
+    "description": "Porphyry's edition of Plotinus's Enneads appears, arranging fifty-four treatises into six groups of nine. The Enneads will wait over a thousand years for a Latin translation: Ficino's version, completed in 1492, makes the full Plotinian system available to the Renaissance West for the first time and enables Ficino's philosophical grounding of natural magic in world-soul doctrine.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.49,
+    "figures": [
+      "Plotinus",
+      "Porphyry"
+    ]
+  },
+  {
+    "id": 65,
+    "year": 305,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Porphyry",
+    "description": "Porphyry died at approximately 71. His Isagoge became the standard logic textbook of the medieval university, sparking the dispute over universals that ran through scholasticism for centuries. His lost work Against the Christians complicated the reception of Neoplatonism in the Christian tradition for scholars who knew of its existence.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.49,
+    "figures": [
+      "Porphyry"
+    ]
+  },
+  {
+    "id": 32,
+    "year": 325,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Iamblichus",
+    "description": "Iamblichus died. His De Mysteriis established the principle that the soul requires ritual mediation through material symbols to reach the divine.",
+    "location_name": "Syria",
+    "lat": 35.0,
+    "lon": 38.0,
+    "figures": [
+      "Iamblichus"
+    ]
+  },
+  {
+    "id": 29,
+    "year": 412,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Proclus",
+    "description": "Proclus was born in Constantinople. The last great systematic Neoplatonist, his hierarchical theology influenced Ficino and provided resources for Kabbalistic-Neoplatonic synthesis.",
+    "location_name": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.97,
+    "figures": [
+      "Proclus"
+    ]
+  },
+  {
+    "id": 66,
+    "year": 420,
+    "year_end": 430,
+    "event_type": "PUBLICATION",
+    "title": "Augustine's City of God condemns Hermetic magic",
+    "description": "Augustine's City of God (413-426) includes his influential condemnation of the Asclepius passage describing Egyptian priests who animated statues by drawing down gods and daemons. Augustine reads this as straightforward demonic operation and forbidden idolatry. D.P. Walker's analysis shows Ficino was acutely aware of this condemnation and carefully framed his De Vita talismanic system to avoid the same charge.",
+    "location_name": "Hippo Regius, Algeria",
+    "lat": 36.87,
+    "lon": 7.76,
+    "figures": [
+      "Hermes Trismegistus"
+    ]
+  },
+  {
+    "id": 67,
+    "year": 450,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Proclus writes Elements of Theology",
+    "description": "Proclus composes the Elements of Theology, axiomatizing Neoplatonic metaphysics into 211 propositions on the model of Euclid. Its hierarchical account of divine emanation — One, divine henads, Intellect, Soul, Nature — provides Renaissance Kabbalists and natural magicians with the philosophical infrastructure for their systems of angelic hierarchy and celestial influence.",
+    "location_name": "Athens, Greece",
+    "lat": 37.98,
+    "lon": 23.73,
+    "figures": [
+      "Proclus"
+    ]
+  },
+  {
+    "id": 30,
+    "year": 485,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Proclus",
+    "description": "Proclus died in Athens, the last head of the Platonic Academy before Justinian closed it in 529.",
+    "location_name": "Athens, Greece",
+    "lat": 37.98,
+    "lon": 23.73,
+    "figures": [
+      "Proclus"
+    ]
+  },
+  {
+    "id": 68,
+    "year": 500,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Pseudo-Dionysius composes Celestial Hierarchy",
+    "description": "The Pseudo-Dionysian Corpus — Celestial Hierarchy, Ecclesiastical Hierarchy, Mystical Theology, Divine Names — appears, attributed to Dionysius the Areopagite but probably composed in Syria around 500 CE. Its hierarchical angelology, integrating Christian theology with Proclean Neoplatonism, shapes medieval and Renaissance conceptions of the angelic orders that populate the magic literature from Agrippa's De Occulta Philosophia to Dee's Enochian system.",
+    "location_name": "Syria",
+    "lat": 35.0,
+    "lon": 38.0,
+    "figures": []
+  },
+  {
+    "id": 69,
+    "year": 529,
+    "year_end": null,
+    "event_type": "INSTITUTION",
+    "title": "Justinian closes the Platonic Academy in Athens",
+    "description": "Emperor Justinian's edict forbids pagans from teaching philosophy, closing the Platonic Academy in Athens. The last Neoplatonic philosophers — Damascius, Simplicius, and others — emigrate to Persia. This ends institutionalized pagan philosophical teaching in the Roman Empire and marks the point at which Neoplatonism's transmission to the medieval West passes through Christian channels — Pseudo-Dionysius, Boethius, and later the Arabic philosophical tradition.",
+    "location_name": "Athens, Greece",
+    "lat": 37.98,
+    "lon": 23.73,
+    "figures": [
+      "Proclus"
+    ]
+  },
+  {
+    "id": 70,
+    "year": 600,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Sefer Yetzirah achieves final form",
+    "description": "The Sefer Yetzirah (Book of Formation), the oldest Kabbalistic text, achieves its roughly final form, having been composed in stages probably between the third and seventh centuries CE. Its account of the universe as created through twenty-two Hebrew letters and ten primordial numbers (sefirot) will generate centuries of commentary and provide Renaissance Christian Kabbalists — Pico, Reuchlin, Agrippa — with letter-number symbolism for their ceremonial magic systems.",
+    "location_name": "Palestine",
+    "lat": 31.77,
+    "lon": 35.23,
+    "figures": []
+  },
+  {
+    "id": 33,
+    "year": 801,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Al-Kindi",
+    "description": "Al-Kindi was born in Kufa, Iraq. His De Radiis Stellarum theorized universal radiation as the mechanism of astrological influence, profoundly shaping Latin magical theory.",
+    "location_name": "Kufa, Iraq",
+    "lat": 32.03,
+    "lon": 44.4,
+    "figures": [
+      "Al-Kindi"
+    ]
+  },
+  {
+    "id": 71,
+    "year": 820,
+    "year_end": 833,
+    "event_type": "INSTITUTION",
+    "title": "House of Wisdom translation project in Baghdad",
+    "description": "Under the Abbasid caliphs al-Ma'mun and al-Mu'tasim, the House of Wisdom (Bayt al-Hikma) in Baghdad becomes the center of the most ambitious translation project in history: Greek scientific and philosophical texts into Arabic. Al-Kindi is among the scholars active in this project. The resulting Arabic synthesis of Greek philosophy is what medieval Europe will receive through the twelfth-century Toledo translations.",
+    "location_name": "Baghdad, Iraq",
+    "lat": 33.34,
+    "lon": 44.4,
+    "figures": [
+      "Al-Kindi"
+    ]
+  },
+  {
+    "id": 72,
+    "year": 850,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Al-Kindi writes De Radiis Stellarum",
+    "description": "Al-Kindi composes De Radiis Stellarum (On Stellar Rays), theorizing that every substance in the universe continuously emits rays that pervade the cosmos — stellar rays dominating sublunary matter, and human speech, gesture, and will also generating rays capable of acting at a distance. This mathematical theory of natural astral influence, translated into Latin in the twelfth century, provides the theoretical basis for Renaissance natural magic and is a primary source in Liana Saif's Arabic Influences.",
+    "location_name": "Baghdad, Iraq",
+    "lat": 33.34,
+    "lon": 44.4,
+    "figures": [
+      "Al-Kindi"
+    ]
+  },
+  {
+    "id": 34,
+    "year": 873,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Al-Kindi",
+    "description": "Al-Kindi died in Baghdad. His ray theory would reach the Latin West through translation and inform Ficino’s natural magic, though the Arabic source was rarely acknowledged.",
+    "location_name": "Baghdad, Iraq",
+    "lat": 33.34,
+    "lon": 44.4,
+    "figures": [
+      "Al-Kindi"
+    ]
+  },
+  {
+    "id": 73,
+    "year": 980,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Avicenna",
+    "description": "Ibn Sina (Avicenna) was born in Afshana, near Bukhara (modern Uzbekistan). His vast Arabic synthesis of Aristotelian philosophy and Galenic medicine — including the Shifa (Book of Healing) and Canon of Medicine — shaped European intellectual life from the twelfth century onward. His pneumatic psychology (the imagination's power over the body) provided key theoretical resources for Renaissance natural magic's account of how mind acts on matter.",
+    "location_name": "Bukhara, Uzbekistan",
+    "lat": 39.77,
+    "lon": 64.42,
+    "figures": [
+      "Avicenna"
+    ]
+  },
+  {
+    "id": 74,
+    "year": 1037,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Avicenna",
+    "description": "Avicenna died in Hamadan at approximately 57. His Canon of Medicine remained the standard medical text in European universities into the seventeenth century. His spirit theory and account of the imaginative faculty — particularly the power of the imagination to act on external matter at a distance — ground the theory of fascination and the evil eye that Ficino and Agrippa develop.",
+    "location_name": "Hamadan, Iran",
+    "lat": 34.8,
+    "lon": 48.52,
+    "figures": [
+      "Avicenna"
+    ]
+  },
+  {
+    "id": 75,
+    "year": 1150,
+    "year_end": 1175,
+    "event_type": "TRANSLATION",
+    "title": "Gerard of Cremona translates Arabic texts into Latin",
+    "description": "Gerard of Cremona, working in Toledo, translates into Latin dozens of Arabic scientific and philosophical texts, including al-Kindi's works, Avicenna's Canon of Medicine, and the Liber de Causis. This translation enterprise makes the Arabic-mediated synthesis of Greek philosophy available to Latin Europe and transforms the intellectual curriculum — producing what Liana Saif has called the Arabic layer of the Renaissance esoteric inheritance.",
+    "location_name": "Toledo, Spain",
+    "lat": 39.86,
+    "lon": -4.02,
+    "figures": []
+  },
+  {
+    "id": 76,
+    "year": 1180,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Liber de Causis circulates in Latin",
+    "description": "The Liber de Causis (Book of Causes), a selective compilation from Proclus's Elements of Theology made in the Arabic philosophical tradition, circulates in Latin translation attributed to Aristotle. Its hierarchical account of divine causation — first cause, intelligence, soul, nature — becomes a standard philosophical text before Thomas Aquinas identifies it as Proclean in 1268. This misattribution illustrates how deeply Neoplatonism had infiltrated the 'Aristotelian' curriculum.",
+    "location_name": "Paris, France",
+    "lat": 48.85,
+    "lon": 2.35,
+    "figures": []
+  },
+  {
+    "id": 37,
+    "year": 1200,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Albertus Magnus",
+    "description": "Albertus Magnus was born in Lauingen, Bavaria. His Speculum Astronomiae would provide the most influential medieval framework for distinguishing licit from illicit magic.",
+    "location_name": "Lauingen, Germany",
+    "lat": 48.57,
+    "lon": 10.43,
+    "figures": [
+      "Albertus Magnus"
+    ]
+  },
+  {
+    "id": 39,
+    "year": 1214,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Roger Bacon",
+    "description": "Roger Bacon was born in Ilchester, England. His advocacy of scientia experimentalis alongside natural magic anticipated the empirical dimension of Renaissance philosophy.",
+    "location_name": "Ilchester, England",
+    "lat": 51.01,
+    "lon": -2.69,
+    "figures": [
+      "Roger Bacon"
+    ]
+  },
+  {
+    "id": 77,
+    "year": 1225,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Thomas Aquinas",
+    "description": "Thomas Aquinas was born in Roccasecca, in the Kingdom of Sicily. His Dominican formation and eventual synthesis of Aristotelian philosophy with Christian theology in the Summa Theologiae establishes the canonical framework within which the Church assesses magical claims — categories of licit natural operation and illicit demonic invocation that Renaissance practitioners from Ficino to Dee must navigate.",
+    "location_name": "Roccasecca, Italy",
+    "lat": 41.56,
+    "lon": 13.66,
+    "figures": [
+      "Thomas Aquinas"
+    ]
+  },
+  {
+    "id": 23,
+    "year": 1232,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Ramon Llull",
+    "description": "Ramon Llull was born in Palma de Mallorca. His combinatory Ars Magna would be transformed by Bruno into a Hermetic memory system.",
+    "location_name": "Palma de Mallorca, Spain",
+    "lat": 39.57,
+    "lon": 2.65,
+    "figures": [
+      "Ramon Llull"
+    ]
+  },
+  {
+    "id": 78,
+    "year": 1245,
+    "year_end": 1248,
+    "event_type": "INSTITUTION",
+    "title": "Aquinas studies under Albertus Magnus",
+    "description": "The young Thomas Aquinas studies natural philosophy under Albertus Magnus in Cologne and follows him to Paris. Albertus's encyclopedic approach to Arabic philosophy and his classification of magical texts (Speculum Astronomiae) shapes Aquinas's encounter with the full range of ancient and Arabic learning — and his eventual demarcation of legitimate from illegitimate magical practice.",
+    "location_name": "Cologne, Germany",
+    "lat": 50.94,
+    "lon": 6.96,
+    "figures": [
+      "Albertus Magnus",
+      "Thomas Aquinas"
+    ]
+  },
+  {
+    "id": 79,
+    "year": 1256,
+    "year_end": null,
+    "event_type": "TRANSLATION",
+    "title": "Picatrix translated into Castilian for Alfonso X",
+    "description": "At the court of Alfonso X of Castile ('the Wise'), the Arabic Ghayat al-Hakim is translated into Castilian as the Picatrix — the first step in the Latin West's access to the most comprehensive medieval manual of astrological image magic. The work's four books on planetary talismans, fumigations, and invocations of planetary spirits will be absorbed by Ficino's De Vita III and Agrippa's De Occulta Philosophia.",
+    "location_name": "Toledo, Spain",
+    "lat": 39.86,
+    "lon": -4.02,
+    "figures": []
+  },
+  {
+    "id": 80,
+    "year": 1260,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Albertus Magnus writes Speculum Astronomiae",
+    "description": "Albertus Magnus composes the Speculum Astronomiae, the most systematic medieval classification of astrological and magical texts — distinguishing acceptable astrological prediction from condemned demonic invocation by examining each text's operations and the spirits invoked. The Speculum catalogues the available magical library and establishes the canonical framework for the learned magic tradition that Frank Klaassen's Transformations of Magic examines.",
+    "location_name": "Cologne, Germany",
+    "lat": 50.94,
+    "lon": 6.96,
+    "figures": [
+      "Albertus Magnus"
+    ]
+  },
+  {
+    "id": 81,
+    "year": 1267,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Roger Bacon presents Opus Majus to Pope Clement IV",
+    "description": "Roger Bacon presents his encyclopedic Opus Majus to Pope Clement IV, arguing for university reform centered on mathematics, optics, and experimental method. His application of al-Kindi's ray theory to explain apparently miraculous effects crystallizes a key tension: the boundary between natural philosophy explaining magical-seeming phenomena and genuine magical operation. His discussions of language's power over matter prefigure Renaissance debates about the efficacy of divine names.",
+    "location_name": "Oxford, England",
+    "lat": 51.75,
+    "lon": -1.26,
+    "figures": [
+      "Roger Bacon"
+    ]
+  },
+  {
+    "id": 82,
+    "year": 1268,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Aquinas identifies Liber de Causis as Proclean",
+    "description": "In his Commentary on the Liber de Causis, Thomas Aquinas demonstrates that the text is a compilation from Proclus's Elements of Theology rather than a work of Aristotle. This philological discovery reveals the depth of Neoplatonist infiltration into the 'Aristotelian' medieval curriculum and forces a renegotiation of the relationship between Aristotle, Proclus, and Christian philosophy.",
+    "location_name": "Paris, France",
+    "lat": 48.85,
+    "lon": 2.35,
+    "figures": [
+      "Proclus",
+      "Thomas Aquinas"
+    ]
+  },
+  {
+    "id": 83,
+    "year": 1274,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Thomas Aquinas",
+    "description": "Thomas Aquinas died at the monastery of Fossanova, aged approximately 49. His Summa Theologiae's treatment of magic, demons, and the power of words establishes the authoritative framework within which the Church assesses magical claims for the remainder of the medieval and Renaissance periods. His categories of licit natural operation and illicit demonic invocation structure the debates Ficino, Agrippa, and Dee navigate.",
+    "location_name": "Fossanova, Italy",
+    "lat": 41.44,
+    "lon": 13.15,
+    "figures": [
+      "Thomas Aquinas"
+    ]
+  },
+  {
+    "id": 38,
+    "year": 1280,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Albertus Magnus",
+    "description": "Albertus Magnus died in Cologne. His taxonomy of acceptable and condemnable magical practices framed how Renaissance magi argued for their own legitimacy.",
+    "location_name": "Cologne, Germany",
+    "lat": 50.94,
+    "lon": 6.96,
+    "figures": [
+      "Albertus Magnus"
+    ]
+  },
+  {
+    "id": 84,
+    "year": 1280,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Moses de León composes the Zohar in Castile",
+    "description": "Moses de León composes the Zohar (Book of Splendor) in Castile, casting it as the mystical teachings of the second-century Rabbi Shimon bar Yochai. The Zohar's elaborate theosophy — ten sefirot as dynamic divine attributes, cosmic exile and redemption, the erotic imagery of divine union — becomes the primary text through which Renaissance Christian Kabbalists approach Jewish mysticism. Pico's 900 Conclusiones and Reuchlin's De Arte Cabalistica both draw on Zoharic traditions.",
+    "location_name": "Guadalajara, Spain",
+    "lat": 40.63,
+    "lon": -3.17,
+    "figures": [
+      "Moses de León"
+    ]
+  },
+  {
+    "id": 40,
+    "year": 1292,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Roger Bacon",
+    "description": "Roger Bacon died in Oxford. His discussions of the power of words and mathematical figures influenced later magical thought.",
+    "location_name": "Oxford, England",
+    "lat": 51.75,
+    "lon": -1.26,
+    "figures": [
+      "Roger Bacon"
+    ]
+  },
+  {
+    "id": 85,
+    "year": 1300,
+    "year_end": null,
+    "event_type": "TRANSLATION",
+    "title": "Picatrix translated into Latin",
+    "description": "The Picatrix is translated from Castilian into Latin, making the most comprehensive medieval astrological-image magic manual available to Latin readers. The work's account of planetary talismans, spirit invocations, and the philosophical basis of astral magic will be absorbed — often without citation — by Ficino's De Vita III and Agrippa's second book of De Occulta Philosophia.",
+    "location_name": "Paris, France",
+    "lat": 48.85,
+    "lon": 2.35,
+    "figures": []
+  },
+  {
+    "id": 24,
+    "year": 1316,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Ramon Llull",
+    "description": "Ramon Llull died in Tunis, reportedly stoned by a crowd while on a missionary journey. His Art survived to become one of the most creatively repurposed intellectual systems in Renaissance philosophy.",
+    "location_name": "Palma de Mallorca, Spain",
+    "lat": 39.57,
+    "lon": 2.65,
+    "figures": [
+      "Ramon Llull"
+    ]
+  },
+  {
+    "id": 35,
+    "year": 1401,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Nicholas of Cusa",
+    "description": "Nicholas of Cusa was born in Kues, Germany. His doctrine of learned ignorance and coincidence of opposites influenced both Pico and Bruno.",
+    "location_name": "Kues, Germany",
+    "lat": 49.91,
+    "lon": 7.13,
+    "figures": [
+      "Nicholas of Cusa"
+    ]
+  },
+  {
+    "id": 9,
+    "year": 1433,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Marsilio Ficino",
+    "description": "Marsilio Ficino was born in Figline Valdarno, near Florence. Under Medici patronage, he would translate the Corpus Hermeticum, Plato, and Plotinus, creating the intellectual infrastructure for Renaissance magical philosophy.",
+    "location_name": "Figline Valdarno, Italy",
+    "lat": 43.62,
+    "lon": 11.46,
+    "figures": [
+      "Marsilio Ficino"
+    ]
+  },
+  {
+    "id": 86,
+    "year": 1440,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Cusa publishes De Docta Ignorantia",
+    "description": "Nicholas of Cusa presents De Docta Ignorantia (On Learned Ignorance) to Cardinal Cesarini in Venice, arguing that the infinite God exceeds all rational comprehension and can be approached only through learned acknowledgment of ignorance. His cosmological corollary — that the infinite universe has no fixed center — directly influences Giordano Bruno, who acknowledged Cusa as a predecessor for his infinite cosmology.",
+    "location_name": "Venice, Italy",
+    "lat": 45.44,
+    "lon": 12.33,
+    "figures": [
+      "Nicholas of Cusa"
+    ]
+  },
+  {
+    "id": 87,
+    "year": 1453,
+    "year_end": null,
+    "event_type": "POLITICAL",
+    "title": "Fall of Constantinople",
+    "description": "The Ottoman conquest of Constantinople under Mehmed II ends the Byzantine Empire and accelerates the emigration of Greek scholars to Italy, bringing manuscripts of Plato, Proclus, and Plotinus westward. The resulting intensification of access to Greek philosophical texts directly enables the Platonic revival that Ficino leads at the Medici court — including the Corpus Hermeticum manuscript that reaches Florence in 1460.",
+    "location_name": "Constantinople",
+    "lat": 41.01,
+    "lon": 28.97,
+    "figures": []
+  },
+  {
+    "id": 13,
+    "year": 1455,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Johannes Reuchlin",
+    "description": "Johannes Reuchlin was born in Pforzheim, Germany. He would become the most accomplished Christian Hebraist of his generation and a founder of Christian Cabala.",
+    "location_name": "Pforzheim, Germany",
+    "lat": 48.89,
+    "lon": 8.7,
+    "figures": [
+      "Johannes Reuchlin"
+    ]
+  },
+  {
+    "id": 41,
+    "year": 1460,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Ficino begins translating Corpus Hermeticum",
+    "description": "At the request of Cosimo de' Medici, Marsilio Ficino begins translating the Greek Hermetica into Latin, prioritizing it over his Plato translations.",
+    "location_name": "Florence, Italy",
+    "lat": 43.78,
+    "lon": 11.25,
+    "figures": []
+  },
+  {
+    "id": 11,
+    "year": 1462,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Johannes Trithemius",
+    "description": "Johannes Trithemius was born in Trittenheim, Germany. As abbot of Sponheim, he would produce the Steganographia — a work that embeds genuine cryptography within an angelic magical framework.",
+    "location_name": "Trittenheim, Germany",
+    "lat": 49.83,
+    "lon": 6.92,
+    "figures": [
+      "Johannes Trithemius"
+    ]
+  },
+  {
+    "id": 88,
+    "year": 1462,
+    "year_end": null,
+    "event_type": "INSTITUTION",
+    "title": "Cosimo de' Medici establishes Platonic Academy at Careggi",
+    "description": "Cosimo de' Medici establishes the Platonic Academy at his villa in Careggi outside Florence, installing Marsilio Ficino as its head. The Academy becomes the center of the Italian Renaissance engagement with Platonism, Hermetism, and Neoplatonism — producing the intellectual synthesis that runs through Pico, Agrippa, and Bruno and that gives this corpus its philosophical coherence.",
+    "location_name": "Florence, Italy",
+    "lat": 43.81,
+    "lon": 11.24,
+    "figures": [
+      "Marsilio Ficino"
+    ]
+  },
+  {
+    "id": 3,
+    "year": 1463,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Giovanni Pico della Mirandola",
+    "description": "Giovanni Pico della Mirandola was born in Mirandola, Italy. His 900 Conclusions and Oration on the Dignity of Man would become defining documents of Renaissance syncretic philosophy.",
+    "location_name": "Mirandola, Italy",
+    "lat": 44.88,
+    "lon": 11.07,
+    "figures": [
+      "Giovanni Pico della Mirandola"
+    ]
+  },
+  {
+    "id": 42,
+    "year": 1463,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Ficino completes Pimander translation",
+    "description": "Ficino's Latin translation of the Corpus Hermeticum circulates in manuscript, establishing Hermes Trismegistus as a prisca theologia authority.",
+    "location_name": "Florence, Italy",
+    "lat": 43.78,
+    "lon": 11.25,
+    "figures": []
+  },
+  {
+    "id": 36,
+    "year": 1464,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Nicholas of Cusa",
+    "description": "Nicholas of Cusa died in Todi, Italy. His philosophical legacy flowed into the Renaissance through both Ficino (who read him) and Bruno (who radicalized him).",
+    "location_name": "Todi, Italy",
+    "lat": 42.78,
+    "lon": 12.41,
+    "figures": [
+      "Nicholas of Cusa"
+    ]
+  },
+  {
+    "id": 89,
+    "year": 1482,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Ficino publishes Theologia Platonica",
+    "description": "Marsilio Ficino publishes his Theologia Platonica de Immortalitate Animarum (eighteen books), arguing that Platonic philosophy confirms Christian doctrine and demonstrating the immortality of the soul through Neoplatonic metaphysics. The work establishes the philosophical framework — world-soul, spiritus, celestial-terrestrial sympathy — within which all subsequent Renaissance magical philosophy operates.",
+    "location_name": "Florence, Italy",
+    "lat": 43.78,
+    "lon": 11.25,
+    "figures": [
+      "Marsilio Ficino"
+    ]
+  },
+  {
+    "id": 7,
+    "year": 1486,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Heinrich Cornelius Agrippa",
+    "description": "Heinrich Cornelius Agrippa was born in Cologne. His De Occulta Philosophia would provide the most comprehensive Renaissance synthesis of magical philosophy.",
+    "location_name": "Cologne, Germany",
+    "lat": 50.94,
+    "lon": 6.96,
+    "figures": [
+      "Heinrich Cornelius Agrippa"
+    ]
+  },
+  {
+    "id": 43,
+    "year": 1486,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Pico's 900 Theses",
+    "description": "Giovanni Pico della Mirandola publishes his 900 Conclusiones, proposing a syncretic unity of Kabbalah, Hermeticism, and Christian theology.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.49,
+    "figures": []
+  },
+  {
+    "id": 44,
+    "year": 1487,
+    "year_end": null,
+    "event_type": "TRIAL",
+    "title": "Papal condemnation of Pico's Theses",
+    "description": "Pope Innocent VIII condemns 13 of Pico's 900 theses as heretical. Pico flees to France and is briefly imprisoned.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.49,
+    "figures": []
+  },
+  {
+    "id": 90,
+    "year": 1487,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Pico publishes Heptaplus",
+    "description": "Giovanni Pico della Mirandola publishes the Heptaplus, a sevenfold allegorical commentary on Genesis demonstrating through Kabbalistic and Neoplatonic methods that the biblical creation narrative encodes a complete philosophical cosmology. The work demonstrates Pico's command of Hebrew and his technique of reading Kabbalah as a confirmation of Christian doctrine — the approach that Reuchlin and Agrippa will systematize.",
+    "location_name": "Florence, Italy",
+    "lat": 43.78,
+    "lon": 11.25,
+    "figures": [
+      "Giovanni Pico della Mirandola"
+    ]
+  },
+  {
+    "id": 45,
+    "year": 1489,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Ficino's De Vita",
+    "description": "Ficino publishes Three Books on Life, integrating Neoplatonic philosophy with astrological medicine and natural magic.",
+    "location_name": "Florence, Italy",
+    "lat": 43.78,
+    "lon": 11.25,
+    "figures": []
+  },
+  {
+    "id": 91,
+    "year": 1490,
+    "year_end": null,
+    "event_type": "INSTITUTION",
+    "title": "Pico settles in Florence under Medici protection",
+    "description": "Giovanni Pico della Mirandola, after his flight to France following papal condemnation of his theses, returns to Italy and settles in Florence under Lorenzo de' Medici's protection. His intellectual exchange with Ficino during these years consolidates the synthesis of Hermetism, Kabbalah, and Neoplatonism that Agrippa will systematize in De Occulta Philosophia.",
+    "location_name": "Florence, Italy",
+    "lat": 43.78,
+    "lon": 11.25,
+    "figures": [
+      "Giovanni Pico della Mirandola",
+      "Marsilio Ficino"
+    ]
+  },
+  {
+    "id": 92,
+    "year": 1492,
+    "year_end": null,
+    "event_type": "TRANSLATION",
+    "title": "Ficino completes Plotinus translation",
+    "description": "Marsilio Ficino completes and publishes his Latin translation of Plotinus's Enneads, making the full Plotinian system available to Latin readers for the first time in the work's twelve-hundred-year history. Combined with his Plato translations and the Corpus Hermeticum, this gives Renaissance scholars unprecedented access to the full Neoplatonic philosophical canon.",
+    "location_name": "Florence, Italy",
+    "lat": 43.78,
+    "lon": 11.25,
+    "figures": [
+      "Marsilio Ficino",
+      "Plotinus"
+    ]
+  },
+  {
+    "id": 25,
+    "year": 1493,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Paracelsus",
+    "description": "Paracelsus was born in Einsiedeln, Switzerland. His chemical medicine and doctrine of the tria prima reframed alchemy as a medical art.",
+    "location_name": "Einsiedeln, Switzerland",
+    "lat": 47.13,
+    "lon": 8.74,
+    "figures": [
+      "Paracelsus"
+    ]
+  },
+  {
+    "id": 4,
+    "year": 1494,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Giovanni Pico della Mirandola",
+    "description": "Giovanni Pico della Mirandola died in Florence at thirty-one, possibly poisoned. He left unfinished his massive attack on judicial astrology.",
+    "location_name": "Florence, Italy",
+    "lat": 43.78,
+    "lon": 11.25,
+    "figures": [
+      "Giovanni Pico della Mirandola"
+    ]
+  },
+  {
+    "id": 46,
+    "year": 1494,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Reuchlin's De Verbo Mirifico",
+    "description": "Johannes Reuchlin publishes On the Wonder-Working Word, the first systematic Christian Kabbalistic treatise.",
+    "location_name": "Pforzheim, Germany",
+    "lat": 48.89,
+    "lon": 8.7,
+    "figures": []
+  },
+  {
+    "id": 10,
+    "year": 1499,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Marsilio Ficino",
+    "description": "Marsilio Ficino died in Florence. He had made Plato, Plotinus, and Hermes Trismegistus available to the Latin West and established the philosophical framework within which all subsequent Renaissance magic operated.",
+    "location_name": "Careggi, Italy",
+    "lat": 43.81,
+    "lon": 11.24,
+    "figures": [
+      "Marsilio Ficino"
+    ]
+  },
+  {
+    "id": 93,
+    "year": 1499,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Trithemius composes Steganographia",
+    "description": "Johannes Trithemius composes the Steganographia, presenting a system of planetary spirit communications while embedding genuine cryptographic ciphers within the angelic framework. Trithemius shows the manuscript to Agrippa but restricts wider circulation, fearing misunderstanding. The work will circulate in restricted manuscript for over a century before print publication in 1606, influencing Agrippa's treatment of angel magic.",
+    "location_name": "Sponheim, Germany",
+    "lat": 49.84,
+    "lon": 7.4,
+    "figures": [
+      "Johannes Trithemius"
+    ]
+  },
+  {
+    "id": 94,
+    "year": 1509,
+    "year_end": 1514,
+    "event_type": "TRIAL",
+    "title": "Reuchlin-Pfefferkorn controversy over Jewish books",
+    "description": "Johann Pfefferkorn's campaign to burn Jewish books, including Kabbalistic texts, prompts Reuchlin's formal defense of Hebrew learning in Augenspiegel (1511). Reuchlin is tried for heresy, eventually vindicated, but only after a prolonged controversy that galvanizes the humanist movement, prefigures Reformation debates about ecclesiastical authority, and establishes Christian Kabbalah's legitimacy as a humanist scholarly practice.",
+    "location_name": "Augsburg, Germany",
+    "lat": 48.37,
+    "lon": 10.9,
+    "figures": [
+      "Johannes Reuchlin"
+    ]
+  },
+  {
+    "id": 47,
+    "year": 1510,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Agrippa's De Occulta Philosophia (first draft)",
+    "description": "Agrippa circulates the manuscript of De Occulta Philosophia, synthesizing natural, celestial, and ceremonial magic.",
+    "location_name": "Dôle, France",
+    "lat": 47.1,
+    "lon": 5.5,
+    "figures": []
+  },
+  {
+    "id": 95,
+    "year": 1515,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Johann Weyer",
+    "description": "Johann Weyer was born in Grave, Netherlands. He will study medicine and absorb the humanist skepticism of his teacher Agrippa, then produce in De Praestigiis Daemonum (1563) the most sustained medical and theological critique of witch-trial doctrine in the sixteenth century — arguing that accused witches are victims of diabolical delusion and melancholy, not genuine practitioners of harmful magic.",
+    "location_name": "Grave, Netherlands",
+    "lat": 51.76,
+    "lon": 5.74,
+    "figures": [
+      "Johann Weyer"
+    ]
+  },
+  {
+    "id": 12,
+    "year": 1516,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Johannes Trithemius",
+    "description": "Johannes Trithemius died at the monastery of St. James in Wurzburg. His Polygraphia, the first printed book on cryptography, was published posthumously two years later.",
+    "location_name": "Würzburg, Germany",
+    "lat": 49.79,
+    "lon": 9.95,
+    "figures": [
+      "Johannes Trithemius"
+    ]
+  },
+  {
+    "id": 48,
+    "year": 1516,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Trithemius' Polygraphia published posthumously",
+    "description": "Trithemius' cryptographic treatise is published after his death, becoming a landmark in both cryptography and angel magic.",
+    "location_name": "Oppenheim, Germany",
+    "lat": 49.85,
+    "lon": 8.36,
+    "figures": []
+  },
+  {
+    "id": 49,
+    "year": 1517,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Reuchlin's De Arte Cabalistica",
+    "description": "Reuchlin publishes On the Art of Kabbalah, the most sophisticated Christian Kabbalistic work of the Renaissance.",
+    "location_name": "Hagenau, Alsace",
+    "lat": 48.81,
+    "lon": 7.79,
+    "figures": []
+  },
+  {
+    "id": 96,
+    "year": 1517,
+    "year_end": null,
+    "event_type": "POLITICAL",
+    "title": "Luther's Ninety-Five Theses initiate the Reformation",
+    "description": "Martin Luther posts his Ninety-Five Theses against indulgences in Wittenberg. The Reformation dissolves the unified Catholic framework within which the boundary between licit and illicit magic had been adjudicated, produces new theological arguments about demonic power relevant to witchcraft prosecutions, and creates the Protestant learned culture within which figures like Dee and Scot operate.",
+    "location_name": "Wittenberg, Germany",
+    "lat": 51.87,
+    "lon": 12.65,
+    "figures": []
+  },
+  {
+    "id": 14,
+    "year": 1522,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Johannes Reuchlin",
+    "description": "Johannes Reuchlin died in Stuttgart. His defense of Jewish books and his Kabbalistic treatises had made Christian Cabala a respectable intellectual enterprise.",
+    "location_name": "Stuttgart area, Germany",
+    "lat": 48.78,
+    "lon": 9.18,
+    "figures": [
+      "Johannes Reuchlin"
+    ]
+  },
+  {
+    "id": 1,
+    "year": 1527,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of John Dee",
+    "description": "John Dee was born in Tower Ward, London. He would become Elizabeth I’s court philosopher, owner of one of Europe’s largest private libraries, and the inventor of the Enochian angelic system.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "John Dee"
+    ]
+  },
+  {
+    "id": 97,
+    "year": 1530,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Agrippa publishes De Vanitate Scientiarum",
+    "description": "Heinrich Cornelius Agrippa publishes De Incertitudine et Vanitate Scientiarum, a comprehensive skeptical attack on all human knowledge including magic — one year before De Occulta Philosophia. The paradox of this relationship — De Vanitate apparently recanting De Occulta — has generated extensive scholarly debate about Agrippa's intellectual development, his rhetorical strategy, and whether the two works are meant to be read as a dialectical unit.",
+    "location_name": "Antwerp, Belgium",
+    "lat": 51.22,
+    "lon": 4.4,
+    "figures": [
+      "Heinrich Cornelius Agrippa"
+    ]
+  },
+  {
+    "id": 50,
+    "year": 1531,
+    "year_end": 1533,
+    "event_type": "PUBLICATION",
+    "title": "Agrippa's De Occulta Philosophia published",
+    "description": "The three books of De Occulta Philosophia are published in Cologne, becoming the foundational Renaissance synthesis of magical philosophy.",
+    "location_name": "Antwerp, Belgium",
+    "lat": 51.22,
+    "lon": 4.4,
+    "figures": []
+  },
+  {
+    "id": 8,
+    "year": 1535,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Heinrich Cornelius Agrippa",
+    "description": "Heinrich Cornelius Agrippa died in Grenoble, impoverished and under suspicion of heresy. His De Occulta Philosophia would remain the standard reference for ceremonial magic for over a century.",
+    "location_name": "Grenoble, France",
+    "lat": 45.19,
+    "lon": 5.72,
+    "figures": [
+      "Heinrich Cornelius Agrippa"
+    ]
+  },
+  {
+    "id": 98,
+    "year": 1535,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Giovan Battista Della Porta",
+    "description": "Giovan Battista Della Porta was born in Vico Equense, near Naples. He will found the Accademia dei Segreti (Academy of Secrets), one of the first learned societies devoted to experimental investigation, and produce in Magia Naturalis (1558, expanded 1589) the most widely read Renaissance account of natural magic — rigorously distinguishing natural from demonic magical operation through a philosophy of occult natural properties.",
+    "location_name": "Vico Equense, Italy",
+    "lat": 40.67,
+    "lon": 14.43,
+    "figures": [
+      "Giovan Battista Della Porta"
+    ]
+  },
+  {
+    "id": 99,
+    "year": 1538,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Reginald Scot",
+    "description": "Reginald Scot was born in Brabourne, Kent. His Discoverie of Witchcraft (1584) will become the most comprehensive English-language critique of witch belief and the grimoire tradition — arguing not only that accused witches lack magical power but that demons themselves cannot perform the corporeal operations witch-trial doctrine requires.",
+    "location_name": "Brabourne, England",
+    "lat": 51.12,
+    "lon": 0.96,
+    "figures": [
+      "Reginald Scot"
+    ]
+  },
+  {
+    "id": 26,
+    "year": 1541,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Paracelsus",
+    "description": "Paracelsus died in Salzburg. His chemical philosophy and insistence on experiential knowledge over textual authority continued to generate controversy and followers for generations.",
+    "location_name": "Salzburg, Austria",
+    "lat": 47.8,
+    "lon": 13.04,
+    "figures": [
+      "Paracelsus"
+    ]
+  },
+  {
+    "id": 5,
+    "year": 1548,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Giordano Bruno",
+    "description": "Giordano Bruno was born in Nola, near Naples. He would push the Hermetic philosophical project further than any Renaissance thinker — and pay for it with his life.",
+    "location_name": "Nola, Italy",
+    "lat": 40.93,
+    "lon": 14.52,
+    "figures": [
+      "Giordano Bruno"
+    ]
+  },
+  {
+    "id": 100,
+    "year": 1558,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Della Porta publishes Magia Naturalis (first edition)",
+    "description": "Giovan Battista Della Porta publishes the first edition of Magia Naturalis (Natural Magic) in four books, the most accessible and widely read account of natural magic in the Renaissance — a compendium of practical secrets organized under the philosophical category of natural occult properties, rigorously distinguished from demonic operation. The expanded 1589 edition will quadruple the original in scope.",
+    "location_name": "Naples, Italy",
+    "lat": 40.85,
+    "lon": 14.27,
+    "figures": [
+      "Giovan Battista Della Porta"
+    ]
+  },
+  {
+    "id": 101,
+    "year": 1563,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Weyer publishes De Praestigiis Daemonum",
+    "description": "Johann Weyer publishes De Praestigiis Daemonum et Incantationibus ac Veneficiis, arguing that accused witches are victims of diabolical delusion and melancholy rather than genuine practitioners. Weyer's medical and theological argument — that the crime belongs to the demon who causes the delusion, not the deluded woman — is the most sustained challenge to witch-trial doctrine of the century. Jean Bodin's ferocious response appears in De la Démonomanie (1580).",
+    "location_name": "Cleves, Germany",
+    "lat": 51.79,
+    "lon": 6.14,
+    "figures": [
+      "Johann Weyer"
+    ]
+  },
+  {
+    "id": 51,
+    "year": 1564,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Dee's Monas Hieroglyphica",
+    "description": "John Dee publishes the Monas Hieroglyphica in Antwerp, proposing a unified hieroglyphic symbol encoding cosmic knowledge.",
+    "location_name": "Antwerp, Belgium",
+    "lat": 51.22,
+    "lon": 4.4,
+    "figures": []
+  },
+  {
+    "id": 15,
+    "year": 1574,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Robert Fludd",
+    "description": "Robert Fludd was born in Bearsted, Kent. His encyclopedic Utriusque Cosmi Historia would produce the most visually ambitious maps of macrocosm-microcosm correspondence in Renaissance philosophy.",
+    "location_name": "Bearsted, England",
+    "lat": 51.27,
+    "lon": 0.56,
+    "figures": [
+      "Robert Fludd"
+    ]
+  },
+  {
+    "id": 19,
+    "year": 1575,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Jacob Boehme",
+    "description": "Jacob Boehme was born in Alt-Seidenberg, Saxony. A cobbler with no formal education, he would produce a theosophical system of extraordinary originality.",
+    "location_name": "Görlitz area, Germany",
+    "lat": 51.15,
+    "lon": 14.99,
+    "figures": [
+      "Jacob Boehme"
+    ]
+  },
+  {
+    "id": 102,
+    "year": 1576,
+    "year_end": null,
+    "event_type": "OTHER",
+    "title": "Dee's library at Mortlake recognized as largest in England",
+    "description": "John Dee's library at Mortlake is recognized as among the largest private libraries in England, containing over four thousand volumes spanning mathematics, astronomy, navigation, Kabbalah, natural philosophy, and occult texts. His library represents the material infrastructure of the Renaissance learned tradition — and its eventual dispersal after his death in 1608 represents its dissolution.",
+    "location_name": "London, England",
+    "lat": 51.47,
+    "lon": -0.26,
+    "figures": []
+  },
+  {
+    "id": 103,
+    "year": 1580,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Bodin publishes De la Démonomanie des Sorciers",
+    "description": "Jean Bodin publishes De la Démonomanie des Sorciers, a systematic demonological refutation of Weyer's skeptical arguments and a vigorous defense of witch-trial practice. Bodin's work — combining legal philosophy, Neoplatonic demonology, and detailed case studies — becomes the most influential demonological treatise of the late sixteenth century and provokes Reginald Scot's Discoverie of Witchcraft (1584) as a response.",
+    "location_name": "Paris, France",
+    "lat": 48.85,
+    "lon": 2.35,
+    "figures": [
+      "Johann Weyer",
+      "Jean Bodin"
+    ]
+  },
+  {
+    "id": 104,
+    "year": 1581,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Dee begins angelic conversations with Barnabas Saul",
+    "description": "John Dee begins his first scrying experiments with Barnabas Saul at Mortlake, inaugurating the series of angelic conversations that will occupy the next eight years of his life. The communications produce a complete angelic language (Enochian), a celestial geography of thirty Aethyrs, and a system of angelic governance — material unlike anything else in the Renaissance magical tradition, recorded in meticulous diary form now published as the Five Books of Mystery.",
+    "location_name": "Mortlake, London",
+    "lat": 51.47,
+    "lon": -0.26,
+    "figures": [
+      "John Dee"
+    ]
+  },
+  {
+    "id": 105,
+    "year": 1582,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Edward Kelley becomes Dee's scryer",
+    "description": "Edward Kelley joins John Dee at Mortlake as his primary scryer, replacing Barnabas Saul. The Dee-Kelley partnership will produce the bulk of the Enochian revelation over the next seven years, including the Polish and Bohemian sessions. The nature of Kelley's role — genuine medium, conscious fabricator, or something between — remains a central interpretive question in Dee scholarship.",
+    "location_name": "Mortlake, London",
+    "lat": 51.47,
+    "lon": -0.26,
+    "figures": [
+      "John Dee"
+    ]
+  },
+  {
+    "id": 52,
+    "year": 1583,
+    "year_end": 1589,
+    "event_type": "BIOGRAPHY",
+    "title": "Dee's angelic conversations in Prague and Krakow",
+    "description": "Dee and Edward Kelley conduct scrying sessions across Central Europe, producing the Enochian angel language system.",
+    "location_name": "Prague, Bohemia",
+    "lat": 50.08,
+    "lon": 14.44,
+    "figures": []
+  },
+  {
+    "id": 106,
+    "year": 1583,
+    "year_end": 1589,
+    "event_type": "BIOGRAPHY",
+    "title": "Dee and Kelley in Central Europe: Prague and Krakow",
+    "description": "John Dee and Edward Kelley, with their families, travel to Poland and Bohemia seeking court patronage for their angelic revelations. Their years in Central Europe produce the sessions recorded in A True and Faithful Relation (published posthumously in 1659), including the controversial wife-swapping episode and Dee's audience with Emperor Rudolf II in Prague.",
+    "location_name": "Prague, Bohemia",
+    "lat": 50.08,
+    "lon": 14.44,
+    "figures": [
+      "John Dee"
+    ]
+  },
+  {
+    "id": 53,
+    "year": 1584,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Bruno's De la Causa and Cena de le Ceneri",
+    "description": "Giordano Bruno publishes his Italian dialogues in London, arguing for an infinite universe and Hermetic cosmology.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": []
+  },
+  {
+    "id": 107,
+    "year": 1584,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Scot publishes Discoverie of Witchcraft",
+    "description": "Reginald Scot publishes The Discoverie of Witchcraft, the most comprehensive English-language critique of witch belief — arguing that accused witches are mentally deluded, that demons cannot perform the corporeal acts witch-trial doctrine requires, and that the grimoire tradition is essentially Catholic superstition transposed to diabolical ends. King James VI of Scotland orders it burned and writes Daemonologie (1597) explicitly in response.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "Reginald Scot"
+    ]
+  },
+  {
+    "id": 108,
+    "year": 1588,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Johann Weyer",
+    "description": "Johann Weyer died in Tecklenburg. His De Praestigiis Daemonum, though condemned by opponents as favorable to witches, had introduced medical explanations of witch belief that would prove more intellectually durable than the demonological alternatives — and would be drawn on by Scot, by seventeenth-century skeptics, and eventually by Enlightenment critics of witch prosecution.",
+    "location_name": "Tecklenburg, Germany",
+    "lat": 52.22,
+    "lon": 7.82,
+    "figures": [
+      "Johann Weyer"
+    ]
+  },
+  {
+    "id": 109,
+    "year": 1589,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Della Porta publishes expanded Magia Naturalis",
+    "description": "Giovan Battista Della Porta publishes the expanded twenty-book edition of Magia Naturalis, quadrupling the original in scope to cover optics, cryptography, distillation, perfumery, metallurgy, agricultural secrets, and stage illusions. The expanded edition becomes the standard compendium of practical natural magic for the late Renaissance, and its account of perspective optics prefigures the development of the telescope.",
+    "location_name": "Naples, Italy",
+    "lat": 40.85,
+    "lon": 14.27,
+    "figures": [
+      "Giovan Battista Della Porta"
+    ]
+  },
+  {
+    "id": 110,
+    "year": 1591,
+    "year_end": null,
+    "event_type": "TRIAL",
+    "title": "Bruno arrested by Venetian Inquisition",
+    "description": "Giordano Bruno, recently arrived in Venice at the invitation of the patrician Giovanni Mocenigo, is denounced to the Venetian Inquisition by his host. His arrest begins eight years of imprisonment and inquisitorial process. The charges encompass his cosmological doctrines (infinite universe, multiple worlds), his denial of transubstantiation, and his claimed magical and prophetic powers.",
+    "location_name": "Venice, Italy",
+    "lat": 45.44,
+    "lon": 12.33,
+    "figures": [
+      "Giordano Bruno"
+    ]
+  },
+  {
+    "id": 111,
+    "year": 1597,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "James VI publishes Daemonologie",
+    "description": "James VI of Scotland publishes Daemonologie, his demonological treatise directly refuting Reginald Scot's skeptical arguments. James defends the reality of demonic power, the validity of witch-trial evidence, and the theological necessity of witch prosecution. When James becomes James I of England in 1603, his demonological convictions intensify English witch prosecutions.",
+    "location_name": "Edinburgh, Scotland",
+    "lat": 55.95,
+    "lon": -3.19,
+    "figures": []
+  },
+  {
+    "id": 112,
+    "year": 1599,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Reginald Scot",
+    "description": "Reginald Scot died in Smeeth, Kent. His Discoverie of Witchcraft, which King James ordered burned after becoming king of England in 1603, was republished in 1651 and 1665 and became a significant reference for seventeenth-century skeptics questioning the foundations of witch belief and the legal basis of witch prosecution.",
+    "location_name": "Smeeth, England",
+    "lat": 51.13,
+    "lon": 0.9,
+    "figures": [
+      "Reginald Scot"
+    ]
+  },
+  {
+    "id": 6,
+    "year": 1600,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Giordano Bruno",
+    "description": "Giordano Bruno was burned at the stake in Rome’s Campo de’ Fiori for heresy. His execution effectively ended open Hermetic philosophy in Catholic Europe.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.47,
+    "figures": [
+      "Giordano Bruno"
+    ]
+  },
+  {
+    "id": 54,
+    "year": 1600,
+    "year_end": null,
+    "event_type": "TRIAL",
+    "title": "Bruno burned at the stake in Rome",
+    "description": "The Roman Inquisition executes Giordano Bruno for heresy at the Campo de' Fiori, making him a martyr for free thought.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.47,
+    "figures": []
+  },
+  {
+    "id": 17,
+    "year": 1602,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Athanasius Kircher",
+    "description": "Athanasius Kircher was born in Geisa, Germany. As a Jesuit polymath at the Collegium Romanum, he would attempt to domesticate Hermeticism within Catholic institutional frameworks.",
+    "location_name": "Geisa, Germany",
+    "lat": 50.69,
+    "lon": 10.0,
+    "figures": [
+      "Athanasius Kircher"
+    ]
+  },
+  {
+    "id": 113,
+    "year": 1606,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Steganographia published posthumously",
+    "description": "Trithemius's Steganographia, composed around 1499 and circulated in restricted manuscript copies for over a century, is finally published in Frankfurt. The work's publication makes its system of planetary spirit communications and embedded cryptographic ciphers available to a wider learned audience — and inaugurates the interpretive debate, still ongoing in scholarship, about whether its primary content is angel magic or cryptography.",
+    "location_name": "Frankfurt, Germany",
+    "lat": 50.11,
+    "lon": 8.68,
+    "figures": []
+  },
+  {
+    "id": 2,
+    "year": 1608,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of John Dee",
+    "description": "John Dee died in Mortlake, impoverished and stripped of his library. His angel diaries would be published posthumously by Meric Casaubon in 1659.",
+    "location_name": "Mortlake, London",
+    "lat": 51.47,
+    "lon": -0.26,
+    "figures": [
+      "John Dee"
+    ]
+  },
+  {
+    "id": 21,
+    "year": 1614,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Birth of Francis Mercury van Helmont",
+    "description": "Francis Mercury van Helmont was born. Son of the chemist Jan Baptist van Helmont, he would collaborate on the Kabbala Denudata and advocate for the transmigration of souls.",
+    "location_name": "Vilvoorde, Belgium",
+    "lat": 50.93,
+    "lon": 4.43,
+    "figures": [
+      "Francis Mercury van Helmont"
+    ]
+  },
+  {
+    "id": 55,
+    "year": 1614,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Fama Fraternitatis (Rosicrucian manifesto)",
+    "description": "The first Rosicrucian manifesto appears, claiming a secret brotherhood founded on Hermetic and Paracelsian principles.",
+    "location_name": "Kassel, Germany",
+    "lat": 51.31,
+    "lon": 9.49,
+    "figures": []
+  },
+  {
+    "id": 115,
+    "year": 1614,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Isaac Casaubon's philological dating of Corpus Hermeticum",
+    "description": "Isaac Casaubon, in De Rebus Sacris et Ecclesiasticis Exercitationes (1614), demonstrates through philological analysis that the Greek of the Corpus Hermeticum is characteristic of the early centuries CE rather than ancient Egypt — exposing the texts as Greco-Roman philosophical compositions rather than ancient Egyptian revelation. This dating arrives too late to diminish the preceding century and a half of Hermetic influence but permanently changes how the texts must be read.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "Hermes Trismegistus",
+      "Isaac Casaubon"
+    ]
+  },
+  {
+    "id": 114,
+    "year": 1615,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Giovan Battista Della Porta",
+    "description": "Giovan Battista Della Porta died in Naples. His Magia Naturalis had established the authoritative account of natural magic as distinct from demonic operation — a distinction that influenced the conceptual vocabulary of natural philosophy well into the seventeenth century and shaped how subsequent scholars framed the question of what 'magic' was.",
+    "location_name": "Naples, Italy",
+    "lat": 40.85,
+    "lon": 14.27,
+    "figures": [
+      "Giovan Battista Della Porta"
+    ]
+  },
+  {
+    "id": 116,
+    "year": 1615,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Confessio Fraternitatis (second Rosicrucian manifesto)",
+    "description": "The Confessio Fraternitatis, the second Rosicrucian manifesto, is published in Latin, amplifying the Fama's claims about a secret brotherhood and providing a theological framework for their project of universal reformation. The Rosicrucian manifestos generate a European-wide literary debate. No actual Rosicrucian fellowship has ever been conclusively identified — they may be literary inventions designed to provoke intellectual discussion.",
+    "location_name": "Kassel, Germany",
+    "lat": 51.31,
+    "lon": 9.49,
+    "figures": []
+  },
+  {
+    "id": 117,
+    "year": 1616,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Chemical Wedding of Christian Rosencreutz",
+    "description": "The Chemical Wedding of Christian Rosencreutz (attributed to Johann Valentin Andreae) is published, the most literary of the Rosicrucian manifestos — an alchemical allegory in which Christian Rosencreutz attends a royal wedding filled with symbolic trials and transformations. The text's combination of alchemical symbolism, court entertainment, and spiritual allegory represents a late flowering of Renaissance emblematic culture.",
+    "location_name": "Strasbourg, Alsace",
+    "lat": 48.58,
+    "lon": 7.75,
+    "figures": [
+      "Johann Valentin Andreae"
+    ]
+  },
+  {
+    "id": 56,
+    "year": 1617,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Fludd's Utriusque Cosmi Historia",
+    "description": "Robert Fludd publishes his encyclopedic History of the Two Worlds, featuring elaborate cosmological diagrams integrating Hermetic philosophy.",
+    "location_name": "Oppenheim, Germany",
+    "lat": 49.85,
+    "lon": 8.36,
+    "figures": []
+  },
+  {
+    "id": 118,
+    "year": 1619,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Kepler-Fludd polemic over mathematical vs analogical method",
+    "description": "Johannes Kepler publishes an appendix to his Harmonices Mundi attacking Robert Fludd's analogical approach to cosmic harmony, arguing that genuine natural philosophy requires quantitative mathematical relationships rather than symbolic-qualitative correspondences. Fludd responds vigorously. The exchange crystallizes the methodological rupture between the Hermetic-qualitative tradition and the emerging mathematical-quantitative natural science that will displace it.",
+    "location_name": "Linz, Austria",
+    "lat": 48.31,
+    "lon": 14.29,
+    "figures": [
+      "Robert Fludd",
+      "Johannes Kepler"
+    ]
+  },
+  {
+    "id": 20,
+    "year": 1624,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Jacob Boehme",
+    "description": "Jacob Boehme died in Goerlitz. His theosophical writings would influence German Idealism, English Romanticism, and Western esotericism for centuries.",
+    "location_name": "Görlitz, Germany",
+    "lat": 51.15,
+    "lon": 14.99,
+    "figures": [
+      "Jacob Boehme"
+    ]
+  },
+  {
+    "id": 119,
+    "year": 1631,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Mersenne attacks Fludd as incompatible with Christian philosophy",
+    "description": "Marin Mersenne, mathematician and correspondent of Descartes, attacks Robert Fludd's philosophy in Quaestiones celeberrimae in Genesim, accusing him of Cabalism and Hermetism incompatible with Christian natural philosophy. Mersenne's attack represents the growing institutional and theological pressure on the Renaissance Hermetic synthesis from both mechanistic science and orthodox theology.",
+    "location_name": "Paris, France",
+    "lat": 48.85,
+    "lon": 2.35,
+    "figures": [
+      "Robert Fludd",
+      "Marin Mersenne"
+    ]
+  },
+  {
+    "id": 16,
+    "year": 1637,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Robert Fludd",
+    "description": "Robert Fludd died in London. His elaborate cosmological diagrams and Rosicrucian philosophy carried Renaissance Hermeticism into the seventeenth century.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "Robert Fludd"
+    ]
+  },
+  {
+    "id": 120,
+    "year": 1637,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Descartes publishes Discourse on Method",
+    "description": "René Descartes publishes Discours de la méthode, articulating the mechanistic philosophy that will become the dominant framework of seventeenth-century natural philosophy. Descartes's sharp distinction between mind and matter, and his account of the material world as pure extension governed by mechanical laws, eliminates the active, spiritus-pervaded world-soul on which Renaissance natural magic depends. The 'death of nature' (Carolyn Merchant's phrase) begins here.",
+    "location_name": "Leiden, Netherlands",
+    "lat": 52.16,
+    "lon": 4.49,
+    "figures": [
+      "René Descartes"
+    ]
+  },
+  {
+    "id": 121,
+    "year": 1640,
+    "year_end": 1680,
+    "event_type": "DISCOVERY",
+    "title": "Newton's alchemical investigations",
+    "description": "Isaac Newton conducts an extensive program of alchemical reading, experiment, and manuscript collection alongside his mathematical physics, eventually producing over a million words of alchemical writing. Newton's alchemy — long suppressed in the standard historiography — has become central to understanding his intellectual development since Westfall's Never at Rest (1980) and demonstrates that the 'Scientific Revolution' did not simply expel the Hermetic tradition but incorporated and transformed elements of it.",
+    "location_name": "Cambridge, England",
+    "lat": 52.21,
+    "lon": 0.12,
+    "figures": [
+      "Isaac Newton"
+    ]
+  },
+  {
+    "id": 57,
+    "year": 1652,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Casaubon publishes A True and Faithful Relation",
+    "description": "Meric Casaubon publishes Dee's angelic diaries, framing them as evidence of demonic deception rather than genuine revelation.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": []
+  },
+  {
+    "id": 122,
+    "year": 1659,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Meric Casaubon publishes Dee's True and Faithful Relation",
+    "description": "Meric Casaubon publishes A True and Faithful Relation of What Passed for Many Years Between Dr. John Dee and Some Spirits (1659), editing Dee's angelic diaries with a lengthy preface arguing that the communications were diabolical delusions. Casaubon's hostile framing paradoxically preserved the material and shaped its reception for three centuries. Deborah Harkness and György Szönyi's works in the corpus provide the modern scholarly alternative to Casaubon's demonization.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "John Dee"
+    ]
+  },
+  {
+    "id": 123,
+    "year": 1677,
+    "year_end": 1684,
+    "event_type": "PUBLICATION",
+    "title": "Van Helmont and Knorr von Rosenroth publish Kabbala Denudata",
+    "description": "Francis Mercury van Helmont and Christian Knorr von Rosenroth publish Kabbala Denudata (Kabbalah Unveiled) in two volumes (1677, 1684), the most important printed compendium of Jewish Kabbalistic texts in Latin translation in the seventeenth century. The work makes Zoharic and Lurianic materials available to Protestant European scholars and deeply influences Anne Conway, Leibniz, and the Cambridge Platonists.",
+    "location_name": "Sulzbach, Germany",
+    "lat": 49.49,
+    "lon": 11.75,
+    "figures": [
+      "Francis Mercury van Helmont"
+    ]
+  },
+  {
+    "id": 18,
+    "year": 1680,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Athanasius Kircher",
+    "description": "Athanasius Kircher died in Rome. His attempt to decipher Egyptian hieroglyphics was wrong, but his encyclopedic ambition preserved and transmitted Hermetic ideas within Jesuit scholarship.",
+    "location_name": "Rome, Italy",
+    "lat": 41.9,
+    "lon": 12.49,
+    "figures": [
+      "Athanasius Kircher"
+    ]
+  },
+  {
+    "id": 124,
+    "year": 1687,
+    "year_end": null,
+    "event_type": "PUBLICATION",
+    "title": "Newton publishes Principia Mathematica",
+    "description": "Isaac Newton publishes Philosophiae Naturalis Principia Mathematica, establishing mathematical mechanics as the foundation of natural philosophy. The Principia represents the decisive institutional triumph of the quantitative-mathematical approach over the qualitative-analogical Hermetic tradition. However, Newton's own extensive engagement with alchemy (undisclosed in his lifetime) complicates simple narratives of the 'death of magic' at the hands of mathematical science.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "Isaac Newton"
+    ]
+  },
+  {
+    "id": 22,
+    "year": 1698,
+    "year_end": null,
+    "event_type": "BIOGRAPHY",
+    "title": "Death of Francis Mercury van Helmont",
+    "description": "Francis Mercury van Helmont died. His Kabbalistic universalism and advocacy of metempsychosis (gilgul) had bridged Renaissance Christian Cabala and Enlightenment philosophy.",
+    "location_name": "Berlin, Germany",
+    "lat": 52.52,
+    "lon": 13.4,
+    "figures": [
+      "Francis Mercury van Helmont"
+    ]
+  },
+  {
+    "id": 125,
+    "year": 1958,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Walker publishes Spiritual and Demonic Magic",
+    "description": "D.P. Walker publishes Spiritual and Demonic Magic from Ficino to Campanella, establishing the analytical distinction between spiritual magic (working through natural spiritus) and demonic magic (invoking personal spirit-beings) that gives subsequent scholarship its central analytical vocabulary. Walker's close reading of Ficino's De Vita III and Campanella's solar magic shows how practitioners navigated the licit-illicit boundary in practice.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "Marsilio Ficino",
+      "D.P. Walker"
+    ]
+  },
+  {
+    "id": 58,
+    "year": 1964,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Yates publishes Giordano Bruno and the Hermetic Tradition",
+    "description": "Frances Yates' landmark study proposes that Hermeticism was a driving force behind the Scientific Revolution, launching the 'Yates thesis' debate.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": []
+  },
+  {
+    "id": 126,
+    "year": 1966,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Yates publishes The Art of Memory",
+    "description": "Frances Yates publishes The Art of Memory, tracing the classical memory tradition through the medieval period and into the Renaissance, arguing that Bruno's transformation of the classical art into a Hermetic memory system is central to understanding his philosophy and the emergence of theatre and visual culture. The book extends the Yates thesis into new cultural domains while deepening her account of Bruno.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "Giordano Bruno",
+      "Frances A. Yates"
+    ]
+  },
+  {
+    "id": 127,
+    "year": 1971,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Keith Thomas publishes Religion and the Decline of Magic",
+    "description": "Keith Thomas publishes Religion and the Decline of Magic, the most comprehensive study of magical belief in English popular culture and its decline under Protestantism, print culture, and emerging scientific rationalism. Thomas's social-historical approach — attending to popular practice rather than elite philosophy — complements and challenges the intellectual history tradition represented by Yates and Walker.",
+    "location_name": "Oxford, England",
+    "lat": 51.75,
+    "lon": -1.26,
+    "figures": [
+      "Keith Thomas"
+    ]
+  },
+  {
+    "id": 128,
+    "year": 1978,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Peters publishes The Magician, the Witch, and the Law",
+    "description": "Edward Peters publishes The Magician, the Witch, and the Law, examining how medieval and early modern law constructed the categories of magician and witch through inquisitorial procedure. Peters's legal-historical approach shows how the witch-figure was created through juridical processes as much as theological doctrine — a complement to the intellectual history approaches of Yates and Walker.",
+    "location_name": "Philadelphia, USA",
+    "lat": 39.95,
+    "lon": -75.17,
+    "figures": [
+      "Edward Peters"
+    ]
+  },
+  {
+    "id": 129,
+    "year": 1984,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Vickers publishes methodological critique of Yates thesis",
+    "description": "Brian Vickers edits Occult and Scientific Mentalities in the Renaissance, including a powerful critique of the Yates thesis: the supposed connection between Hermetic animism and early modern science rests on a confusion between analogical and causal reasoning that neither Hermetists nor scientists themselves recognized. Vickers's critique does not dismiss the Hermetic tradition but challenges Yates's causal claim about its role in scientific change.",
+    "location_name": "Cambridge, England",
+    "lat": 52.21,
+    "lon": 0.12,
+    "figures": [
+      "Frances A. Yates",
+      "Brian Vickers"
+    ]
+  },
+  {
+    "id": 130,
+    "year": 1988,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Copenhaver publishes essays revising the Yates thesis",
+    "description": "Brian Copenhaver publishes a series of essays — including 'Magic and the Dignity of Man' and 'Hermes Trismegistus, Proclus, and the Question of a Philosophy of Magic in the Renaissance' — arguing that Ficino was primarily a Platonist rather than a Hermetist, and that 'Hermetism' as a unified tradition is more a scholarly construction than a historical reality. These essays are the most sustained scholarly revision of the Yates thesis.",
+    "location_name": "Los Angeles, USA",
+    "lat": 34.07,
+    "lon": -118.45,
+    "figures": [
+      "Marsilio Ficino",
+      "Brian P. Copenhaver"
+    ]
+  },
+  {
+    "id": 131,
+    "year": 1992,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Copenhaver publishes critical edition of Hermetica",
+    "description": "Brian Copenhaver publishes Hermetica: The Greek Corpus Hermeticum and the Latin Asclepius in a New English Translation with Notes and Introduction — the modern critical edition. Copenhaver's introduction argues that the Hermetic texts are best understood as products of Neoplatonic philosophical culture rather than as evidence of a distinct 'Hermetic tradition,' operationalizing his earlier essays into a sustained scholarly alternative to the Yates thesis.",
+    "location_name": "Los Angeles, USA",
+    "lat": 34.07,
+    "lon": -118.45,
+    "figures": [
+      "Hermes Trismegistus",
+      "Brian P. Copenhaver"
+    ]
+  },
+  {
+    "id": 132,
+    "year": 2001,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Klaassen publishes Transformations of Magic",
+    "description": "Frank Klaassen publishes The Transformations of Magic: Illicit Learned Magic in the Later Middle Ages and Renaissance, examining how the learned magic tradition — especially the Ars Notoria and medieval angel magic — transformed through manuscript transmission and how practitioners negotiated the boundary between licit prayer and illicit invocation. Klaassen's work bridges medieval and Renaissance magic studies.",
+    "location_name": "Saskatoon, Canada",
+    "lat": 52.13,
+    "lon": -106.67,
+    "figures": [
+      "Frank Klaassen"
+    ]
+  },
+  {
+    "id": 133,
+    "year": 2005,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Hanegraaff edits Dictionary of Gnosis and Western Esotericism",
+    "description": "Wouter Hanegraaff (editor-in-chief) publishes the Dictionary of Gnosis and Western Esotericism, the first comprehensive scholarly reference work for the field. The Dictionary's appearance marks the institutionalization of Western esotericism as a recognized academic discipline and establishes the conceptual vocabulary — including the historiographical categories of Hermetism, Neoplatonism, theosophy, and occultism — that organizes the field's self-understanding.",
+    "location_name": "Amsterdam, Netherlands",
+    "lat": 52.37,
+    "lon": 4.9,
+    "figures": [
+      "Wouter Hanegraaff"
+    ]
+  },
+  {
+    "id": 134,
+    "year": 2012,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Hanegraaff publishes Esotericism and the Academy",
+    "description": "Wouter Hanegraaff publishes Esotericism and the Academy: Rejected Knowledge in Western Culture, arguing that 'Western esotericism' is a scholarly construct — the category of 'rejected knowledge' that Enlightenment rationalism excluded from legitimate discourse — and that this construct needs historical analysis rather than uncritical acceptance. The work provides the methodological foundation for treating 'magic' as a scholarly category rather than a neutral description.",
+    "location_name": "Amsterdam, Netherlands",
+    "lat": 52.37,
+    "lon": 4.9,
+    "figures": [
+      "Wouter Hanegraaff"
+    ]
+  },
+  {
+    "id": 135,
+    "year": 2015,
+    "year_end": null,
+    "event_type": "SCHOLARSHIP",
+    "title": "Saif publishes Arabic Influences on Early Modern Occult Philosophy",
+    "description": "Liana Saif publishes The Arabic Influences on Early Modern Occult Philosophy, demonstrating the depth and specificity of the Arabic-Islamic contribution to the magical-astrological tradition that Renaissance scholars inherited. Saif's work corrects the Eurocentric framing of Renaissance magic as a purely Greek-Latin tradition and establishes the Islamic thread as a first-class component of the intellectual genealogy — directly shaping RenMagDB's scope.",
+    "location_name": "London, England",
+    "lat": 51.51,
+    "lon": -0.13,
+    "figures": [
+      "Al-Kindi",
+      "Liana Saif"
+    ]
+  }
+]

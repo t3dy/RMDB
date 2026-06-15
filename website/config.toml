@@ -43,6 +43,11 @@ url = "/dictionary/"
 weight = 40
 
 [[menu.main]]
+name = "Timeline Map"
+url = "/timeline/"
+weight = 45
+
+[[menu.main]]
 name = "About"
 url = "/about/"
 weight = 50

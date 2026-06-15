@@ -1,0 +1,38 @@
+{
+  "artifact_id": "curation_yates-giordano-bruno-1964",
+  "artifact_type": "curation",
+  "schema_version": "1.0",
+  "source_id": "yates-giordano-bruno-1964",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "generated_by": "scripts/artifact_pipeline.py (LLM_ASSISTED)",
+  "input_artifact_ids": [
+    "src_meta_yates-giordano-bruno-1964",
+    "ont_tag_yates-giordano-bruno-1964-intro",
+    "interp_yates-giordano-bruno-1964-intro"
+  ],
+  "relevance_score": 0.98,
+  "relevance_status": "feature",
+  "audience_fit": "Specialists and advanced generalists with interest in Renaissance intellectual history, historiography, and the history of Western esotericism.",
+  "scholarly_value": "high",
+  "reasons_for_inclusion": [
+    "Yates (1964) is one of the foundational texts of the field this portal covers. Any scholar working on Renaissance magic, Hermetism, or Bruno must engage with it.",
+    "The book is both a primary historiographical source (documenting the 'Yates thesis') and a reference for understanding the field's subsequent development.",
+    "It is already in the project corpus and directly referenced in RMESSAY1.md as a key historiographical position the portal must situate itself relative to.",
+    "Featuring it contextualizes the portal's own approach (following the Copenhaver/Hanegraaff revision) for readers who may know the Yates thesis from popular accounts."
+  ],
+  "reasons_for_exclusion": [],
+  "recommended_tags": [
+    "yates-thesis",
+    "hermetism",
+    "giordano-bruno",
+    "ficino",
+    "corpus-hermeticum",
+    "historiography",
+    "renaissance-magic",
+    "secondary-source",
+    "foundational-text"
+  ],
+  "editorial_angle": "Present as a foundational but contested text: explain what the Yates thesis argued, why it was so influential, and how subsequent scholarship has refined it. Do not endorse the thesis wholesale; situate it within the historiographical arc the portal traces.",
+  "aggregator_link_card": null,
+  "curator_notes": "This is a monograph in the research corpus, not a news item — the aggregator_link_card is null. Public prose should be a document summary card for the library catalog section of the portal."
+}

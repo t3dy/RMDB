@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "scholar_citation",
+  "title": "ScholarCitationArtifact",
+  "description": "Captures what a scholar says about a text, passage, concept, or historiographical issue. Separates the scholar's claim from the source they discuss.",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "artifact_type",
+    "schema_version",
+    "source_id",
+    "generated_at",
+    "bibliographic_source_id",
+    "scholar_name",
+    "claim_summary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id":            { "type": "string", "minLength": 1 },
+    "artifact_type":          { "type": "string", "const": "scholar_citation" },
+    "schema_version":         { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "source_id":              { "type": "string", "minLength": 1, "description": "source_id of the scholarly secondary source" },
+    "generated_at":           { "type": "string", "format": "date-time" },
+    "generated_by":           { "type": ["string", "null"] },
+    "bibliographic_source_id":{ "type": "string", "description": "source_id of the scholarly work making the claim" },
+    "scholar_name":           { "type": "string" },
+    "cited_work":             { "type": ["string", "null"], "description": "Primary text or topic the scholar is discussing" },
+    "relevant_topic":         { "type": ["string", "null"] },
+    "citation_context":       { "type": ["string", "null"], "description": "What discussion surrounds this claim in the scholar's text" },
+    "claim_summary":          { "type": "string" },
+    "exact_quote": {
+      "type": ["string", "null"],
+      "description": "Short direct quote if within fair use; must include page_or_location"
+    },
+    "page_or_location":       { "type": ["string", "null"] },
+    "historiographical_angle": {
+      "type": ["string", "null"],
+      "description": "Which historiographical school or debate this claim belongs to (e.g. Yates thesis, Copenhaver revision, Hanegraaff constructionism)"
+    },
+    "related_portal_entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_type", "entity_id_or_name"],
+        "additionalProperties": false,
+        "properties": {
+          "entity_type":       { "type": "string", "enum": ["figure", "text", "term", "tradition"] },
+          "entity_id_or_name": { "type": "string" }
+        }
+      }
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

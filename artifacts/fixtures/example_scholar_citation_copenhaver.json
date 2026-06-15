@@ -1,0 +1,25 @@
+{
+  "artifact_id": "sch_cite_copenhaver-magic-ficino-1988-ficino-platonist",
+  "artifact_type": "scholar_citation",
+  "schema_version": "1.0",
+  "source_id": "copenhaver-magic-ficino-philosophy-1988",
+  "generated_at": "2026-06-15T00:00:00Z",
+  "generated_by": "scripts/artifact_pipeline.py (LLM_ASSISTED)",
+  "bibliographic_source_id": "copenhaver-magic-ficino-philosophy-1988",
+  "scholar_name": "Brian P. Copenhaver",
+  "cited_work": "'Magic and the Dignity of Man: De-Kanting Pico's Oration' (essay, 1988); 'Hermes Trismegistus, Proclus, and the Question of a Philosophy of Magic in the Renaissance' (essay, 1988); Hermetica (1992)",
+  "relevant_topic": "Revision of the Yates thesis: Ficino as Platonist, not Hermetist; Hermetism as scholarly category rather than independent tradition",
+  "citation_context": "Copenhaver's essays in the late 1980s and his 1992 critical edition of Hermetica together constitute the most influential scholarly revision of Yates's account of Renaissance Hermetism. Writing after two decades of building on Yates's work, Copenhaver systematically demonstrates where her analysis went wrong without abandoning her key insight that the Hermetic texts mattered enormously.",
+  "claim_summary": "Copenhaver argues that Ficino was primarily a Platonist, not a Hermetist: when Ficino's magical and cosmological ideas are traced to their sources, they derive overwhelmingly from Neoplatonic philosophy (Plotinus, Proclus, Iamblichus) rather than from the Hermetic texts specifically. The Hermetic corpus was one input among many, not the driving force Yates identified. Furthermore, 'Hermetism' as a unified, self-conscious tradition is more a scholarly construction than a historical reality: Renaissance figures who used Hermetic texts were simultaneously doing Platonism, Kabbalah, natural philosophy, and other things, not adhering to a single 'Hermetic' program. The portal should describe how specific actors used specific texts, not invoke 'Hermetism' as a self-explanatory category.",
+  "exact_quote": null,
+  "page_or_location": "Multiple essays 1988; Hermetica (1992) Introduction",
+  "historiographical_angle": "Copenhaver's revision is the second major phase of Yates thesis criticism, following Vickers's methodological critique (1984). Copenhaver accepts Yates's historical terrain but disagrees with her identification of what drove change within it. His is a sources-and-influences argument, not a wholesale dismissal of Yates. Hanegraaff's subsequent methodological work (Esotericism and the Academy, 2012) provides a third-wave perspective that situates both Yates and Copenhaver within the broader historiography of how scholars have constructed 'Western esotericism' as a field.",
+  "related_portal_entities": [
+    { "entity_type": "figure", "entity_id_or_name": "Brian P. Copenhaver" },
+    { "entity_type": "figure", "entity_id_or_name": "Marsilio Ficino" },
+    { "entity_type": "figure", "entity_id_or_name": "Frances A. Yates" },
+    { "entity_type": "text", "entity_id_or_name": "Corpus Hermeticum" },
+    { "entity_type": "tradition", "entity_id_or_name": "hermetism" }
+  ],
+  "notes": "This citation artifact captures the core methodological claim from multiple Copenhaver works, not a single text. For portal purposes, the claim is operationalized as RMESSAY1.md rule: treat 'magic' and 'Hermetism' as scholarly categories requiring analysis, not as transparent descriptions of historical realities. The portal's GNOSISDICTIONARYSTYLEANALYSISTAKEAWAYS.md document explicitly adopts the Copenhaver/Hanegraaff line."
+}

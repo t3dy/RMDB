@@ -1,0 +1,84 @@
+{
+  "artifact_id": "interp_yates-giordano-bruno-1964-intro",
+  "artifact_type": "interpretive",
+  "schema_version": "1.0",
+  "source_id": "yates-giordano-bruno-1964",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "generated_by": "scripts/artifact_pipeline.py (LLM_ASSISTED)",
+  "input_artifact_ids": [
+    "raw_ext_yates-giordano-bruno-1964-intro",
+    "ont_tag_yates-giordano-bruno-1964-intro"
+  ],
+  "interpretive_questions": [
+    "What is the historiographical significance of Yates's argument about Renaissance Hermetism?",
+    "How does Yates's framing of the 'Hermetic tradition' relate to the portal's treatment of magic as a scholarly category?",
+    "What are the key claims in the introduction/chapter 1 that require qualification for a portal that follows the Copenhaver revision?"
+  ],
+  "interpretive_claims": [
+    {
+      "claim": "Yates's account of Ficino's 1463 translation establishes a standard narrative of Hermetic reception in the Renaissance that later scholars (particularly Copenhaver and Walker) have significantly refined without abandoning its core insight: that the Hermetic texts mattered enormously to Renaissance thinkers.",
+      "evidence_links": [
+        {
+          "artifact_id": "raw_ext_yates-giordano-bruno-1964-intro",
+          "location": "Chapter 1, approx. p. 13",
+          "quote": "Ficino translated the Corpus Hermeticum in 1463 at the command of Cosimo de' Medici…"
+        }
+      ],
+      "confidence": "high",
+      "speculative": false,
+      "alternative_readings": [
+        "Copenhaver (1992) argues that Yates overstates the unity and distinctiveness of 'Hermetism' as a tradition; many figures Yates calls Hermetic were also doing Neoplatonism, natural philosophy, and other things simultaneously."
+      ]
+    },
+    {
+      "claim": "Yates consistently treats Hermes Trismegistus as a scholarly category — i.e., as a figure Renaissance actors believed in — rather than endorsing the historicity of an ancient Egyptian wisdom tradition. The portal should follow this precedent: describe how Renaissance actors used the category, not what the category 'really' meant.",
+      "evidence_links": [
+        {
+          "artifact_id": "raw_ext_yates-giordano-bruno-1964-intro",
+          "location": "Chapter 1, approx. p. 2",
+          "quote": "The 'Egyptian' writings of Hermes Trismegistus were believed in the Renaissance to be of enormous antiquity…"
+        }
+      ],
+      "confidence": "high",
+      "speculative": false,
+      "alternative_readings": []
+    },
+    {
+      "claim": "The emphasis on Bruno as the culmination of the Hermetic tradition may reflect Yates's retrospective framing more than the historical record. Portal content drawing on this book should treat Bruno-as-Hermetist as one scholarly interpretation, noting Copenhaver's more cautious reading.",
+      "evidence_links": [
+        {
+          "artifact_id": "raw_ext_yates-giordano-bruno-1964-intro",
+          "location": "Introduction, approx. p. 2"
+        }
+      ],
+      "confidence": "medium",
+      "speculative": false,
+      "alternative_readings": [
+        "Hanegraaff (2012, Esotericism and the Academy) situates Yates's approach within the 'legitimist' historiographical tradition and argues for a more constructionist reading of Renaissance categories."
+      ]
+    },
+    {
+      "claim": "The prisca theologia doctrine — the belief that Hermetic texts represented ancient wisdom predating Plato — is the intellectual precondition for all the other uses of Hermetism in the Renaissance that Yates traces. Without it, Ficino's urgency and Bruno's claims make little sense.",
+      "evidence_links": [
+        {
+          "artifact_id": "raw_ext_yates-giordano-bruno-1964-intro",
+          "location": "Chapter 1, approx. p. 2"
+        },
+        {
+          "artifact_id": "ont_tag_yates-giordano-bruno-1964-intro",
+          "location": "tags: prisca-theologia"
+        }
+      ],
+      "confidence": "high",
+      "speculative": false,
+      "alternative_readings": []
+    }
+  ],
+  "historiographical_relevance": "Yates (1964) is the founding text of what became known as the 'Yates thesis': that Hermetism and Renaissance magic were major drivers of the intellectual transformations leading to the Scientific Revolution. This thesis has been substantially qualified: Copenhaver (1992) demonstrated Ficino's Platonism was primary; Walker (1958) showed demonic magic had to be distinguished from natural magic; Hanegraaff reframed the whole field methodologically. The portal follows the Copenhaver/Hanegraaff line per RMESSAY1.md and GNOSISDICTIONARYSTYLEANALYSISTAKEAWAYS.md, meaning Yates is an essential historiographical reference but not the framework.",
+  "limitations": [
+    "This interpretation is based on the introduction and Chapter 1 only. Chapters on Bruno's specific philosophy have not been extracted.",
+    "The critique of Yates's argument relies on secondary knowledge of Copenhaver, Walker, and Hanegraaff; formal extraction artifacts for those works are not yet in the pipeline.",
+    "Page numbers in the extraction artifact are approximate; claims about specific passages should be verified against the processed PDF."
+  ],
+  "interpretation_notes": "This artifact is a fixture example. It demonstrates the interpretive stage of the pipeline: grounded in prior artifacts, aware of historiographical context, clear about confidence and limitations, not producing public prose."
+}

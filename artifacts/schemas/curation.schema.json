@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "curation",
+  "title": "CurationArtifact",
+  "description": "Decides whether and how an item appears in the portal or aggregator. Distinguishes serious scholarly content from pop-occult, AI spam, or low-relevance material. Stage F of the artifact pipeline.",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "artifact_type",
+    "schema_version",
+    "source_id",
+    "generated_at",
+    "input_artifact_ids",
+    "relevance_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id":   { "type": "string", "minLength": 1 },
+    "artifact_type": { "type": "string", "const": "curation" },
+    "schema_version":{ "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "source_id":     { "type": "string", "minLength": 1 },
+    "generated_at":  { "type": "string", "format": "date-time" },
+    "generated_by":  { "type": ["string", "null"] },
+    "input_artifact_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "relevance_score": {
+      "type": ["number", "null"],
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "relevance_status": {
+      "type": "string",
+      "enum": ["reject", "archive", "review", "publish", "feature"],
+      "description": "publish/feature require reasons_for_inclusion"
+    },
+    "audience_fit": {
+      "type": ["string", "null"],
+      "description": "Who this item serves: specialists, advanced generalists, intelligent non-specialists, general public"
+    },
+    "scholarly_value": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "none", "uncertain"]
+    },
+    "reasons_for_inclusion": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Required if relevance_status is publish or feature"
+    },
+    "reasons_for_exclusion": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "recommended_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "editorial_angle": {
+      "type": ["string", "null"],
+      "description": "Suggested framing or emphasis for public presentation"
+    },
+    "aggregator_link_card": {
+      "type": ["object", "null"],
+      "description": "Pre-filled link card fields if this is a news aggregator item",
+      "additionalProperties": false,
+      "properties": {
+        "title":           { "type": "string" },
+        "source_name":     { "type": "string" },
+        "date":            { "type": ["string", "null"] },
+        "url":             { "type": ["string", "null"] },
+        "short_summary":   { "type": "string" },
+        "tags":            { "type": "array", "items": { "type": "string" } },
+        "why_it_matters":  { "type": "string" },
+        "editorial_note":  { "type": ["string", "null"] }
+      }
+    },
+    "curator_notes": { "type": ["string", "null"] }
+  }
+}

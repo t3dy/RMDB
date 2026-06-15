@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "text_comparison",
+  "title": "TextComparisonArtifact",
+  "description": "Compares versions of a text (e.g. Agrippa 1510 vs 1533). Specialized artifact for textual criticism and manuscript studies.",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "artifact_type",
+    "schema_version",
+    "source_id",
+    "generated_at",
+    "source_a_id",
+    "source_b_id",
+    "difference_type",
+    "difference_summary",
+    "confidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id":      { "type": "string", "minLength": 1 },
+    "artifact_type":    { "type": "string", "const": "text_comparison" },
+    "schema_version":   { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "source_id":        { "type": "string", "minLength": 1, "description": "Logical source ID for this comparison pair" },
+    "generated_at":     { "type": "string", "format": "date-time" },
+    "generated_by":     { "type": ["string", "null"] },
+    "comparison_id":    { "type": ["string", "null"], "description": "Stable ID for this comparison pair across sections" },
+    "source_a_id":      { "type": "string", "description": "source_id of the first text (e.g. earlier version)" },
+    "source_b_id":      { "type": "string", "description": "source_id of the second text (e.g. later version)" },
+    "source_a_label":   { "type": ["string", "null"], "description": "Human label, e.g. 'De Occulta 1510 draft'" },
+    "source_b_label":   { "type": ["string", "null"], "description": "Human label, e.g. 'De Occulta 1533 printed'" },
+    "section_id":       { "type": ["string", "null"] },
+    "source_a_excerpt": { "type": ["string", "null"] },
+    "source_b_excerpt": { "type": ["string", "null"] },
+    "evidence_locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "location"],
+        "additionalProperties": false,
+        "properties": {
+          "source":   { "type": "string", "enum": ["a", "b", "both"] },
+          "location": { "type": "string" }
+        }
+      }
+    },
+    "difference_type": {
+      "type": "string",
+      "enum": [
+        "addition",
+        "omission",
+        "substitution",
+        "reordering",
+        "expansion",
+        "compression",
+        "terminology_shift",
+        "doctrinal_shift",
+        "uncertain"
+      ]
+    },
+    "difference_summary":        { "type": "string" },
+    "interpretive_implications": { "type": ["string", "null"] },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "uncertain"]
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

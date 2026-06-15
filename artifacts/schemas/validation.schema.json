@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "validation",
+  "title": "ValidationArtifact",
+  "description": "Checks whether an artifact is complete, grounded, and schema-valid. Produced by a validation agent or the validate_artifacts.py script. Stage C of the artifact pipeline.",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "artifact_type",
+    "schema_version",
+    "source_id",
+    "generated_at",
+    "target_artifact_id",
+    "validation_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id":         { "type": "string", "minLength": 1 },
+    "artifact_type":       { "type": "string", "const": "validation" },
+    "schema_version":      { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "source_id":           { "type": "string", "minLength": 1 },
+    "generated_at":        { "type": "string", "format": "date-time" },
+    "generated_by":        { "type": ["string", "null"] },
+    "target_artifact_id":  { "type": "string", "minLength": 1, "description": "artifact_id of the artifact being validated" },
+    "target_artifact_type":{ "type": ["string", "null"] },
+    "validation_status": {
+      "type": "string",
+      "enum": ["pass", "warn", "fail"],
+      "description": "fail blocks publishing; warn allows work to continue"
+    },
+    "schema_errors":                { "type": "array", "items": { "type": "string" } },
+    "missing_required_fields":      { "type": "array", "items": { "type": "string" } },
+    "grounding_issues": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Claims not traceable to source evidence"
+    },
+    "suspected_hallucinations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Claims that appear invented or unsupported"
+    },
+    "duplicate_or_conflicting_claims": { "type": "array", "items": { "type": "string" } },
+    "recommended_fixes":    { "type": "array", "items": { "type": "string" } },
+    "contract_violations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Violations of the artifact contract (AGENT_ARTIFACT_RULES.md)"
+    },
+    "validator_notes":      { "type": ["string", "null"] }
+  }
+}

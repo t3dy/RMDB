@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "raw_extraction",
+  "title": "RawExtractionArtifact",
+  "description": "Captures what is explicitly present in a source or section, before interpretation. Must not make historiographical claims the source does not make. Stage B of the artifact pipeline.",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "artifact_type",
+    "schema_version",
+    "source_id",
+    "generated_at",
+    "extraction_scope"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id":    { "type": "string", "minLength": 1 },
+    "artifact_type":  { "type": "string", "const": "raw_extraction" },
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "source_id":      { "type": "string", "minLength": 1 },
+    "generated_at":   { "type": "string", "format": "date-time" },
+    "generated_by":   { "type": ["string", "null"] },
+    "section_id":     { "type": ["string", "null"], "description": "e.g. 'chapter-1', 'pp.1-25', 'introduction'" },
+    "extraction_scope": {
+      "type": "string",
+      "description": "Human-readable description of what was extracted and from where"
+    },
+    "extracted_entities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "people":       { "type": "array", "items": { "type": "string" } },
+        "works":        { "type": "array", "items": { "type": "string" } },
+        "places":       { "type": "array", "items": { "type": "string" } },
+        "dates":        { "type": "array", "items": { "type": "string" } },
+        "institutions": { "type": "array", "items": { "type": "string" } },
+        "traditions":   { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "key_terms":                    { "type": "array", "items": { "type": "string" } },
+    "explicit_topics":              { "type": "array", "items": { "type": "string" } },
+    "substances_materials":         { "type": "array", "items": { "type": "string" } },
+    "images_symbols_motifs":        { "type": "array", "items": { "type": "string" } },
+    "rituals_practices_procedures": { "type": "array", "items": { "type": "string" } },
+    "claims_made_by_source": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Claims the source itself makes, in the source's own terms"
+    },
+    "important_passages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["excerpt", "location"],
+        "additionalProperties": false,
+        "properties": {
+          "excerpt":      { "type": "string" },
+          "location":     { "type": "string", "description": "page, section, paragraph, timestamp, URL fragment, etc." },
+          "significance": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Things unclear, ambiguous, or hard to read in the source"
+    },
+    "extraction_notes": { "type": ["string", "null"] }
+  }
+}

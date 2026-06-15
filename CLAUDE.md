@@ -36,19 +36,24 @@ RenMagDB is a SQLite database and future static website for Renaissance magic sc
 ### Living Documents
 | Document | Purpose |
 |----------|---------|
-| `docs/WRITING_TEMPLATES.md` | 6 content templates, museum-curator voice |
-| `docs/PIPELINE.md` | Script execution order |
+| `docs/WRITING_TEMPLATES_REVISED.md` | 6 content templates, museum-curator voice |
+| `docs/ARTIFACT_PIPELINE.md` | Staged artifact pipeline — stages, schemas, storage, contract |
+| `docs/AGENT_ARTIFACT_RULES.md` | Which agent produces/consumes which artifact type |
+| `docs/CURATION_CRITERIA.md` | Content standards for publish/reject decisions |
 | `agile/BOARD.md` | Current agile board state |
 
 ## Document Routing
 
 - **Schema questions:** `docs/ONTOLOGY.md` + `BUCKMANONTRMDB.md`
-- **Pipeline questions:** `docs/PIPELINE.md` + `DECKARDV2RMDB.md`
+- **Pipeline questions:** `DECKARDV2RMDB.md`
+- **Artifact pipeline:** `docs/ARTIFACT_PIPELINE.md` (stages, schemas, storage, contract)
+- **Agent artifact rules:** `docs/AGENT_ARTIFACT_RULES.md` (who produces/consumes what)
+- **Curation decisions:** `docs/CURATION_CRITERIA.md` (publish/reject standards)
 - **v2 scope questions:** `JOECHIPV2RMDB.md`
 - **v2 architecture:** `HIROV2RMDB.md` (supersedes HIRORMDB.md)
 - **v2 boundaries:** `DECKARDV2RMDB.md` (supersedes DECKARDRMDB.md)
 - **LLM prompts:** `BUCKMANV2RMDB.md` (3 revised prompts for Phase B)
-- **Writing voice:** `docs/WRITING_TEMPLATES.md`
+- **Writing voice:** `docs/WRITING_TEMPLATES_REVISED.md`
 - **Corpus analysis:** `LAMPTONRMDB.md`
 - **Current work:** `agile/BOARD.md` + latest `agile/sprints/SPRINT-NN.md`
 - **Blunders/lessons:** `agile/issues/BLUNDER*.md`
@@ -65,6 +70,8 @@ RenMagDB is a SQLite database and future static website for Renaissance magic sc
 8. **Agile tracking.** Create TICKET/ISSUE .md files as work proceeds. Log BLUNDER*.md on crashes/failures.
 9. **UTF-8 encoding.** All Python scripts must include `sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')`. (BLUNDER2 lesson.)
 10. **Swarm constraints.** Agents CANNOT run Bash/Python/SQL. Use staging/ protocol per SWARMRMDB.md. Main session handles all DB operations. (BLUNDER4 lesson.)
+11. **Artifact pipeline.** LLM-assisted content must pass through the staged artifact pipeline: source_metadata → raw_extraction → validation → ontology_tagging → interpretive → curation → public_prose. No agent may skip from source to prose. See `docs/ARTIFACT_PIPELINE.md`.
+12. **Artifact validation.** Run `python scripts/validate_artifacts.py` before inserting LLM-generated content into the DB or publishing. Requires `pip install jsonschema>=4.0.0`.
 
 ## Behavioral Triggers
 
@@ -73,6 +80,8 @@ RenMagDB is a SQLite database and future static website for Renaissance magic sc
 - If skipping a gate: flag with `GATE WARNING`
 - If prompts getting long: suggest `/plan-isidore-tokens`
 - If corpus analysis needed: suggest `/plan-lampton-corpus`
+- If LLM output skips artifact stages: quote rule 11 and redirect to `docs/ARTIFACT_PIPELINE.md`
+- If asked to curate news items: follow `docs/CURATION_CRITERIA.md` pipeline
 
 ## Key Decisions
 
@@ -93,3 +102,4 @@ Core: PyMuPDF, pdfminer.six, pypdf, BeautifulSoup4, html2text, ebooklib
 NLP: spaCy (en_core_web_sm), langdetect, rapidfuzz, scikit-learn
 Data: sqlite3 (stdlib), networkx, Jinja2, python-slugify
 API: wikipedia-api, requests
+Validation: jsonschema>=4.0.0 (for artifact pipeline schema validation)

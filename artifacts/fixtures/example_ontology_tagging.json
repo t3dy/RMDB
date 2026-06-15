@@ -1,0 +1,120 @@
+{
+  "artifact_id": "ont_tag_yates-giordano-bruno-1964-intro",
+  "artifact_type": "ontology_tagging",
+  "schema_version": "1.0",
+  "source_id": "yates-giordano-bruno-1964",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "generated_by": "scripts/artifact_pipeline.py (LLM_ASSISTED)",
+  "input_artifact_id": "raw_ext_yates-giordano-bruno-1964-intro",
+  "ontology_version": "1.0",
+  "tags": [
+    "hermetism",
+    "renaissance-magic",
+    "neoplatonism",
+    "corpus-hermeticum",
+    "prisca-theologia",
+    "ficino",
+    "bruno",
+    "historiography",
+    "yates-thesis",
+    "secondary-source",
+    "monograph"
+  ],
+  "esoteric_traditions": [
+    "hermetism",
+    "neoplatonism",
+    "renaissance-magic",
+    "natural-magic"
+  ],
+  "scholarly_fields": [
+    "historiography",
+    "intellectual-history",
+    "reception-history"
+  ],
+  "content_types": [
+    "secondary-analysis",
+    "historiographic-debate",
+    "biography"
+  ],
+  "periods": [
+    "renaissance",
+    "early-modern",
+    "modern"
+  ],
+  "genres": [
+    "monograph",
+    "intellectual-history"
+  ],
+  "methods": [
+    "close-reading",
+    "source-tracing",
+    "intellectual-biography"
+  ],
+  "scholarly_reliability": "high",
+  "pop_occult_flag": false,
+  "entities_linked_to_ontology_ids": [
+    {
+      "entity_name": "Frances A. Yates",
+      "ontology_id": "figure:yates-frances-a",
+      "entity_type": "figure",
+      "confidence": "high"
+    },
+    {
+      "entity_name": "Marsilio Ficino",
+      "ontology_id": "figure:ficino-marsilio",
+      "entity_type": "figure",
+      "confidence": "high"
+    },
+    {
+      "entity_name": "Giordano Bruno",
+      "ontology_id": "figure:bruno-giordano",
+      "entity_type": "figure",
+      "confidence": "high"
+    },
+    {
+      "entity_name": "Corpus Hermeticum",
+      "ontology_id": "text:corpus-hermeticum",
+      "entity_type": "text",
+      "confidence": "high"
+    },
+    {
+      "entity_name": "prisca theologia",
+      "ontology_id": "term:prisca-theologia",
+      "entity_type": "term",
+      "confidence": "high"
+    }
+  ],
+  "historiographical_categories": [
+    "Yates thesis",
+    "Hermetism and the Scientific Revolution debate",
+    "Renaissance Neoplatonism"
+  ],
+  "confidence_by_tag": {
+    "hermetism": 1.0,
+    "renaissance-magic": 0.9,
+    "neoplatonism": 0.9,
+    "corpus-hermeticum": 1.0,
+    "prisca-theologia": 0.95,
+    "ficino": 1.0,
+    "bruno": 1.0,
+    "historiography": 1.0,
+    "yates-thesis": 1.0,
+    "secondary-source": 1.0,
+    "monograph": 1.0
+  },
+  "rejected_tags": [
+    {
+      "tag": "alchemy",
+      "reason": "Alchemy is not a primary topic of this text or the extracted section; Yates treats Hermetism and natural magic as her central categories."
+    },
+    {
+      "tag": "christian-kabbalah",
+      "reason": "Kabbalah mentioned only in passing in this section; not a focus of the extracted portion."
+    },
+    {
+      "tag": "grimoire-tradition",
+      "reason": "Yates does not engage with grimoire literature in this section."
+    }
+  ],
+  "tagging_notes": "Yates's work is the founding text of the 'Yates thesis' historiographical position, which subsequent scholars (Copenhaver, Vickers, Hanegraaff) have significantly qualified or challenged. Tags reflect the book's scholarly identity as a historiographic landmark, not endorsement of its thesis."
+}

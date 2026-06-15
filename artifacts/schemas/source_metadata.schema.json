@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "source_metadata",
+  "title": "SourceMetadataArtifact",
+  "description": "Represents an ingested source before interpretation. Stage A of the artifact pipeline.",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "artifact_type",
+    "schema_version",
+    "source_id",
+    "generated_at",
+    "ingestion_date",
+    "raw_text_available",
+    "transcript_available"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id":          { "type": "string", "minLength": 1 },
+    "artifact_type":        { "type": "string", "const": "source_metadata" },
+    "schema_version":       { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "source_id":            { "type": "string", "minLength": 1 },
+    "generated_at":         { "type": "string", "format": "date-time" },
+    "generated_by":         { "type": ["string", "null"] },
+    "source_type": {
+      "type": "string",
+      "enum": ["pdf", "book", "article", "podcast_episode", "youtube_video", "webpage", "manuscript", "database_record", "other"]
+    },
+    "source_title":         { "type": ["string", "null"] },
+    "authors":              { "type": "array", "items": { "type": "string" } },
+    "editors":              { "type": "array", "items": { "type": "string" } },
+    "publication_date":     { "type": ["string", "null"] },
+    "publication_year":     { "type": ["integer", "null"] },
+    "publisher":            { "type": ["string", "null"] },
+    "source_uri":           { "type": ["string", "null"] },
+    "local_path":           { "type": ["string", "null"] },
+    "ingestion_date":       { "type": "string", "format": "date-time" },
+    "language":             { "type": ["string", "null"] },
+    "page_count":           { "type": ["integer", "null"] },
+    "rights_status":        { "type": ["string", "null"] },
+    "access_notes":         { "type": ["string", "null"] },
+    "raw_text_available":   { "type": "boolean" },
+    "transcript_available": { "type": "boolean" },
+    "db_document_id":       { "type": ["integer", "null"], "description": "FK to documents.id in renmagic.db if ingested" },
+    "notes":                { "type": ["string", "null"] }
+  }
+}

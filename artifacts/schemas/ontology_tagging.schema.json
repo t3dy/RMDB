@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "ontology_tagging",
+  "title": "OntologyTaggingArtifact",
+  "description": "Maps a raw extraction onto the portal's controlled vocabulary. Classifies; must not produce public prose. Stage D of the artifact pipeline.",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "artifact_type",
+    "schema_version",
+    "source_id",
+    "generated_at",
+    "input_artifact_id",
+    "ontology_version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id":       { "type": "string", "minLength": 1 },
+    "artifact_type":     { "type": "string", "const": "ontology_tagging" },
+    "schema_version":    { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "source_id":         { "type": "string", "minLength": 1 },
+    "generated_at":      { "type": "string", "format": "date-time" },
+    "generated_by":      { "type": ["string", "null"] },
+    "input_artifact_id": { "type": "string", "minLength": 1, "description": "artifact_id of the RawExtractionArtifact consumed" },
+    "ontology_version":  { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Controlled vocabulary tags from the portal ontology"
+    },
+    "esoteric_traditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "western-esotericism",
+          "renaissance-magic",
+          "alchemy",
+          "hermetism",
+          "neoplatonism",
+          "christian-kabbalah",
+          "jewish-kabbalah",
+          "grimoire-tradition",
+          "ritual-magic",
+          "astrology",
+          "natural-magic",
+          "demonic-magic",
+          "witchcraft-studies",
+          "theurgy",
+          "enochian",
+          "rosicrucianism",
+          "theosophy",
+          "other"
+        ]
+      }
+    },
+    "scholarly_fields": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "history-of-science",
+          "manuscript-studies",
+          "book-history",
+          "iconography",
+          "historiography",
+          "methodology",
+          "reception-history",
+          "intellectual-history",
+          "religious-history",
+          "art-history",
+          "philology",
+          "other"
+        ]
+      }
+    },
+    "content_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "primary-source-discussion",
+          "secondary-analysis",
+          "text-edition",
+          "translation",
+          "commentary",
+          "biography",
+          "historiographic-debate",
+          "methodology-discussion",
+          "review",
+          "other"
+        ]
+      }
+    },
+    "periods": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["ancient", "late-antique", "medieval", "renaissance", "early-modern", "enlightenment", "modern", "contemporary"]
+      }
+    },
+    "genres": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "methods": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "scholarly_reliability": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "uncertain"],
+      "description": "Assessment of the scholarly rigor of the source"
+    },
+    "pop_occult_flag": {
+      "type": "boolean",
+      "description": "True if source is generic occult lifestyle, AI spam, or low-scholarly relevance content"
+    },
+    "entities_linked_to_ontology_ids": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_name", "ontology_id", "entity_type"],
+        "additionalProperties": false,
+        "properties": {
+          "entity_name":  { "type": "string" },
+          "ontology_id":  { "type": "string", "description": "figures.id, texts.id, or dictionary_terms.id in renmagic.db" },
+          "entity_type":  { "type": "string", "enum": ["figure", "text", "term", "tradition"] },
+          "confidence":   { "type": ["string", "null"], "enum": ["high", "medium", "low", null] }
+        }
+      }
+    },
+    "historiographical_categories": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "confidence_by_tag": {
+      "type": "object",
+      "additionalProperties": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+    },
+    "rejected_tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tag", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "tag":    { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "tagging_notes": { "type": ["string", "null"] }
+  }
+}

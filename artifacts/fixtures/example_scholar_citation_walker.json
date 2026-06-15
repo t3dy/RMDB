@@ -1,0 +1,24 @@
+{
+  "artifact_id": "sch_cite_walker-spiritual-demonic-1958-core-distinction",
+  "artifact_type": "scholar_citation",
+  "schema_version": "1.0",
+  "source_id": "walker-spiritual-demonic-magic-1958",
+  "generated_at": "2026-06-15T00:00:00Z",
+  "generated_by": "scripts/artifact_pipeline.py (LLM_ASSISTED)",
+  "bibliographic_source_id": "walker-spiritual-demonic-magic-1958",
+  "scholar_name": "D.P. Walker",
+  "cited_work": "Spiritual and Demonic Magic from Ficino to Campanella (1958)",
+  "relevant_topic": "Distinction between spiritual magic and demonic magic in Renaissance practice",
+  "citation_context": "Walker opens the book by establishing the analytical distinction that organizes his entire study, in response to the blurring of categories in both contemporary polemical literature and in modern historiography that tends to treat all Renaissance magic as a single undifferentiated phenomenon.",
+  "claim_summary": "Walker distinguishes 'spiritual magic' — operations that work through the spiritus mundi and its analogues in human physiology, using music, scent, food, talismanic images, and other material-pneumatic means to attract or channel celestial influences — from 'demonic magic' that invokes personal spirit-beings (angels, demons) and is theologically condemned. Ficino's astrological medicine in De Vita III is the paradigm case of spiritual magic: it operates through natural spiritus, not personal demons, and can therefore be defended as natural philosophy rather than sorcery.",
+  "exact_quote": null,
+  "page_or_location": "Introduction and Chapter 1",
+  "historiographical_angle": "Pre-Yates thesis in publication date but conceptually compatible with it; Walker's distinction supports Yates's broader argument that Renaissance Hermetism was intellectually serious rather than merely superstitious. Copenhaver's subsequent work (1988 onward) has refined Walker's reading of Ficino, arguing that Walker underestimates how thoroughly Ficino's Platonism, rather than Hermetism, drives his magical theory.",
+  "related_portal_entities": [
+    { "entity_type": "figure", "entity_id_or_name": "Marsilio Ficino" },
+    { "entity_type": "figure", "entity_id_or_name": "D.P. Walker" },
+    { "entity_type": "text", "entity_id_or_name": "De Vita (Three Books on Life)" },
+    { "entity_type": "tradition", "entity_id_or_name": "natural-magic" }
+  ],
+  "notes": "Walker's spiritual/demonic distinction is now standard vocabulary in the field but should be applied cautiously: the boundary was contested and shifting in practice, not a fixed categorical line. Practitioners like Agrippa and Dee often operated in the gray zone Walker's analysis identifies but does not fully resolve."
+}

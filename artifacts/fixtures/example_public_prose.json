@@ -1,0 +1,38 @@
+{
+  "artifact_id": "pub_prose_yates-giordano-bruno-1964-draft",
+  "artifact_type": "public_prose",
+  "schema_version": "1.0",
+  "source_id": "yates-giordano-bruno-1964",
+  "generated_at": "2026-06-14T00:00:00Z",
+  "generated_by": "scripts/artifact_pipeline.py (LLM_ASSISTED)",
+  "input_artifact_ids": [
+    "src_meta_yates-giordano-bruno-1964",
+    "raw_ext_yates-giordano-bruno-1964-intro",
+    "ont_tag_yates-giordano-bruno-1964-intro",
+    "interp_yates-giordano-bruno-1964-intro",
+    "curation_yates-giordano-bruno-1964"
+  ],
+  "title": "Giordano Bruno and the Hermetic Tradition",
+  "dek": "Frances Yates's landmark 1964 study of Renaissance Hermetism and its role in the intellectual transformation of early modern Europe.",
+  "body_markdown": "Frances Yates's *Giordano Bruno and the Hermetic Tradition* (1964) is one of the most consequential works in the historiography of Renaissance thought. Yates argued that the rediscovery of the *Corpus Hermeticum* — a collection of Greek texts attributed to the mythical sage Hermes Trismegistus and translated by Marsilio Ficino for Cosimo de' Medici in 1463 — was central to the intellectual transformations of the Renaissance, including the cosmological revolution usually credited to Copernicus and Galileo.\n\nYates's central claim was that Renaissance thinkers, Bruno foremost among them, operated within a Hermetic-Neoplatonic framework that she called the 'Hermetic tradition': an animist, magic-inflected worldview that treated the natural world as suffused with spiritual forces accessible through the right philosophical and ritual practice. This worldview, she argued, provided the motivational and conceptual backdrop for Bruno's infinite universe and his challenge to Aristotelian cosmology.\n\nThe 'Yates thesis,' as it came to be called, transformed the study of Renaissance philosophy and science and opened up the history of Western esotericism as a serious scholarly field. Subsequent scholars have significantly qualified it. Brian Vickers challenged the idea that Hermetic animism was intellectually continuous with Galilean mechanism. Brian Copenhaver demonstrated that Ficino's primary intellectual allegiance was to Platonism, not a distinct 'Hermetism.' Wouter Hanegraaff reframed the entire field methodologically, arguing that the category of 'esotericism' itself is a scholarly construction that needs historical analysis rather than uncritical deployment.\n\nThis portal's approach follows the Copenhaver-Hanegraaff line: 'Hermetism' and 'Renaissance magic' are actor categories that need to be described precisely as Renaissance figures used them, not taken as transparent descriptions of a tradition. Yates remains essential reading — but as historiography to understand and situate, not as the framework to adopt unchanged.",
+  "summary": "Frances Yates's 1964 monograph arguing that Renaissance Hermetism — centered on the rediscovery of the Corpus Hermeticum — was central to the intellectual transformations of early modern Europe, including the Scientific Revolution. The 'Yates thesis' remains foundational to the field despite significant subsequent qualification by Copenhaver, Vickers, and Hanegraaff.",
+  "tags": [
+    "yates-thesis",
+    "hermetism",
+    "giordano-bruno",
+    "ficino",
+    "corpus-hermeticum",
+    "historiography",
+    "renaissance-magic",
+    "secondary-source",
+    "foundational-text"
+  ],
+  "citations_or_source_links": [
+    "Yates, Frances A. Giordano Bruno and the Hermetic Tradition. London: Routledge and Kegan Paul, 1964.",
+    "Copenhaver, Brian P. Hermetica. Cambridge: Cambridge University Press, 1992.",
+    "Hanegraaff, Wouter J. Esotericism and the Academy. Cambridge: Cambridge University Press, 2012."
+  ],
+  "emergency_prototype_mode": false,
+  "editorial_status": "draft",
+  "revision_notes": "Draft generated from prior artifacts in the pipeline. Requires human review before status can be changed to reviewed or published. Body markdown should be verified against the actual extraction artifact — passages cited are from approximate memory in the fixture example."
+}
